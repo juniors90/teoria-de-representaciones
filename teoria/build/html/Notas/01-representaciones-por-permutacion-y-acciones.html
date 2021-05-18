@@ -1,0 +1,408 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>1. Teoría de Representaciones de Grupos &mdash; documentación de Teoría de Representaciones de Grupos - 0.0.1</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="2. Representaciones, Acciones lineales y módulos" href="02-representaciones-acciones-lineales-y-modulos.html" />
+    <link rel="prev" title="Teoría de Representaciones de Grupos" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Teoría de Representaciones de Grupos
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contenidos:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. Teoría de Representaciones de Grupos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduccion">1.1. Introducción</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#representaciones-por-permutacion-y-acciones">1.2. Representaciones por Permutación y Acciones</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#definicion">1.2.1. Definición</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">1.2.2. Definición</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#grupos">1.3. Grupos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#accion-de-un-grupo-sobre-un-conjunto">1.4. acción de un grupo sobre un conjunto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ejemplos">1.5. Ejemplos</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="02-representaciones-acciones-lineales-y-modulos.html">2. Representaciones, Acciones lineales y módulos</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Teoría de Representaciones de Grupos</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li><span class="section-number">1. </span>Teoría de Representaciones de Grupos</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/Notas/01-representaciones-por-permutacion-y-acciones.rst.txt" rel="nofollow"> Ver código fuente de la página</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="teoria-de-representaciones-de-grupos">
+<h1><span class="section-number">1. </span>Teoría de Representaciones de Grupos<a class="headerlink" href="#teoria-de-representaciones-de-grupos" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="introduccion">
+<h2><span class="section-number">1.1. </span>Introducción<a class="headerlink" href="#introduccion" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Para comprender las notas del curso se deben tener nociones de</p>
+<ul class="simple">
+<li><p>Teoría de Grupos</p></li>
+<li><p>Álgebra lineal</p></li>
+</ul>
+<p>En matemáticas, la palabra «representación» significa básicamente «función de preservación de la estructura». Por lo tanto, en la «Teoría de Grupos» una representación es un homomorfismo.</p>
+<p>Pero, más concretamente, debería ser un homomorfismo de un objeto (grupo o anillo) que se está intentando estudiar a otro que es de alguna forma más concreto y por tanto, de un salto, más fácil de entender. Los dos tipos de grupos concretos más simples son, en primer lugar, el grupo de todas las permutaciones de un conjunto arbitrario y, en segundo lugar, el grupo de todas las transformaciones lineales invertibles en un espacio vectorial arbitrario. Entonces, para los grupos, las representaciones más comúnmente estudiadas son las representaciones de permutación y las representaciones lineales.</p>
+</div>
+<div class="section" id="representaciones-por-permutacion-y-acciones">
+<h2><span class="section-number">1.2. </span>Representaciones por Permutación y Acciones<a class="headerlink" href="#representaciones-por-permutacion-y-acciones" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="definicion">
+<h3><span class="section-number">1.2.1. </span>Definición<a class="headerlink" href="#definicion" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Una representación de permutación de un grupo <span class="math notranslate nohighlight">\(G\)</span> en un conjunto <span class="math notranslate nohighlight">\(S\)</span> es un homomorfismo de <span class="math notranslate nohighlight">\(G\)</span> al conjunto (grupo) de todas las permutaciones de <span class="math notranslate nohighlight">\(S\)</span>.</p>
+<blockquote>
+<div><p>Preguntar si es conjunto o grupo de permutaciones.</p>
+</div></blockquote>
+</div>
+<div class="section" id="id1">
+<h3><span class="section-number">1.2.2. </span>Definición<a class="headerlink" href="#id1" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Una representación lineal de un grupo <span class="math notranslate nohighlight">\(G\)</span> en un espacio vectorial <span class="math notranslate nohighlight">\(V\)</span> es un homomorfismo de <span class="math notranslate nohighlight">\(G\)</span> al grupo de todas las transformaciones lineales invertibles de <span class="math notranslate nohighlight">\(V\)</span>.</p>
+<p>A menos que esté calificado con algún otro adjetivo, «representación» generalmente significa «representación lineal», por lo que este curso se ocupará de las representaciones lineales de grupos. Por lo general, restringiremos nuestra atención a grupos finitos y espacios vectoriales sobre el campo complejo, ya que esto simplifica las cosas y proporciona una teoría más completa. Si bien sería posible lanzarnos de inmediato al desarrollo de esta teoría, primero dedicaremos un poco de tiempo a familiarizarnos con algunos pequeños grupos finitos, para luego poder ver cómo se aplica la teoría en ejemplos particulares.</p>
+<ul class="simple">
+<li><p>El fundador del tema fue Ferdinand Georg Frobenius (1849-1917), quien descubrió las asombrosas propiedades básicas de los caracteres grupales irreductibles y las publicó en una serie de artículos en la década de 1890.</p></li>
+<li><p>Su alumno, Issai Schur, fue otro que hizo muchas contribuciones tempranas importantes al tema.</p></li>
+<li><p>En su forma moderna, el tema debe mucho a las contribuciones de Emmy Noether (en la década de 1920), cuyo trabajo forma la base de lo que ahora se llama «álgebra moderna».</p></li>
+<li><p>Sobre esta base, Richard Brauer desarrolló la teoría de la representación modular, en la que se estudian las representaciones sobre campos de características distintas de cero y se relacionan con representaciones complejas.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="grupos">
+<h2><span class="section-number">1.3. </span>Grupos<a class="headerlink" href="#grupos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Los grupos se inventaron como una herramienta para estudiar objetos simétricos. Estos pueden ser objetos de cualquier tipo. Si definimos una simetría de un objeto como una transformación de ese objeto que conserva su estructura esencial, entonces el conjunto de todas las simetrías del objeto forma un grupo. En matemáticas siempre es posible considerar cualquier objeto como un conjunto con alguna estructura adicional; por tanto, una simetría es una función biyectiva que preserva la estructura desde el conjunto hacia sí mismo. La composición de funciones proporciona una operación en este conjunto, y no es difícil demostrar que los axiomas de grupo deben satisfacerse.</p>
+<p>Por ejemplo, un campo es un conjunto dotado con operaciones de suma y multiplicación, que satisface varios axiomas. Un cuadrado puede considerarse como un conjunto de puntos y líneas en el plano euclidiano que satisfacen varias propiedades relacionadas con los ángulos y las distancias. Una simetría de un campo es una función biyectiva del campo a sí mismo que conserva las operaciones de suma y multiplicación. (Es decir, una simetría de un campo es un automorfismo del campo). Una simetría de un cuadrado es una función del conjunto relevante de puntos y líneas a sí mismo que conserva todos los ángulos y distancias. En ambos casos, el conjunto de todas las simetrías es un grupo.</p>
+<p>Está claro que la combinación de dos funciones que conservan alguna propiedad también conservará esa propiedad. Por ejemplo, si <span class="math notranslate nohighlight">\(R\)</span> es un conjunto equipado con una operación <span class="math notranslate nohighlight">\(\ast\)</span> (como suma o multiplicación) y si <span class="math notranslate nohighlight">\(f, g: R \to R\)</span> son funciones que conservan <span class="math notranslate nohighlight">\(\ast\)</span>, entonces para todo <span class="math notranslate nohighlight">\(x, y \in R\)</span></p>
+<div class="math notranslate nohighlight">
+\[(fg)(x \ast y) = f(g(x \ast y)) = f((gx) \ast (gy)) = (f(gx)) \ast (f(gy)) = ((fg)x) \ast ((fg)y),\]</div>
+<p>para que <span class="math notranslate nohighlight">\(fg\)</span> también conserve <span class="math notranslate nohighlight">\(\ast\)</span>. De manera similar, si <span class="math notranslate nohighlight">\(S\)</span> es un conjunto de puntos en el plano euclidiano y <span class="math notranslate nohighlight">\(\phi, \psi: S \to S \)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+    \angle P_{1}, P_{2}, P_{3} &amp;= \angle P_{1}'P_{2}'P_{3}' \text{ donde } P_{i}' = \psi P_{i} \\
+                               &amp;= \angle P_{1}''P_{2}''P_{3}'' \text{ donde } P_{i}'' = \phi P_{i}' = ( \phi \psi ) P_{i},
+\end{align}\end{split}\]</div>
+<p>de modo que <span class="math notranslate nohighlight">\(\phi \psi\)</span> también conserva los ángulos. Así se puede ver que el compuesto de dos simetrías es una simetría. De manera similar, la inversa de una simetría también es una simetría. Además, la composición de funciones es una operación asociativa. De modo que se satisfacen los axiomas de grupo. Podemos esperar que comprender el grupo de simetría de un objeto pueda conducir a una comprensión más profunda del objeto en sí.</p>
+<p>La teoría de la representación en realidad invierte esta filosofía. Si uno considera los grupos como cosas que son de interés por derecho propio, entonces quizás uno pueda esperar comprender mejor un grupo dado descubriendo un objeto del cual el grupo es el grupo de simetría, y usando las propiedades de ese objeto para descubrir información sobre el grupo. grupo. Sin embargo, el tema subyacente sigue siendo que los elementos de un grupo deben asociarse con las transformaciones de un conjunto. Por tanto, la siguiente definición es natural.</p>
+</div>
+<div class="section" id="accion-de-un-grupo-sobre-un-conjunto">
+<h2><span class="section-number">1.4. </span>acción de un grupo sobre un conjunto<a class="headerlink" href="#accion-de-un-grupo-sobre-un-conjunto" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Una acción de un grupo <span class="math notranslate nohighlight">\(G\)</span> sobre un conjunto <span class="math notranslate nohighlight">\(S\)</span> es una función <span class="math notranslate nohighlight">\((g, s) \mapsto gs\)</span> de <span class="math notranslate nohighlight">\(G \times S\)</span> a <span class="math notranslate nohighlight">\(S\)</span> tal que</p>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\((i)\)</span> <span class="math notranslate nohighlight">\((gh)s = g(hs)\)</span> para todo <span class="math notranslate nohighlight">\(g, h \in G\)</span>, <span class="math notranslate nohighlight">\(s \in S\)</span>,</p>
+<p><span class="math notranslate nohighlight">\((i)\)</span> <span class="math notranslate nohighlight">\(1s = s\)</span> para todo <span class="math notranslate nohighlight">\(s \in S\)</span>, donde <span class="math notranslate nohighlight">\(1\)</span> es el elemento identidad de <span class="math notranslate nohighlight">\(G\)</span>.</p>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<ul class="simple">
+<li><p>Habitualmente usaremos la notación «<span class="math notranslate nohighlight">\(1\)</span>» para el elemento de identidad de un grupo abstracto, aunque si la operación de grupo se escribe como «<span class="math notranslate nohighlight">\(+\)</span>» entonces usaremos «<span class="math notranslate nohighlight">\(0\)</span>» para la identidad. Para un grupo de transformaciones de un conjunto, el elemento identidad será la función identidad del conjunto a sí mismo, y esto lo denotaremos por «<span class="math notranslate nohighlight">\(id\)</span>». La matriz de identidad se indicará con «<span class="math notranslate nohighlight">\(I\)</span>»</p></li>
+<li><p>Una acción de <span class="math notranslate nohighlight">\(G\)</span> sobre <span class="math notranslate nohighlight">\(S\)</span> puede verse como una regla para multiplicar elementos de <span class="math notranslate nohighlight">\(S\)</span> por elementos de <span class="math notranslate nohighlight">\(G\)</span>, de modo que el resultado es otro elemento de <span class="math notranslate nohighlight">\(S\)</span>.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="ejemplos">
+<h2><span class="section-number">1.5. </span>Ejemplos<a class="headerlink" href="#ejemplos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Pasamos ahora a una discusión de algunos ejemplos de grupos.</p>
+<p>El grupo cíclico <span class="math notranslate nohighlight">\(C_{n}\)</span> consta de <span class="math notranslate nohighlight">\(n\)</span> elementos <span class="math notranslate nohighlight">\(1\)</span>, <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(x^{2}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span>, <span class="math notranslate nohighlight">\(x^{n-1}\)</span>, donde <span class="math notranslate nohighlight">\(x^{n}=1\)</span>. Este grupo se puede representar como el grupo de todas las rotaciones del plano que llevan consigo un polígono regular de <span class="math notranslate nohighlight">\(n\)</span> lados, representando <span class="math notranslate nohighlight">\(x\)</span> como una rotación a través de <span class="math notranslate nohighlight">\(2\pi / n\)</span>. Alternativamente, se puede pensar en el grupo aditivo de <span class="math notranslate nohighlight">\(\mathbb{Z}_{n}\)</span>, el anillo de números enteros módulo <span class="math notranslate nohighlight">\(n\)</span>, identificando el generador <span class="math notranslate nohighlight">\(x\)</span> de <span class="math notranslate nohighlight">\(C_{n}\)</span> con <span class="math notranslate nohighlight">\(1\in\mathbb{Z}_{n}\)</span>, y el elemento identidad de <span class="math notranslate nohighlight">\(C_{n}\)</span> con <span class="math notranslate nohighlight">\(0\in\mathbb{Z}_{n}\)</span>. Otra realización de este grupo se obtiene identificando <span class="math notranslate nohighlight">\(x^{k}\)</span> con el número complejo <span class="math notranslate nohighlight">\(e^{k (2\pi i / n)}\)</span>, siendo la operación de grupo la multiplicación habitual de números complejos.</p>
+<p>Podemos obtener una representación de permutación de <span class="math notranslate nohighlight">\(C_{n}\)</span> en el conjunto <span class="math notranslate nohighlight">\({1, 2,\dots , n}\)</span> mapeando <span class="math notranslate nohighlight">\(x\)</span> a la permutación <span class="math notranslate nohighlight">\(\sigma\)</span> definida por <span class="math notranslate nohighlight">\(\sigma i = i + 1\)</span> para <span class="math notranslate nohighlight">\(1 \leq i \leq n - 1\)</span> y <span class="math notranslate nohighlight">\(\sigma n = 1\)</span>, y podemos obtener una representación matricial de <span class="math notranslate nohighlight">\(C_{n}\)</span> mapeando <span class="math notranslate nohighlight">\(x\)</span> a la matriz <span class="math notranslate nohighlight">\(\left(\begin{matrix} \cos{\theta} &amp; -\sin{\theta} \\ \sin{\theta}  &amp; \cos{\theta}  \end{matrix}\right)\)</span> de orden <span class="math notranslate nohighlight">\(2 \times 2\)</span>, donde <span class="math notranslate nohighlight">\(\theta = 2\pi / n\)</span>.</p>
+<p>En este punto, el estudiante tendría razón al quejarse de que no se ha dado una definición adecuada de <span class="math notranslate nohighlight">\(C_{n}\)</span>. ¿Qué es este grupo cíclico, realmente? ¿Son sus elementos los símbolos <span class="math notranslate nohighlight">\(x^{k}\)</span>, y si hubiéramos escrito <span class="math notranslate nohighlight">\(y^{k}\)</span> en su lugar, sería el mismo grupo o uno diferente? ¿O los elementos de <span class="math notranslate nohighlight">\(C_{n}\)</span> son realmente números enteros módulo <span class="math notranslate nohighlight">\(n\)</span>, o raíces <span class="math notranslate nohighlight">\(n\)</span>-ésimas complejas de <span class="math notranslate nohighlight">\(1\)</span>, o quizás ciertas permutaciones o ciertas matrices? De hecho, hablar del grupo cíclico de orden <span class="math notranslate nohighlight">\(n\)</span>, como hacen los teóricos de grupos, es bastante impreciso. Los cinco ejemplos que dimos anteriormente pueden denominarse grupos cíclicos de orden <span class="math notranslate nohighlight">\(n\)</span>. Sin embargo, el hecho crucial es que dos grupos cíclicos cualesquiera de orden <span class="math notranslate nohighlight">\(n\)</span> son isomorfos entre sí: si <span class="math notranslate nohighlight">\(G\)</span> y <span class="math notranslate nohighlight">\(H\)</span> son ambos grupos cíclicos de orden <span class="math notranslate nohighlight">\(n\)</span>, entonces existe una correspondencia uno a uno entre los elementos de <span class="math notranslate nohighlight">\(G\)</span> y los elementos de <span class="math notranslate nohighlight">\(H\)</span> que respeta las dos operaciones del grupo. Cuando un teórico de grupos dice «hay solo un grupo cíclico de orden <span class="math notranslate nohighlight">\(n\)</span>», lo que se quiere decir es que solo hay una clase de isomorfismo de grupos cíclicos de orden <span class="math notranslate nohighlight">\(n\)</span>. Si uno realmente quisiera tener un solo objeto llamado grupo cíclico de orden <span class="math notranslate nohighlight">\(n\)</span>, ¡tendría que ser de hecho una clase de grupos de isomorfismo, en lugar de un grupo!</p>
+<p>Antes de continuar con ejemplos de grupos, necesitamos una notación para las permutaciones. Una permutación de un conjunto es una función biyectiva del conjunto a sí mismo. Si <span class="math notranslate nohighlight">\(\sigma\)</span> es una permutación de <span class="math notranslate nohighlight">\(\{1, 2,\dots, n\}\)</span> luego <span class="math notranslate nohighlight">\(\sigma 1\)</span>, <span class="math notranslate nohighlight">\(\sigma 2\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span>, <span class="math notranslate nohighlight">\(\sigma n\)</span> son <span class="math notranslate nohighlight">\(1\)</span>, <span class="math notranslate nohighlight">\(2\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span>, <span class="math notranslate nohighlight">\(n\)</span> en algún orden, y escribimos <span class="math notranslate nohighlight">\(\left[\begin{matrix} 1 &amp; 2 &amp; \dots &amp; n \\ \sigma 1  &amp; \sigma 2 &amp; \dots &amp; \sigma n  \end{matrix}\right]\)</span>. Así, por ejemplo, <span class="math notranslate nohighlight">\(\left[\begin{matrix} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\ 4 &amp; 1 &amp; 5 &amp; 2 &amp; 3 \end{matrix}\right]\)</span>  denota la función <span class="math notranslate nohighlight">\(\sigma: \{1, 2, 3, 4, 5\} \to \{1, 2, 3, 4, 5\}\)</span> tal que <span class="math notranslate nohighlight">\(\sigma 1 = 4\)</span>, <span class="math notranslate nohighlight">\(\sigma 2 = 1\)</span>, <span class="math notranslate nohighlight">\(\sigma 3 = 5\)</span>, <span class="math notranslate nohighlight">\(\sigma 4 = 2\)</span> y <span class="math notranslate nohighlight">\(\sigma 5 = 3\)</span>. Habiendo introducido esta notación, quiero abandonarla inmediatamente a favor de la «notación cíclica» más compacta, que hace que la permutación anterior sea <span class="math notranslate nohighlight">\((1, 4, 2) (3, 5)\)</span>. En la notación cíclica para <span class="math notranslate nohighlight">\(\sigma\)</span> los elementos del conjunto <span class="math notranslate nohighlight">\(\{1, 2,\dots, n\}\)</span> se reúnen en secuencias en las que cada término sucesivo se obtiene aplicando <span class="math notranslate nohighlight">\(\sigma\)</span> al anterior, y <span class="math notranslate nohighlight">\(\sigma\)</span> aplicado al último término de una secuencia da el primero. Las secuencias con un solo término <span class="math notranslate nohighlight">\(k\)</span> corresponden a aquellas <span class="math notranslate nohighlight">\(k\)</span> para las que <span class="math notranslate nohighlight">\(\sigma k = k\)</span>, y estas a menudo se omiten. Por lo tanto, en la notación de ciclo, la permutación <span class="math notranslate nohighlight">\(\tau = \left[\begin{matrix} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\ 3 &amp; 2 &amp; 4 &amp; 1 &amp; 5 \end{matrix}\right]\)</span> generalmente se escribe como <span class="math notranslate nohighlight">\((1, 3, 4)\)</span>, pero a veces se escribe como <span class="math notranslate nohighlight">\((1, 3, 4) (2) (5)\)</span> , especialmente si no está claro por el contexto que <span class="math notranslate nohighlight">\(\tau\)</span> es una permutación de <span class="math notranslate nohighlight">\(\{1, 2, 3, 4, 5\}\)</span> en lugar de <span class="math notranslate nohighlight">\(\{1, 2, 3, 4\}\)</span>.</p>
+<p>La combinación de dos permutaciones <span class="math notranslate nohighlight">\(\sigma\)</span> y <span class="math notranslate nohighlight">\(\tau\)</span> del mismo conjunto es la función στ definida por <span class="math notranslate nohighlight">\((\sigma \tau) k = \sigma (\tau k)\)</span> para cada <span class="math notranslate nohighlight">\(k\)</span>. Como la combinación de dos biyecciones es una biyección, se deduce que <span class="math notranslate nohighlight">\(\sigma \tau\)</span> es una permutación. El conjunto de todas las permutaciones de un conjunto dado <span class="math notranslate nohighlight">\(S\)</span> forma un grupo, llamado grupo simétrico en <span class="math notranslate nohighlight">\(S\)</span>, y a veces denotado por <span class="math notranslate nohighlight">\(Sym(S)\)</span>. Si el número de elementos en <span class="math notranslate nohighlight">\(S\)</span> es <span class="math notranslate nohighlight">\(n\)</span>, entonces <span class="math notranslate nohighlight">\(Sym(S)\)</span> se llama grupo simétrico de grado <span class="math notranslate nohighlight">\(n\)</span>, comúnmente escrito como <span class="math notranslate nohighlight">\(S_{n}\)</span>. Por supuesto, existe realmente un grupo simétrico de grado <span class="math notranslate nohighlight">\(n\)</span> para cada conjunto de <span class="math notranslate nohighlight">\(n\)</span> elementos, pero todos son isomórficos entre sí y, en cualquier caso, es natural y habitual utilizar el conjunto <span class="math notranslate nohighlight">\(\{1, 2,\dots, n\}\)</span> como el conjunto estándar de <span class="math notranslate nohighlight">\(n\)</span> elementos (a menos que el contexto favorezca alguna otra opción). Observe que el grupo <span class="math notranslate nohighlight">\(S_{3}\)</span> tiene seis elementos, es decir, <span class="math notranslate nohighlight">\(id\)</span>, <span class="math notranslate nohighlight">\((1, 2)\)</span>, <span class="math notranslate nohighlight">\((1, 3)\)</span>, <span class="math notranslate nohighlight">\((2, 3)\)</span>, <span class="math notranslate nohighlight">\((1, 2, 3)\)</span> y <span class="math notranslate nohighlight">\((1, 3, 2)\)</span>. La tabla de multiplicar para este grupo es la siguiente.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 16%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(S_{3}\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(id\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\((1,2)\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\((1, 3)\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\((2, 3)\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\((1, 2, 3)\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\((1, 3, 2)\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(id\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(id\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((1,2)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((1,3)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((2, 3)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((1, 2, 3)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((1, 3, 2)\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\((1,2)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((1,2)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(id\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((1,3,2)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((1,2,3)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((2, 3)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((1, 3)\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\((1,3)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((1,3)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((1,2,3)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(id\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((1,3,2)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((1, 2)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((2, 3)\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\((2, 3)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((2, 3)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((1,3,2)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((1,2,3)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(id\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((1, 3)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((1, 2)\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\((1,2,3)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((1,2,3)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((1, 2)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((2, 3)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((1,2)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((1,3,2)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(id\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\((1,3,2)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((1,3,2)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((2, 3)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((1, 2)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((1,3)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(id\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((1, 2, 3)\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>Revisemos una entrada en esta tabla. Si <span class="math notranslate nohighlight">\(\sigma = (1, 2, 3)\)</span> y <span class="math notranslate nohighlight">\(\tau = (1, 3)\)</span> entonces</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+    (\sigma \tau) 1 &amp;= \sigma (\tau 1) = \sigma 3 = 1,\\
+    (\sigma \tau) 2 &amp;= \sigma (\tau 2) = \sigma 2 = 3,\\
+    (\sigma \tau) 3 &amp;= \sigma (\tau 3) = \sigma 1 = 2.
+\end{align}\end{split}\]</div>
+<p>de modo que <span class="math notranslate nohighlight">\(\sigma \tau = (2, 3)\)</span>, de acuerdo con la tabla.</p>
+<p>Manteniendo la notación <span class="math notranslate nohighlight">\(\sigma = (1, 2, 3)\)</span> y <span class="math notranslate nohighlight">\(\tau = (1, 3)\)</span>, observe que <span class="math notranslate nohighlight">\(\tau \sigma \tau = (1, 3, 2) = \sigma^{-1}\)</span>. Esta relación permite reescribir cualquier producto de potencias de <span class="math notranslate nohighlight">\(\sigma\)</span> y potencias de <span class="math notranslate nohighlight">\(\tau\)</span> de modo que las potencias de <span class="math notranslate nohighlight">\(\sigma\)</span> precedan a las potencias de <span class="math notranslate nohighlight">\(\tau\)</span>. Dado que <span class="math notranslate nohighlight">\(\tau = \tau^{− 1}\)</span> la relación <span class="math notranslate nohighlight">\(\tau \sigma \tau = \sigma^{-1}\)</span> puede escribirse alternativamente como <span class="math notranslate nohighlight">\(\tau \sigma = \sigma^{-1} \tau\)</span> o como <span class="math notranslate nohighlight">\(\tau \sigma^{-1} = \sigma \tau\)</span>; en consecuencia, siempre se puede mover <span class="math notranslate nohighlight">\(\tau\)</span> más allá de <span class="math notranslate nohighlight">\(\sigma^{\epsilon}\)</span> a expensas de reemplazar <span class="math notranslate nohighlight">\(\sigma^{\epsilon}\)</span> por <span class="math notranslate nohighlight">\(\sigma^{-\epsilon}\)</span>. Por ejemplo,</p>
+<div class="math notranslate nohighlight">
+\[(\sigma^{2}\tau)(\sigma \tau) = \sigma^{2}(\sigma^{−1}\tau)\tau= \sigma.\]</div>
+<p>Tales consideraciones, cuando se combinan con el hecho de que <span class="math notranslate nohighlight">\(\sigma^{3} = id\)</span>, dejan en claro que el producto de dos elementos cualesquiera del conjunto <span class="math notranslate nohighlight">\(\{id, \sigma, \sigma^{2}, \tau, \sigma \tau, \sigma^{2}\tau \}\)</span> siempre será otro elemento del mismo conjunto.</p>
+<p>Además, si <span class="math notranslate nohighlight">\(\sigma^{i} \tau^{j} = \sigma^{k} \tau^{l}\)</span> entonces <span class="math notranslate nohighlight">\(\sigma^{i-k} = \tau^{l-j}\)</span>; sin embargo, la única permutación que es tanto una potencia de <span class="math notranslate nohighlight">\(\sigma\)</span> como una potencia de <span class="math notranslate nohighlight">\(\tau\)</span> es id, por lo que se deduce que <span class="math notranslate nohighlight">\(\sigma^{i} = \sigma^{k}\)</span> y <span class="math notranslate nohighlight">\(\tau^{j} = \tau^{l}\)</span>. Las seis expresiones <span class="math notranslate nohighlight">\(\sigma^{i} \tau^{j}\)</span> para <span class="math notranslate nohighlight">\(i \in \{0, 1, 2\}\)</span> y <span class="math notranslate nohighlight">\(j \in \{0, 1\}\)</span> corresponden a seis elementos distintos del grupo, y como <span class="math notranslate nohighlight">\(S_{3}\)</span> tiene solo seis elementos en total, los tenemos todos. El resultado de esto es que la estructura de <span class="math notranslate nohighlight">\(S_{3}\)</span> está completamente determinada por las relaciones <span class="math notranslate nohighlight">\(\sigma^{3} = \tau^{2} = id\)</span> y <span class="math notranslate nohighlight">\(\tau \sigma \tau = \sigma^{-1}\)</span>.</p>
+<p>Observe que <span class="math notranslate nohighlight">\(S_{3}\)</span> es isomorfo al grupo de todas las simetrías de un triángulo equilátero. Etiquetar los vértices del triángulo como <span class="math notranslate nohighlight">\(1\)</span>, <span class="math notranslate nohighlight">\(2\)</span> y <span class="math notranslate nohighlight">\(3\)</span> nos permite identificar las simetrías con permutaciones de los vértices y vemos que hay tres simetrías de rotación (a través de ángulos de <span class="math notranslate nohighlight">\(0\)</span>, <span class="math notranslate nohighlight">\(2\pi/3\)</span> y <span class="math notranslate nohighlight">\(4\pi/3\)</span>) correspondientes permutaciones <span class="math notranslate nohighlight">\(id\)</span>, <span class="math notranslate nohighlight">\((1, 2, 3)\)</span> y <span class="math notranslate nohighlight">\((1, 3, 2)\)</span>, y tres simetrías de reflexión correspondientes a los otros tres elementos de <span class="math notranslate nohighlight">\(S_{3}\)</span>. (Por ejemplo, la reflexión en la bisectriz perpendicular del lado que une el vértice <span class="math notranslate nohighlight">\(1\)</span> y el vértice <span class="math notranslate nohighlight">\(2\)</span> intercambia estos dos vértices y fija el otro, y por lo tanto corresponde a la permutación <span class="math notranslate nohighlight">\((1, 2)\)</span>.)</p>
+<p>El grupo de todas las simetrías de un polígono regular de <span class="math notranslate nohighlight">\(n\)</span> lados se conoce como grupo diedro de orden <span class="math notranslate nohighlight">\(2n\)</span>. Muchos autores denotan este grupo por <span class="math notranslate nohighlight">\(D_{2n}\)</span>, y muchos otros lo denotan por <span class="math notranslate nohighlight">\(D_{n}\)</span>. Hay <span class="math notranslate nohighlight">\(n\)</span> simetrías de rotación, a través de ángulos de <span class="math notranslate nohighlight">\(2k\pi/n\)</span>, donde <span class="math notranslate nohighlight">\(k \in \{1, 2,\dots , n− 1\}\)</span>, y hay <span class="math notranslate nohighlight">\(n\)</span> simetrías de reflexión, en las <span class="math notranslate nohighlight">\(n\)</span> líneas que son las bisectrices de los ángulos internos y las bisectrices perpendiculares de los lados. (Tenga en cuenta que si <span class="math notranslate nohighlight">\(n\)</span> es par entonces para cada lado del polígono hay un lado opuesto, y las bisectrices perpendiculares de estos dos lados son iguales. Asimismo, la bisectriz del ángulo en un vértice coincide con la bisectriz del ángulo en el vértice opuesto. Si <span class="math notranslate nohighlight">\(n\)</span> es impar, entonces la bisectriz de un ángulo coincide con la bisectriz perpendicular del lado opuesto.) Si dejamos que <span class="math notranslate nohighlight">\(\sigma\)</span> sea la rotación en sentido horario a través de <span class="math notranslate nohighlight">\(2 \pi / n\)</span> y sea <span class="math notranslate nohighlight">\(\tau\)</span> cualquiera de las reflexiones, entonces es bastante fácil para comprobar que se cumplen las siguientes relaciones: <span class="math notranslate nohighlight">\(\sigma^{n} = \sigma^{2} = id\)</span>, y <span class="math notranslate nohighlight">\(\tau \sigma \tau = \sigma^{-1}\)</span>. Como en el caso <span class="math notranslate nohighlight">\(n = 3\)</span>, tratado anteriormente, vemos que los <span class="math notranslate nohighlight">\(2n\)</span> elementos del grupo son <span class="math notranslate nohighlight">\(id\)</span>, <span class="math notranslate nohighlight">\(\sigma\)</span>, <span class="math notranslate nohighlight">\(\sigma^{2}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span> , <span class="math notranslate nohighlight">\(\sigma^{n-1}\)</span>, <span class="math notranslate nohighlight">\(\tau\)</span>, :math:` sigma tau`, <span class="math notranslate nohighlight">\(\sigma^{2} \tau\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span> , <span class="math notranslate nohighlight">\(\sigma^{n-1} \tau\)</span>.</p>
+<p>Además, la tabla de multiplicar está completamente determinada por las relaciones que hemos escrito. También es sencillo representar el grupo diedro como un grupo de permutaciones.</p>
+<p>Numeración de los vértices del polígono regular <span class="math notranslate nohighlight">\(1\)</span>, <span class="math notranslate nohighlight">\(2\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span>, <span class="math notranslate nohighlight">\(n\)</span> (sentido horario), la rotación <span class="math notranslate nohighlight">\(\sigma\)</span> corresponde al <span class="math notranslate nohighlight">\(n\)</span>-ciclo <span class="math notranslate nohighlight">\((1, 2, \dots , n)\)</span>, mientras que la reflexión en la bisectriz perpendicular del lado que une los vértices <span class="math notranslate nohighlight">\(1\)</span> y <span class="math notranslate nohighlight">\(n\)</span> corresponde a la permutación <span class="math notranslate nohighlight">\((1, n )(2, n - 1)(3, n - 2)\dots\)</span>, donde el último factor es <span class="math notranslate nohighlight">\((k, k + 1)\)</span> si <span class="math notranslate nohighlight">\(n = 2k\)</span> es par, o <span class="math notranslate nohighlight">\((k - 1, k + 1)\)</span> si <span class="math notranslate nohighlight">\(n = 2k - 1\)</span> es impar.</p>
+<p>Podemos obtener un grupo interesante con <span class="math notranslate nohighlight">\(21\)</span> elementos, que son permutaciones del conjunto <span class="math notranslate nohighlight">\(\{1, 2, 3, 4, 5, 6, 7\}\)</span>, de la siguiente manera. Sea <span class="math notranslate nohighlight">\(a = (1, 2, 3, 4, 5, 6, 7)\)</span> y sea <span class="math notranslate nohighlight">\(b = (2, 3, 5) (4, 7, 6)\)</span>.</p>
+<p>Claramente <span class="math notranslate nohighlight">\(a^{7} = id\)</span> y <span class="math notranslate nohighlight">\(b^{3} = id\)</span>. (Por ejemplo, <span class="math notranslate nohighlight">\(b^{3}2 = b (b (b2)) = b (b3) = b5 = 2\)</span>.) También es fácil comprobar que</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+    bab^{−1} &amp;= (2, 3, 5)(4, 7, 6)(1, 2, 3, 4, 5, 6, 7)(7, 6, 4)(5, 3, 2)    \\
+             &amp;= (1, 3, 5, 7, 2, 4, 6)                                        \\
+             &amp;= a^{2}.
+\end{align}\end{split}\]</div>
+<p>Entonces <span class="math notranslate nohighlight">\(ba = a2b\)</span>, y esta relación nos permite reescribir cualquier producto de las potencias de <span class="math notranslate nohighlight">\(a\)</span> y las potencias de <span class="math notranslate nohighlight">\(b\)</span> de modo que todas las potencias de <span class="math notranslate nohighlight">\(a\)</span> precedan a todas las potencias de <span class="math notranslate nohighlight">\(b\)</span>. Por ejemplo,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+(ab^{2})(a^{2}b) &amp;= ab(ba)ab = ab(a^{2}b)ab = aba^{2}(ba)b = aba^{3}(a^{2}b)b = a(ba)a^{3}b^{2}\\
+                 &amp;= a(a^{2}b)a^{3}b^{2} = a^{3}(ba)a^{2}b^{2} = a^{3}(a^{2}b)a^{2}b^{2}\\
+                 &amp;= a^{5}(ba)ab^{2} = a^{5}(a^{2}b)ab^{2} = (ba)b^{2} = a^{2}b^{3}.
+\end{align}\end{split}\]</div>
+<p>De ello se deduce que el producto de dos elementos cualesquiera del conjunto <span class="math notranslate nohighlight">\(\{a^{i}b^{j} | 0 \leq i \leq 6, 0 \leq j \leq 2\}\)</span> también está en este conjunto. Las potencias de no identidad de a son todas de <span class="math notranslate nohighlight">\(7\)</span>-ciclos, y dado que ninguna potencia de b es una potencia de <span class="math notranslate nohighlight">\(7\)</span>-ciclos, se deduce que el único elemento que es simultáneamente una potencia de <span class="math notranslate nohighlight">\(a\)</span> y una potencia de <span class="math notranslate nohighlight">\(b\)</span> es la identidad. Ahora bien, si <span class="math notranslate nohighlight">\(a^{i}b^{j} = a^{k}b^{l}\)</span> entonces <span class="math notranslate nohighlight">\(a^{i-k} = a^{l-j}\)</span> que debe ser la identidad, de donde <span class="math notranslate nohighlight">\(a^{i}= a^{k}\)</span> y <span class="math notranslate nohighlight">\(b^{j} = b^{l}\)</span>. Así que hay <span class="math notranslate nohighlight">\(21\)</span> elementos distintos en el conjunto anterior, y no es difícil ver que deben constituir un grupo.</p>
+<p>Este grupo - o, más bien, un grupo isomorfo a este grupo - también se puede construir mediante el uso de matrices. Sea <span class="math notranslate nohighlight">\(\omega = e^{2\pi i / 7}\)</span>, y sea</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+    a &amp;= \left(\begin{matrix} \omega &amp; 0 &amp; 0 \\ 0 &amp; \omega^{2} &amp; 0 \\ 0 &amp; 0 &amp; \omega^{4}\end{matrix}\right) &amp;&amp;&amp;
+    b &amp;= \left(\begin{matrix} 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \\ 1 &amp; 0 &amp; 0 \end{matrix}\right)
+\end{align}\end{split}\]</div>
+<p>Es sencillo comprobar que se satisfacen las relaciones <span class="math notranslate nohighlight">\(a^{7} = b^{3} = I\)</span> y <span class="math notranslate nohighlight">\(bab^{−1} = a^{2}\)</span>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="02-representaciones-acciones-lineales-y-modulos.html" class="btn btn-neutral float-right" title="2. Representaciones, Acciones lineales y módulos" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../index.html" class="btn btn-neutral float-left" title="Teoría de Representaciones de Grupos" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Derechos de autor 2021, Ferreira, Juan David.
+
+    </p>
+  </div>
+    
+    
+    
+    Construido con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
