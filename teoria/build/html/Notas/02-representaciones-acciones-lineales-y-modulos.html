@@ -43,6 +43,7 @@
     
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="3. Módulos Cocientes" href="03-modulos-cocientes.html" />
     <link rel="prev" title="1. Teoría de Representaciones de Grupos" href="01-representaciones-por-permutacion-y-acciones.html" /> 
 </head>
 
@@ -100,13 +101,14 @@
 <li class="toctree-l2"><a class="reference internal" href="#id3">2.6. Definición</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id4">2.7. Definición</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#algunas-representaciones-del-grupo-simetrico-de-grado-3">2.8. Algunas representaciones del grupo simétrico de grado 3</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#centralizers-and-conjugacy">2.9. Centralizers and conjugacy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#centralizadores">2.9. Centralizadores</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id5">2.9.1. Proposición</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id6">2.9.2. Definición</a></li>
 </ul>
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="03-modulos-cocientes.html">3. Módulos Cocientes</a></li>
 </ul>
 
             
@@ -235,6 +237,8 @@
 <div class="math notranslate nohighlight">
 \[fu_{j} = \sum_{i = 1}^{n} a_{ij}v_{i} \text{ para todo } j = 1, 2, \dots , m,\]</div>
 <p><span class="math notranslate nohighlight">\(u_{1}\)</span>, <span class="math notranslate nohighlight">\(u_{2}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span> , siendo um los vectores que componen la base <span class="math notranslate nohighlight">\(\mathcal{B}\)</span>, y <span class="math notranslate nohighlight">\(v_{1}\)</span>, <span class="math notranslate nohighlight">\(v_{2}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span>, <span class="math notranslate nohighlight">\(v_{n}\)</span> los que componen la base <span class="math notranslate nohighlight">\(\mathcal{C}\)</span>. Los fundamentos de la conexión entre matrices y transformaciones lineales deberían serle familiares a partir del trabajo de <span class="math notranslate nohighlight">\(2^{\circ}\)</span> año. Los principales hechos son los siguientes. Al multiplicar el vector de coordenadas relativo a <span class="math notranslate nohighlight">\(\mathcal{B}\)</span> de un elemento <span class="math notranslate nohighlight">\(u \in U\)</span> por <span class="math notranslate nohighlight">\(M_{\mathcal{C B}} (f)\)</span> se obtiene el vector de coordenadas relativo a <span class="math notranslate nohighlight">\(\mathcal{C}\)</span> de <span class="math notranslate nohighlight">\(fu \in V\)</span>; es decir, si <span class="math notranslate nohighlight">\(u = \sum_{j = 1}^{m} \lambda_{j}u_{j}\)</span> entonces <span class="math notranslate nohighlight">\(fu = \sum_{i = 1}^{n} \lambda_{i}v_{i}\)</span>, donde</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}M_{\mathcal{C B}} (f) \left(\begin{matrix}\mu_{1}\\ \mu_{2} \\ \vdots \\ \mu_{m} \end{matrix}\right) = \left(\begin{matrix}\lambda_{1} \\ \lambda_{2} \\ \vdots \\ \lambda_{n} \end{matrix}\right)\end{split}\]</div>
 <p>Si las bases <span class="math notranslate nohighlight">\(\mathcal{B}\)</span> y <span class="math notranslate nohighlight">\(\mathcal{C}\)</span> son fijas, el mapeo <span class="math notranslate nohighlight">\(f\to M_{\mathcal{C B}} (f)\)</span> es una correspondencia biyectiva entre el conjunto de todos los mapas lineales <span class="math notranslate nohighlight">\(U \to V\)</span> y el conjunto de todas las matrices <span class="math notranslate nohighlight">\(n \times m\)</span> sobre <span class="math notranslate nohighlight">\(\mathbb{F}\)</span>. Si <span class="math notranslate nohighlight">\(f: U \to V\)</span> y <span class="math notranslate nohighlight">\(h: V \to W\)</span> son ambos mapas lineales, y <span class="math notranslate nohighlight">\(\mathcal{D}\)</span> es una base del espacio vectorial <span class="math notranslate nohighlight">\(W\)</span>, entonces <span class="math notranslate nohighlight">\(M_{\mathcal{D B}} (hf) = M_{\mathcal{D C}} (h) M_{\mathcal{C B}} (f)\)</span>.</p>
 <p>Y de manera similar, si <span class="math notranslate nohighlight">\(h\)</span> y <span class="math notranslate nohighlight">\(f\)</span> son dos mapas lineales de <span class="math notranslate nohighlight">\(U\)</span> a <span class="math notranslate nohighlight">\(V\)</span>, entonces <span class="math notranslate nohighlight">\(M_{\mathcal{C B}} (h + f) = M_{\mathcal{C B}} (h) + M_{\mathcal{C B}} (f)\)</span>.</p>
 <p>En particular tenemos eso</p>
@@ -395,8 +399,8 @@
 <p>Así hemos obtenido una representación matricial de <span class="math notranslate nohighlight">\(S_{3}\)</span> de grado <span class="math notranslate nohighlight">\(2\)</span>.</p>
 <p>Supongamos, para mayor precisión, que el campo <span class="math notranslate nohighlight">\(\mathbb{F}\)</span> (el campo escalar para <span class="math notranslate nohighlight">\(V\)</span> y el campo de coeficientes para nuestras matrices) es <span class="math notranslate nohighlight">\(\mathbb{C}\)</span>, el campo de números complejos. Las dos representaciones de <span class="math notranslate nohighlight">\(S_{3}\)</span> de grado <span class="math notranslate nohighlight">\(1\)</span> y la representación de <span class="math notranslate nohighlight">\(S_{3}\)</span> de grado <span class="math notranslate nohighlight">\(2\)</span> que hemos descrito anteriormente son todas representaciones irreductibles de <span class="math notranslate nohighlight">\(S_{3}\)</span>, en un sentido que definiremos en breve. Además, resulta que cualquier representación compleja irreducible de <span class="math notranslate nohighlight">\(S_{3}\)</span> tiene que ser equivalente a una de estas tres. Los principales teoremas de la teoría de la representación que discutiremos en este curso nos dicen en principio cómo una representación compleja arbitraria de un grupo finito <span class="math notranslate nohighlight">\(G\)</span> puede expresarse en términos de representaciones complejas irreducibles, y cuántas clases de equivalencia de representaciones complejas irreducibles tiene un grupo finito. No existe un método uniforme conocido para construir las representaciones irreductibles de un grupo finito arbitrario y, en consecuencia, el principal problema práctico de la teoría de la representación es encontrar descripciones elegantes de las representaciones irreductibles de varias clases importantes de grupos finitos. En verdad, no hay muchas clases de grupos para los que se haya logrado este objetivo, pero los grupos simétricos constituyen una clase para la que se ha descubierto una teoría completa. Se espera que se describa parte de esta teoría antes del final de este curso.</p>
 </div>
-<div class="section" id="centralizers-and-conjugacy">
-<h2><span class="section-number">2.9. </span>Centralizers and conjugacy<a class="headerlink" href="#centralizers-and-conjugacy" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="centralizadores">
+<h2><span class="section-number">2.9. </span>Centralizadores<a class="headerlink" href="#centralizadores" title="Enlazar permanentemente con este título">¶</a></h2>
 <div class="section" id="id5">
 <h3><span class="section-number">2.9.1. </span>Proposición<a class="headerlink" href="#id5" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>Sea <span class="math notranslate nohighlight">\(G\)</span> un grupo y <span class="math notranslate nohighlight">\(g\in G\)</span>. Entonces el conjunto <span class="math notranslate nohighlight">\(C_{G} (g) = \{x \in G | xg = gx \}\)</span> es un subgrupo de <span class="math notranslate nohighlight">\(G\)</span>.</p>
@@ -431,6 +435,7 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="03-modulos-cocientes.html" class="btn btn-neutral float-right" title="3. Módulos Cocientes" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="01-representaciones-por-permutacion-y-acciones.html" class="btn btn-neutral float-left" title="1. Teoría de Representaciones de Grupos" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
     </div>
 

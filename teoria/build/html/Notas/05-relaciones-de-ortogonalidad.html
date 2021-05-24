@@ -1,0 +1,336 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>5. Relaciones de ortogonalidad &mdash; documentación de Teoría de Representaciones de Grupos - 0.0.1</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="prev" title="4. Módulos Indescomponibles y Módulos Irreducibles" href="04-modulos-indescomponibles-y-modulos-irreducibles.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Teoría de Representaciones de Grupos
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contenidos:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01-representaciones-por-permutacion-y-acciones.html">1. Representaciones por Permutacion y Acciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02-representaciones-acciones-lineales-y-modulos.html">2. Representaciones, Acciones lineales y módulos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03-modulos-cocientes.html">3. Módulos Cocientes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04-modulos-indescomponibles-y-modulos-irreducibles.html">4. Módulos Indescomponibles y Módulos Irreducibles</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">5. Relaciones de ortogonalidad</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#lema">5.1. Lema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#definicion-preguntar">5.2. Definición (Preguntar)</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Teoría de Representaciones de Grupos</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li><span class="section-number">5. </span>Relaciones de ortogonalidad</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/Notas/05-relaciones-de-ortogonalidad.rst.txt" rel="nofollow"> Ver código fuente de la página</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="relaciones-de-ortogonalidad">
+<h1><span class="section-number">5. </span>Relaciones de ortogonalidad<a class="headerlink" href="#relaciones-de-ortogonalidad" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Un poco de escepticismo es algo saludable, y sería natural en esta etapa ser un poco escéptico sobre la utilidad del Lema de Schur. Después de todo, solo se puede aplicar si uno tiene un <span class="math notranslate nohighlight">\(G\)</span>-homomorfismo o una matriz entrelazada para un par de representaciones irreductibles. Y los homomorfismos son cosas muy especiales: puede que no sean fáciles de encontrar. Afortunadamente, el argumento de promediado utilizado en la demostración del teorema de Maschke proporciona (para grupos finitos) un método general para construirlos.</p>
+<div class="section" id="lema">
+<h2><span class="section-number">5.1. </span>Lema<a class="headerlink" href="#lema" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Sea <span class="math notranslate nohighlight">\(G\)</span> un grupo finito, y sean <span class="math notranslate nohighlight">\(R\)</span>, <span class="math notranslate nohighlight">\(S\)</span> representaciones matriciales de <span class="math notranslate nohighlight">\(G\)</span> de grados <span class="math notranslate nohighlight">\(n\)</span> y <span class="math notranslate nohighlight">\(m\)</span> respectivamente. Si <span class="math notranslate nohighlight">\(X\)</span> es cualquier matriz <span class="math notranslate nohighlight">\(n \times m\)</span>, entonces <span class="math notranslate nohighlight">\(Y = \sum_{g\in G} (Rg) X (S (g^{− 1}))\)</span> entrelaza <span class="math notranslate nohighlight">\(R\)</span> y <span class="math notranslate nohighlight">\(S\)</span>.</p>
+<p><strong>Demostración:</strong></p>
+<p>Para todo <span class="math notranslate nohighlight">\(h \in G\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+    (Rh)Y &amp;= \sum_{g\in G} (Rh)(Rg)X(S(g−1))\\
+          &amp;= \sum_{g\in G} (R(hg))X(S(g^{−1}))(S(h−1))(Sh)\\
+          &amp;= \left(\sum_{g\in G} (R(hg))X(S(g^{−1}h^{−1})\right) (Sh)\\
+          &amp;= \left(\sum_{g\in G} (Rk)X(S(k−1)\right) (Sh)\\
+          &amp;= Y(Sh)
+\end{align}\end{split}\]</div>
+<p>ya que <span class="math notranslate nohighlight">\(k = hg\)</span> atraviesa todos los elementos de <span class="math notranslate nohighlight">\(G\)</span> como lo hace <span class="math notranslate nohighlight">\(g\)</span>. <span class="math notranslate nohighlight">\(\blacksquare\)</span></p>
+<p>Supongamos ahora que <span class="math notranslate nohighlight">\(R^{(1)}\)</span>, <span class="math notranslate nohighlight">\(R^{(2)}\)</span>), <span class="math notranslate nohighlight">\(\dots\)</span>, <span class="math notranslate nohighlight">\(R^{(s)}\)</span> son representaciones matriciales irreductibles del grupo finito <span class="math notranslate nohighlight">\(G\)</span>, de grados <span class="math notranslate nohighlight">\(d_{1}\)</span>, <span class="math notranslate nohighlight">\(d_{2}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span>, <span class="math notranslate nohighlight">\(d_{s}\)</span> respectivamente. Suponga además que <span class="math notranslate nohighlight">\(R^{(k)}\)</span> y <span class="math notranslate nohighlight">\(R^{(l)}\)</span> no son equivalentes si <span class="math notranslate nohighlight">\(k \not = l\)</span>. Escriba <span class="math notranslate nohighlight">\(R_{ij}^{(k)}g\)</span> para la entrada <span class="math notranslate nohighlight">\((i, j)\)</span> de <span class="math notranslate nohighlight">\(R^{(k)} g\)</span>.</p>
+<p>Elija <span class="math notranslate nohighlight">\(k\)</span> y <span class="math notranslate nohighlight">\(l\)</span> arbitrariamente del conjunto <span class="math notranslate nohighlight">\(\{1, 2, \dots, s\}\)</span>, y para <span class="math notranslate nohighlight">\(1 \leq m \leq d_{k}\)</span> y para <span class="math notranslate nohighlight">\(1 \leq n \leq d_{l}\)</span> sea <span class="math notranslate nohighlight">\(X_{m, n}^{(k, l)}\)</span> la matriz <span class="math notranslate nohighlight">\(d_{k} \times d_{l}\)</span> cuya La entrada <span class="math notranslate nohighlight">\((t, u)\)</span> es <span class="math notranslate nohighlight">\(0\)</span> a menos que <span class="math notranslate nohighlight">\(t = m\)</span> y <span class="math notranslate nohighlight">\(u = n\)</span>, en cuyo caso es <span class="math notranslate nohighlight">\(1\)</span>. En otras palabras, la entrada <span class="math notranslate nohighlight">\((t, u)\)</span> de <span class="math notranslate nohighlight">\(X_{m, n}^{(k, l)}\)</span> es <span class="math notranslate nohighlight">\(\delta_{tm}\delta_{un}\)</span>. El lema anterior nos dice que la matriz</p>
+<div class="math notranslate nohighlight">
+\[Y_{m,n}^{(k,l)} = \frac{1}{|G|} \sum_{g\in G} (R^{(k)}g)X_{m, n}^{(k, l)}(R^{(l)}(g^{−1}))\]</div>
+<p>entrelaza <span class="math notranslate nohighlight">\(R^{(k)}\)</span> y <span class="math notranslate nohighlight">\(R^{(l)}\)</span>. Por lo tanto, según el lema de Schur, <span class="math notranslate nohighlight">\(Y_{m,n}^{(k,l)}\)</span> es cero si <span class="math notranslate nohighlight">\(k \not = l\)</span> (dado que las dos representaciones no son equivalentes en este caso), mientras que <span class="math notranslate nohighlight">\(Y_{m,n}^{(k,k)}\)</span> debe ser un múltiplo escalar de <span class="math notranslate nohighlight">\(I\)</span>. Por lo tanto, la entrada <span class="math notranslate nohighlight">\((p, q)\)</span> de <span class="math notranslate nohighlight">\(Y_{m,n}^{(k,l)}\)</span> es <span class="math notranslate nohighlight">\(\lambda(k, m, n) \delta_{pq}\delta_{kl}\)</span> para algunos <span class="math notranslate nohighlight">\(\lambda (k, m, n) \in \mathbb{C}\)</span>.</p>
+<p>Calculando la entrada <span class="math notranslate nohighlight">\((p, q)\)</span> de <span class="math notranslate nohighlight">\(Y_{m,n}^{(k,l)}\)</span> directamente de la definición, encontramos que</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+    \lambda(k, m, n) \delta_{pq}\delta_{kl} &amp;= \frac{1}{|G|} \sum_{g\in G} \left(\sum_{t=1}^{d_{k}} \sum_{u=1}^{d_{l}} (R_{pt}^{(k)}g)\delta_{tm}\delta_{un}(R_{uq}^{(l)}(g^{−1}))\right)\\
+                                            &amp;= \frac{1}{|G|} \sum_{g\in G} (R_{pm}^{(k)}g)(R_{nq}^{(l)}(g^{−1})).
+\end{align}\end{split}\]</div>
+<p>Considerando la entrada <span class="math notranslate nohighlight">\((n, m)\)</span> de <span class="math notranslate nohighlight">\(Y_{q, p}^{(l, k)}\)</span> produce por el mismo cálculo (o cambiando el nombre de las variables anteriores) que</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+\lambda (l,q,p)\delta_{nm}\delta_{kl} &amp;= \frac{1}{|G|} \sum_{g\in G} (R_{nq}^{(l)}g)(R_{pm}^{(k)} (g^{−1}))\\
+                                      &amp;= \frac{1}{|G|} \sum_{g\in G} (Rnq(l)(g−1))(Rpm(k)g)
+\end{align}\end{split}\]</div>
+<p>donde en el último paso simplemente hemos cambiado la variable ficticia de suma de <span class="math notranslate nohighlight">\(g\)</span> a <span class="math notranslate nohighlight">\(g^{−1}\)</span>. Pero los lados derechos de las dos últimas fórmulas mostradas son iguales, por lo que concluimos que para todos los valores de <span class="math notranslate nohighlight">\(k\)</span>, <span class="math notranslate nohighlight">\(l\)</span>, <span class="math notranslate nohighlight">\(m\)</span>, <span class="math notranslate nohighlight">\(n\)</span>, <span class="math notranslate nohighlight">\(p\)</span> y <span class="math notranslate nohighlight">\(q\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\lambda(k,m,n)\delta_{pq}\delta_{kl} = \lambda(l,q,p)\delta_{nm}\delta_{kl}.\]</div>
+<p>Poniendo <span class="math notranslate nohighlight">\(q = p\)</span> y <span class="math notranslate nohighlight">\(l = k\)</span> muestra que <span class="math notranslate nohighlight">\(\lambda (k, m, n) = \lambda (k, p, p) \delta_{nm}\)</span>, y ahora poniendo <span class="math notranslate nohighlight">\(m = n\)</span> muestra que <span class="math notranslate nohighlight">\(\lambda (k, n, n) = \lambda (k, p, p) = \mu_{k}\)</span> depende solo de <span class="math notranslate nohighlight">\(k\)</span> y no de <span class="math notranslate nohighlight">\(p\)</span> o <span class="math notranslate nohighlight">\(n\)</span>. Entonces <span class="math notranslate nohighlight">\(\lambda (k, m, n) = \mu_{k}\delta_{nm}\)</span>.</p>
+<p>El cálculo anterior mostró que</p>
+<div class="math notranslate nohighlight">
+\[\frac{1}{|G|} \sum_{g\in G} (R_{pm}^{(k)} g)(R_{nq}^{(l)} (g^{−1})) = \mu_{k}\delta_{nm}\delta_{pq}\delta_{kl}\hspace{2cm}(1)\]</div>
+<p>donde <span class="math notranslate nohighlight">\(R^{(i)}\)</span> son representaciones matriciales irreductibles de <span class="math notranslate nohighlight">\(G\)</span>, de las cuales no hay dos equivalentes. Tenga en cuenta que <span class="math notranslate nohighlight">\(k\)</span>, <span class="math notranslate nohighlight">\(l\)</span>, <span class="math notranslate nohighlight">\(m\)</span>, <span class="math notranslate nohighlight">\(n\)</span>, <span class="math notranslate nohighlight">\(p\)</span> y <span class="math notranslate nohighlight">\(q\)</span> son variables libres: la ecuación es válida para todos sus valores posibles. Por tanto, podemos calcular los valores de los escalares <span class="math notranslate nohighlight">\(\mu k\)</span> de la siguiente manera. Ponga <span class="math notranslate nohighlight">\(l = k\)</span> y <span class="math notranslate nohighlight">\(m = n\)</span>, y sume la Ecuación <span class="math notranslate nohighlight">\((1)\)</span> sobre todos los valores de <span class="math notranslate nohighlight">\(n\)</span> desde <span class="math notranslate nohighlight">\(1\)</span> hasta <span class="math notranslate nohighlight">\(d_{k}\)</span> (el grado de <span class="math notranslate nohighlight">\(R^{(k)}\)</span>. Después de intercambiar el orden de suma en el lado izquierdo obtenemos</p>
+<div class="math notranslate nohighlight">
+\[\frac{1}{|G|} \sum_{g\in G} \sum_{n=1}^{dk} (R_{pn}^{(k)} g)(R_{nq}^{(k)} (g^{−1})) = \sum_{n =1}^{d_{k}} \mu_{k}\delta_{pq} = \mu_{k}d_{k}\delta_{pq}.\]</div>
+<p>Pero como <span class="math notranslate nohighlight">\((R^{(k)} g) (R^{(k)} (g^{− 1})) = R^{(k)} (gg^{−1}) = R^{(k)} 1 = I\)</span> (para todos los valores de <span class="math notranslate nohighlight">\(g\)</span>) sabemos que</p>
+<div class="math notranslate nohighlight">
+\[\sum_{n=1}^{dk} (R_{pn}^{(k)} g)(R_{nq}^{(k)} (g^{−1})) = I_{pq} = \delta_{pq},\]</div>
+<p>y nuestra ecuación anterior se reduce a</p>
+<div class="math notranslate nohighlight">
+\[\frac{1}{|G|} \sum_{g\in G}\delta_{pq} = \mu_{k}d_{k}\delta_{pq}.\]</div>
+<p>Entonces <span class="math notranslate nohighlight">\(\mu k = d_{k}^{-1}\)</span>, y la Ecuación <span class="math notranslate nohighlight">\((1)\)</span> se convierte en</p>
+<div class="math notranslate nohighlight">
+\[\frac{1}{|G|} \sum_{g\in G}(R_{pm}^{(k)} g)(R_{nq}^{(l)} (g^{−1})) = d_{k}^{1}\delta_{nm}\delta_{pq}\delta_{kl}\hspace{2cm}(2)\]</div>
+<p>Este resultado básico se conoce como <em>ortogonalidad de funciones coordenadas</em>.</p>
+</div>
+<div class="section" id="definicion-preguntar">
+<h2><span class="section-number">5.2. </span>Definición (Preguntar)<a class="headerlink" href="#definicion-preguntar" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Se <span class="math notranslate nohighlight">\(R\)</span> representación matricial de un grupo finito <span class="math notranslate nohighlight">\(G\)</span>. Se dice que <span class="math notranslate nohighlight">\(R\)</span> es una representación unitaria si se cumple que que <span class="math notranslate nohighlight">\(Rg\)</span> es una matriz unitaria para cada <span class="math notranslate nohighlight">\(g \in G\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Recuerde que se dice que una matriz <span class="math notranslate nohighlight">\(M\)</span> ser unitaria si su transpuesta conjugada es igual a su inversa; es decir, (<span class="math notranslate nohighlight">\(\overline{M}^{t}) M = I\)</span>. En el caso de que las entradas de <span class="math notranslate nohighlight">\(M\)</span> sean números reales, esta condición se convierte en <span class="math notranslate nohighlight">\((M^{t}) M = I\)</span>, y se dice que la matriz es ortogonal.</p>
+</div>
+<p>Repasemos esta prueba antes de continuar.</p>
+<p>Dada una representación matricial <span class="math notranslate nohighlight">\(R: G \to GL (d, \mathbb{C})\)</span> podemos convertir el espacio vectorial complejo <span class="math notranslate nohighlight">\(V = \mathbb{C}^{d}\)</span> (que consta de todos los vectores de columna de componente <span class="math notranslate nohighlight">\(d\)</span>) en un <span class="math notranslate nohighlight">\(G\)</span>-módulo izquierdo definiendo</p>
+<div class="math notranslate nohighlight">
+\[gv = (Rg)v (\text{ para todo } g \in G \text{ y } v \in V).\]</div>
+<p>El espacio <span class="math notranslate nohighlight">\(V\)</span> es, por supuesto, un espacio de producto interno en relación con el producto interno estándar o producto escalar.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+    \left(
+        \begin{matrix}
+            \lambda_{1}\\
+            \lambda_{2}\\
+            \vdots     \\
+            \lambda_{d}
+        \end{matrix}
+    \right)
+    \cdot
+    \left(
+        \begin{matrix}
+            \mu_{1}\\
+            \mu_{2}\\
+            \vdots     \\
+            \mu_{d}
+        \end{matrix}
+    \right)
+    =
+    \overline{\lambda}_{1}\mu_{1}\overline{\lambda}_{2}\mu_{2}\cdots\overline{\lambda}_{d}\mu_{d}
+\end{align}\end{split}\]</div>
+<p>y como en nuestro primer ensayo del teorema de Maschke, podemos obtener un producto interno <span class="math notranslate nohighlight">\(G\)</span>-invariante en <span class="math notranslate nohighlight">\(V\)</span> definiendo</p>
+<div class="math notranslate nohighlight">
+\[v \ast u = \sum_{g\in G} (gv) \cdot (gu) (\text{ para todo }g \in G \text{ y } v, u \in V).\]</div>
+<p>Ahora elija una base <span class="math notranslate nohighlight">\(v_{1}\)</span>, <span class="math notranslate nohighlight">\(v_{2}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span> , <span class="math notranslate nohighlight">\(v_{d}\)</span> de <span class="math notranslate nohighlight">\(V\)</span> que es ortonormal en relación con este nuevo producto interno, y sea <span class="math notranslate nohighlight">\(S\)</span> la representación matricial de <span class="math notranslate nohighlight">\(G\)</span> que produce esta nueva base de <span class="math notranslate nohighlight">\(V\)</span>. Es decir,</p>
+<div class="math notranslate nohighlight">
+\[gv_{j} = \sum_{i=1}^{d} (Sg)_{ij}v_{i}\]</div>
+<p>para todo <span class="math notranslate nohighlight">\(g\in G\)</span> y <span class="math notranslate nohighlight">\(j \in \{1, 2,\dots , d\}\)</span>. La representación <span class="math notranslate nohighlight">\(S\)</span> es entonces equivalente a la representación R; de hecho, <span class="math notranslate nohighlight">\(Sg = T^{−1} (Rg) T\)</span> (para todo <span class="math notranslate nohighlight">\(g\in G\)</span>), donde <span class="math notranslate nohighlight">\(T\)</span> es la matriz de transición para cambiar las coordenadas relativas a <span class="math notranslate nohighlight">\(v_{1}\)</span>, <span class="math notranslate nohighlight">\(v_{2}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span> , <span class="math notranslate nohighlight">\(v_{d}\)</span> en coordenadas estándar. Específicamente, la <span class="math notranslate nohighlight">\(j\)</span>-ésima columna de <span class="math notranslate nohighlight">\(T\)</span> es simplemente el vector de columna <span class="math notranslate nohighlight">\(v_{j}\)</span>. Además, <span class="math notranslate nohighlight">\(S\)</span> es una representación unitaria. Para ver esto, observe que la invariancia <span class="math notranslate nohighlight">\(G\)</span> de <span class="math notranslate nohighlight">\(\ast\)</span> produce (por definición) que <span class="math notranslate nohighlight">\((gv) \ast (gu) = v \ast u\)</span> para todo <span class="math notranslate nohighlight">\(u\)</span>, <span class="math notranslate nohighlight">\(v \in V\)</span>, y ahora desde la base <span class="math notranslate nohighlight">\(v_{1}\)</span>, <span class="math notranslate nohighlight">\(v_{2}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span> , <span class="math notranslate nohighlight">\(v_{d}\)</span> es ortonormal</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+    \delta_{jk} &amp;= v_{j} \ast v_{k} = (gv_{j}) \ast (gv_{k})                                                 \\
+           &amp;= \left(\sum_{i=1}^{d} (Sg)_{ij}v_{i}\right)\ast \left(\sum_{m=1}^{d} (Sg)_{mk}v_{m} \right) \\
+           &amp;= \sum_{i=1}^{d} \sum_{m=1}^{d} \overline{Sg_{ij}}(Sg)_{mk}(v_{i} \ast v_{m})                \\
+           &amp;= \sum_{i=1}^{d} \sum_{m=1}^{d} \overline{Sg_{ij}}(Sg)_{mk}\delta_{im}                       \\
+           &amp;= \sum_{i=1}^{d} \overline{Sg_{ij}}(Sg)_{ik}                                                 \\
+           &amp;= \sum_{i=1}^{d} (\overline{Sg}^{t})_{ji}(Sg)_{ik}
+\end{align}\end{split}\]</div>
+<p>para todo <span class="math notranslate nohighlight">\(j\)</span> y <span class="math notranslate nohighlight">\(k\)</span> y todo <span class="math notranslate nohighlight">\(g\in G\)</span>. Esto muestra que <span class="math notranslate nohighlight">\(\overline{Sg}^{t} Sg = I\)</span> para todo <span class="math notranslate nohighlight">\(g\in G\)</span>, como se requiere.</p>
+<p>Volviendo a la Ecuación <span class="math notranslate nohighlight">\((2)\)</span>, supongamos ahora que todas las representaciones <span class="math notranslate nohighlight">\(R^{(i)}\)</span> son unitarias. Entonces para todo <span class="math notranslate nohighlight">\(g\in G\)</span> y todo <span class="math notranslate nohighlight">\(l\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[R^{(l)} (g^{−1}) = (R^{(l)} g)^{−1} = \overline{R(l) g}^{t},\]</div>
+<p>y entonces <span class="math notranslate nohighlight">\(R_{nq}^{(l)}(g^{−1}) = \overline{R_{qn}^{(l)}g}\)</span>. Por tanto, la Ecuación <span class="math notranslate nohighlight">\((2)\)</span> se convierte en</p>
+<div class="math notranslate nohighlight">
+\[\frac{1}{|G|} \sum_{g\in G} (R_{pm}^{(k)}g)R_{qn}^{(l)}g = d_{k}^{-1}\delta_{nm}\delta_{pq}\delta_{kl}. (3)\]</div>
+<p>Tabular los valores de la función <span class="math notranslate nohighlight">\(R_{pm}{(k)}: G \to \mathbb{C}\)</span> da un vector fila (llamémoslo temporalmente <span class="math notranslate nohighlight">\(x_{kpm}\)</span>) que tiene una entrada para cada elemento de <span class="math notranslate nohighlight">\(G\)</span>. La Ecuación <span class="math notranslate nohighlight">\((3)\)</span> nos dice que el producto escalar estándar de <span class="math notranslate nohighlight">\(x_{kpm}\)</span> y <span class="math notranslate nohighlight">\(x_{lqn}\)</span> es cero a menos que <span class="math notranslate nohighlight">\(k\)</span>, <span class="math notranslate nohighlight">\(p\)</span> y <span class="math notranslate nohighlight">\(m\)</span> sean (respectivamente) iguales a <span class="math notranslate nohighlight">\(l\)</span>, <span class="math notranslate nohighlight">\(q\)</span> y <span class="math notranslate nohighlight">\(n\)</span>, en cuyo caso el producto escalar es <span class="math notranslate nohighlight">\(|G|/d_{k}\)</span>. Para cada valor de <span class="math notranslate nohighlight">\(k\)</span> hay <span class="math notranslate nohighlight">\(d_{k}^{2}\)</span> posibilidades para el par ordenado <span class="math notranslate nohighlight">\((p, m)\)</span> (ya que <span class="math notranslate nohighlight">\(p\)</span>, <span class="math notranslate nohighlight">\(m \in \{1, 2,\dots, d_{k} \}\)</span>), por lo que tenemos <span class="math notranslate nohighlight">\(\sum_{k = 1}^{s}= d_{k}^{2}\)</span> vectores <span class="math notranslate nohighlight">\(x_{kpm}\)</span> en total. Estos vectores son linealmente independientes ya que son distintos de cero y ortogonales por pares, por lo que abarcan un espacio de dimensión <span class="math notranslate nohighlight">\(\sum_{k = 1}^{s}= d_{k}^{2}\)</span>. Como están contenidos en el espacio <span class="math notranslate nohighlight">\(|G|\)</span>-dimensional de los vectores fila con <span class="math notranslate nohighlight">\(|G|\)</span> componentes, concluimos que</p>
+<div class="math notranslate nohighlight">
+\[\sum_{k =1}^{2} d_{k}^{2} \leq |G| (4)\]</div>
+<p>siempre que <span class="math notranslate nohighlight">\(G\)</span> tenga representaciones mutuamente desiguales de grados <span class="math notranslate nohighlight">\(d_{1}\)</span>, <span class="math notranslate nohighlight">\(d_{2}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span> , <span class="math notranslate nohighlight">\(d_{s}\)</span>. Por lo tanto, <span class="math notranslate nohighlight">\(s \leq | G |\)</span>, ya que cada <span class="math notranslate nohighlight">\(d_{k}\)</span> es al menos <span class="math notranslate nohighlight">\(1\)</span>, y esto muestra que ningún grupo <span class="math notranslate nohighlight">\(G\)</span> puede tener más de <span class="math notranslate nohighlight">\(|G|\)</span> representaciones irreductibles mutuamente desiguales. En particular, hasta la equivalencia, el número de representaciones complejas irreductibles de un grupo finito es finito. (De hecho, como mostraremos en unas pocas conferencias, la igualdad siempre se mantiene en <span class="math notranslate nohighlight">\((4)\)</span>).</p>
+<p>Ilustremos el resultado anterior para el grupo <span class="math notranslate nohighlight">\(G = S_{3}\)</span>. Conocemos tres representaciones irreductibles mutuamente desiguales, de grados <span class="math notranslate nohighlight">\(1\)</span>, <span class="math notranslate nohighlight">\(1\)</span> y <span class="math notranslate nohighlight">\(2\)</span>. La suma de los cuadrados de estos grados es <span class="math notranslate nohighlight">\(6\)</span>, que es igual al orden de <span class="math notranslate nohighlight">\(S_{3}\)</span>; entonces, en vista de la desigualdad <span class="math notranslate nohighlight">\((4)\)</span>, no puede haber una cuarta representación irreductible que no sea equivalente a una de estas tres. Las representaciones de grado <span class="math notranslate nohighlight">\(1\)</span> son necesariamente unitarias (para un grupo finito), ya que por un lado la representación tiene que ser equivalente a una representación unitaria (ver arriba), y por otro lado una representación de grado <span class="math notranslate nohighlight">\(1\)</span> no puede ser equivalente a nada más que sí mismo, ya que las matrices <span class="math notranslate nohighlight">\(1 \times 1\)</span> conmutan. Si identificamos <span class="math notranslate nohighlight">\(S_{3}\)</span> con el grupo de simetrías de un triángulo equilátero, y coordinamos el plano euclidiano tomando el centroide del triángulo como origen y la recta que pasa por el origen y uno de los vértices como eje <span class="math notranslate nohighlight">\(x\)</span>, obtenemos un representación de <span class="math notranslate nohighlight">\(S_{3}\)</span> mediante matrices ortogonales reales. Ahora es muy sencillo calcular los valores de las funciones de coordenadas de nuestras tres representaciones irreducibles y obtener la siguiente tabla.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="04-modulos-indescomponibles-y-modulos-irreducibles.html" class="btn btn-neutral float-left" title="4. Módulos Indescomponibles y Módulos Irreducibles" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Derechos de autor 2021, Ferreira, Juan David.
+
+    </p>
+  </div>
+    
+    
+    
+    Construido con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

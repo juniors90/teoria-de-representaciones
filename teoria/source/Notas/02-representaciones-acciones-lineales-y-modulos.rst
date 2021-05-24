@@ -87,6 +87,10 @@ Sean :math:`U` y :math:`V` espacios vectoriales de dimensión finita sobre el ca
 
 :math:`u_{1}`, :math:`u_{2}`, :math:`\dots` , siendo um los vectores que componen la base :math:`\mathcal{B}`, y :math:`v_{1}`, :math:`v_{2}`, :math:`\dots`, :math:`v_{n}` los que componen la base :math:`\mathcal{C}`. Los fundamentos de la conexión entre matrices y transformaciones lineales deberían serle familiares a partir del trabajo de :math:`2^{\circ}` año. Los principales hechos son los siguientes. Al multiplicar el vector de coordenadas relativo a :math:`\mathcal{B}` de un elemento :math:`u \in U` por :math:`M_{\mathcal{C B}} (f)` se obtiene el vector de coordenadas relativo a :math:`\mathcal{C}` de :math:`fu \in V`; es decir, si :math:`u = \sum_{j = 1}^{m} \lambda_{j}u_{j}` entonces :math:`fu = \sum_{i = 1}^{n} \lambda_{i}v_{i}`, donde
 
+.. math::
+
+    M_{\mathcal{C B}} (f) \left(\begin{matrix}\mu_{1}\\ \mu_{2} \\ \vdots \\ \mu_{m} \end{matrix}\right) = \left(\begin{matrix}\lambda_{1} \\ \lambda_{2} \\ \vdots \\ \lambda_{n} \end{matrix}\right)
+
 
 Si las bases :math:`\mathcal{B}` y :math:`\mathcal{C}` son fijas, el mapeo :math:`f\to M_{\mathcal{C B}} (f)` es una correspondencia biyectiva entre el conjunto de todos los mapas lineales :math:`U \to V` y el conjunto de todas las matrices :math:`n \times m` sobre :math:`\mathbb{F}`. Si :math:`f: U \to V` y :math:`h: V \to W` son ambos mapas lineales, y :math:`\mathcal{D}` es una base del espacio vectorial :math:`W`, entonces :math:`M_{\mathcal{D B}} (hf) = M_{\mathcal{D C}} (h) M_{\mathcal{C B}} (f)`.
 
@@ -286,7 +290,7 @@ Así hemos obtenido una representación matricial de :math:`S_{3}` de grado :mat
 
 Supongamos, para mayor precisión, que el campo :math:`\mathbb{F}` (el campo escalar para :math:`V` y el campo de coeficientes para nuestras matrices) es :math:`\mathbb{C}`, el campo de números complejos. Las dos representaciones de :math:`S_{3}` de grado :math:`1` y la representación de :math:`S_{3}` de grado :math:`2` que hemos descrito anteriormente son todas representaciones irreductibles de :math:`S_{3}`, en un sentido que definiremos en breve. Además, resulta que cualquier representación compleja irreducible de :math:`S_{3}` tiene que ser equivalente a una de estas tres. Los principales teoremas de la teoría de la representación que discutiremos en este curso nos dicen en principio cómo una representación compleja arbitraria de un grupo finito :math:`G` puede expresarse en términos de representaciones complejas irreducibles, y cuántas clases de equivalencia de representaciones complejas irreducibles tiene un grupo finito. No existe un método uniforme conocido para construir las representaciones irreductibles de un grupo finito arbitrario y, en consecuencia, el principal problema práctico de la teoría de la representación es encontrar descripciones elegantes de las representaciones irreductibles de varias clases importantes de grupos finitos. En verdad, no hay muchas clases de grupos para los que se haya logrado este objetivo, pero los grupos simétricos constituyen una clase para la que se ha descubierto una teoría completa. Se espera que se describa parte de esta teoría antes del final de este curso.
 
-Centralizers and conjugacy
+Centralizadores
 -------------------------------------------------
 
 Proposición

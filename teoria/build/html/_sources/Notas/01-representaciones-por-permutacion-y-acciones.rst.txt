@@ -1,5 +1,5 @@
-Teoría de Representaciones de Grupos
-=====================================
+Representaciones por Permutacion y Acciones
+==============================================
 
 Introducción
 ------------

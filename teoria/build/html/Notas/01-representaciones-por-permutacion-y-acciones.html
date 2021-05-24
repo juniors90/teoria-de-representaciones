@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>1. Teoría de Representaciones de Grupos &mdash; documentación de Teoría de Representaciones de Grupos - 0.0.1</title>
+  <title>1. Representaciones por Permutacion y Acciones &mdash; documentación de Teoría de Representaciones de Grupos - 0.0.1</title>
   
 
   
@@ -91,21 +91,24 @@
             
               <p class="caption"><span class="caption-text">Contenidos:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">1. Teoría de Representaciones de Grupos</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. Representaciones por Permutacion y Acciones</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#introduccion">1.1. Introducción</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#representaciones-por-permutacion-y-acciones">1.2. Representaciones por Permutación y Acciones</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">1.2. Representaciones por Permutación y Acciones</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#definicion">1.2.1. Definición</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id1">1.2.2. Definición</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">1.2.2. Definición</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#grupos">1.3. Grupos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#accion-de-un-grupo-sobre-un-conjunto">1.4. acción de un grupo sobre un conjunto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#ejemplos">1.5. Ejemplos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#acciones-de-grupos">1.6. Acciones de Grupos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id2">1.7. Definición</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">1.7. Definición</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="02-representaciones-acciones-lineales-y-modulos.html">2. Representaciones, Acciones lineales y módulos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03-modulos-cocientes.html">3. Módulos Cocientes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04-modulos-indescomponibles-y-modulos-irreducibles.html">4. Módulos Indescomponibles y Módulos Irreducibles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05-relaciones-de-ortogonalidad.html">5. Relaciones de ortogonalidad</a></li>
 </ul>
 
             
@@ -154,7 +157,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li><span class="section-number">1. </span>Teoría de Representaciones de Grupos</li>
+      <li><span class="section-number">1. </span>Representaciones por Permutacion y Acciones</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -173,8 +176,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="teoria-de-representaciones-de-grupos">
-<h1><span class="section-number">1. </span>Teoría de Representaciones de Grupos<a class="headerlink" href="#teoria-de-representaciones-de-grupos" title="Enlazar permanentemente con este título">¶</a></h1>
+  <div class="section" id="representaciones-por-permutacion-y-acciones">
+<h1><span class="section-number">1. </span>Representaciones por Permutacion y Acciones<a class="headerlink" href="#representaciones-por-permutacion-y-acciones" title="Enlazar permanentemente con este título">¶</a></h1>
 <div class="section" id="introduccion">
 <h2><span class="section-number">1.1. </span>Introducción<a class="headerlink" href="#introduccion" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Para comprender las notas del curso se deben tener nociones de</p>
@@ -185,8 +188,8 @@
 <p>En matemáticas, la palabra «representación» significa básicamente «función de preservación de la estructura». Por lo tanto, en la «Teoría de Grupos» una representación es un homomorfismo.</p>
 <p>Pero, más concretamente, debería ser un homomorfismo de un objeto (grupo o anillo) que se está intentando estudiar a otro que es de alguna forma más concreto y por tanto, de un salto, más fácil de entender. Los dos tipos de grupos concretos más simples son, en primer lugar, el grupo de todas las permutaciones de un conjunto arbitrario y, en segundo lugar, el grupo de todas las transformaciones lineales invertibles en un espacio vectorial arbitrario. Entonces, para los grupos, las representaciones más comúnmente estudiadas son las representaciones de permutación y las representaciones lineales.</p>
 </div>
-<div class="section" id="representaciones-por-permutacion-y-acciones">
-<h2><span class="section-number">1.2. </span>Representaciones por Permutación y Acciones<a class="headerlink" href="#representaciones-por-permutacion-y-acciones" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="id1">
+<h2><span class="section-number">1.2. </span>Representaciones por Permutación y Acciones<a class="headerlink" href="#id1" title="Enlazar permanentemente con este título">¶</a></h2>
 <div class="section" id="definicion">
 <h3><span class="section-number">1.2.1. </span>Definición<a class="headerlink" href="#definicion" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>Una representación de permutación de un grupo <span class="math notranslate nohighlight">\(G\)</span> en un conjunto <span class="math notranslate nohighlight">\(S\)</span> es un homomorfismo de <span class="math notranslate nohighlight">\(G\)</span> al conjunto (grupo) de todas las permutaciones de <span class="math notranslate nohighlight">\(S\)</span>.</p>
@@ -194,8 +197,8 @@
 <div><p>Preguntar si es conjunto o grupo de permutaciones.</p>
 </div></blockquote>
 </div>
-<div class="section" id="id1">
-<h3><span class="section-number">1.2.2. </span>Definición<a class="headerlink" href="#id1" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="section" id="id2">
+<h3><span class="section-number">1.2.2. </span>Definición<a class="headerlink" href="#id2" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>Una representación lineal de un grupo <span class="math notranslate nohighlight">\(G\)</span> en un espacio vectorial <span class="math notranslate nohighlight">\(V\)</span> es un homomorfismo de <span class="math notranslate nohighlight">\(G\)</span> al grupo de todas las transformaciones lineales invertibles de <span class="math notranslate nohighlight">\(V\)</span>.</p>
 <p>A menos que esté calificado con algún otro adjetivo, «representación» generalmente significa «representación lineal», por lo que este curso se ocupará de las representaciones lineales de grupos. Por lo general, restringiremos nuestra atención a grupos finitos y espacios vectoriales sobre el campo complejo, ya que esto simplifica las cosas y proporciona una teoría más completa. Si bien sería posible lanzarnos de inmediato al desarrollo de esta teoría, primero dedicaremos un poco de tiempo a familiarizarnos con algunos pequeños grupos finitos, para luego poder ver cómo se aplica la teoría en ejemplos particulares.</p>
 <ul class="simple">
@@ -394,8 +397,8 @@
 \[f((s_{1}, t_{1})(s_{2}, t_{2})) = f(s_{1}s_{2}, t_{1}t_{2}) = (s_{1}s_{2})(t_{1}t_{2}) = (s_{1}t_{1})(s_{2}t_{2}) = f(s_{1}, t_{1})f(s_{2}, t_{2}).\]</div>
 <p>También es fácil demostrar que <span class="math notranslate nohighlight">\(f\)</span> es inyectiva: si <span class="math notranslate nohighlight">\(f (s, t) = 1\)</span> entonces <span class="math notranslate nohighlight">\(st = 1\)</span>, y entonces <span class="math notranslate nohighlight">\(s = t^{− 1} \in S \cap T = {1}\)</span>, de donde <span class="math notranslate nohighlight">\((s, t) = (1 , 1)\)</span>, que es el elemento de identidad de <span class="math notranslate nohighlight">\(S \times T\)</span>. Por tanto, el núcleo de <span class="math notranslate nohighlight">\(f\)</span> es trivial, por lo que <span class="math notranslate nohighlight">\(f\)</span> es inyectivo, como se afirma. Si también es el caso de que <span class="math notranslate nohighlight">\(G = ST\)</span>, de modo que cada elemento de <span class="math notranslate nohighlight">\(G\)</span> es expresable en la forma <span class="math notranslate nohighlight">\(st\)</span> con <span class="math notranslate nohighlight">\(s\in S\)</span> y <span class="math notranslate nohighlight">\(t\in T\)</span>, entonces se deduce que <span class="math notranslate nohighlight">\(f\)</span> es un isomorfismo de <span class="math notranslate nohighlight">\(S \times T\)</span> a <span class="math notranslate nohighlight">\(G\)</span>.</p>
 </div>
-<div class="section" id="id2">
-<h2><span class="section-number">1.7. </span>Definición<a class="headerlink" href="#id2" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="id3">
+<h2><span class="section-number">1.7. </span>Definición<a class="headerlink" href="#id3" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Se dice que un grupo <span class="math notranslate nohighlight">\(G\)</span> es el producto directo interno de <span class="math notranslate nohighlight">\(S\)</span> y <span class="math notranslate nohighlight">\(T\)</span> si <span class="math notranslate nohighlight">\(S\)</span> y <span class="math notranslate nohighlight">\(T\)</span> son subgrupos de <span class="math notranslate nohighlight">\(G\)</span> tales que <span class="math notranslate nohighlight">\(S\cap T = \{ 1 \}\)</span> y <span class="math notranslate nohighlight">\(ST = G\)</span>, y <span class="math notranslate nohighlight">\(st = ts\)</span> para todo <span class="math notranslate nohighlight">\(s\in S\)</span> y <span class="math notranslate nohighlight">\(t\in T\)</span>.</p>
 <p>Si <span class="math notranslate nohighlight">\(S\)</span> y <span class="math notranslate nohighlight">\(T\)</span> son subgrupos de <span class="math notranslate nohighlight">\(G\)</span> tales que <span class="math notranslate nohighlight">\(S\cap T = \{ 1 \}\)</span> y <span class="math notranslate nohighlight">\(G = ST\)</span>, entonces la condición adicional de que <span class="math notranslate nohighlight">\(st = ts\)</span> para todos <span class="math notranslate nohighlight">\(s\in S\)</span> y <span class="math notranslate nohighlight">\(t\in T\)</span> es equivalente a la condición de que <span class="math notranslate nohighlight">\(S\)</span> y <span class="math notranslate nohighlight">\(T\)</span> son ambos subgrupos normales. Pues suponga que <span class="math notranslate nohighlight">\(S\)</span> y <span class="math notranslate nohighlight">\(T\)</span> son ambos normales, y sean <span class="math notranslate nohighlight">\(s\in S\)</span> y <span class="math notranslate nohighlight">\(t\in T\)</span>.</p>
 <ul class="simple">
