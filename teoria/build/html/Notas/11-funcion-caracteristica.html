@@ -1,0 +1,283 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>11. Función Característica &mdash; documentación de Teoría de Representaciones de Grupos - 0.0.1</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="12. Caracterización de Características de Representaciones Complejas Irreducibles de un Grupo Finito" href="12-caracterizacion-de-caracteristicas-de-representaciones-complejas-irreducibles-de-un-grupo-finito.html" />
+    <link rel="prev" title="10. Funciones de clase" href="10-funciones-de-clase.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Teoría de Representaciones de Grupos
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contenidos:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01-representaciones-por-permutacion-y-acciones.html">1. Representaciones por Permutacion y Acciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02-representaciones-acciones-lineales-y-modulos.html">2. Representaciones, Acciones lineales y módulos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03-representaciones-y-representaciones-matriciales.html">3. Representaciones y representaciones matriciales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04-matrices-interventoras.html">4. Matrices Interventoras</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05-modulos-cocientes.html">5. Módulos Cocientes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06-modulos-indescomponibles-y-modulos-irreducibles.html">6. Módulos Indescomponibles y Módulos Irreducibles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07-relaciones-de-ortogonalidad.html">7. Relaciones de ortogonalidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08-la-representacion-regular.html">8. La Representación Regular</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09-el-espacio-coordenado-de-una-representacion.html">9. El Espacio Coordinado de una Representación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10-funciones-de-clase.html">10. Funciones de clase</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">11. Función Característica</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#definicion">11.1. Definición</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#proposicion">11.2. Proposición</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="12-caracterizacion-de-caracteristicas-de-representaciones-complejas-irreducibles-de-un-grupo-finito.html">12. Caracterización de Características de Representaciones Complejas Irreducibles de un Grupo Finito</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Teoría de Representaciones de Grupos</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li><span class="section-number">11. </span>Función Característica</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/Notas/11-funcion-caracteristica.rst.txt" rel="nofollow"> Ver código fuente de la página</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="funcion-caracteristica">
+<h1><span class="section-number">11. </span>Función Característica<a class="headerlink" href="#funcion-caracteristica" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Las funciones <span class="math notranslate nohighlight">\(f_{x}\)</span> para <span class="math notranslate nohighlight">\(x \in G\)</span> forman una base de <span class="math notranslate nohighlight">\(V_{G}\)</span>. Pero también vimos en la lección 10 que si <span class="math notranslate nohighlight">\(R^{(1)}\)</span>, <span class="math notranslate nohighlight">\(R^{(2)}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span>, <span class="math notranslate nohighlight">\(R^{(s)}\)</span> son un conjunto completo de representaciones matriciales irreductibles desiguales por pares de <span class="math notranslate nohighlight">\(S\)</span>, entonces la colección <span class="math notranslate nohighlight">\(S\)</span> de todas las funciones de coordenadas de todas las <span class="math notranslate nohighlight">\(R^{(k)}\)</span> también forma una base de <span class="math notranslate nohighlight">\(V_{G}\)</span> (de donde deducimos que la suma de los cuadrados de los grados de <span class="math notranslate nohighlight">\(R^{(k)}\)</span> es igual a <span class="math notranslate nohighlight">\(| G |\)</span>). Demostraremos que los caracteres (ver definición a continuación) <span class="math notranslate nohighlight">\(\chi^{(1)}\)</span>, <span class="math notranslate nohighlight">\(\chi^{(1)}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span>, <span class="math notranslate nohighlight">\(\chi^{(s)}\)</span> de las representaciones <span class="math notranslate nohighlight">\(R^{(1)}\)</span>, <span class="math notranslate nohighlight">\(R^{(2)}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span>, <span class="math notranslate nohighlight">\(R^{(s)}\)</span> forman una base del espacio de funciones de clase en <span class="math notranslate nohighlight">\(G\)</span>.</p>
+<div class="section" id="definicion">
+<h2><span class="section-number">11.1. </span>Definición<a class="headerlink" href="#definicion" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El <em>carácter de una representación matricial</em> <span class="math notranslate nohighlight">\(R\)</span> de <span class="math notranslate nohighlight">\(G\)</span> es la función <span class="math notranslate nohighlight">\(\chi: G \to \mathbb{C}\)</span> definida por <span class="math notranslate nohighlight">\(\chi (g) = traza (Rg)\)</span>. Por lo tanto, si el grado de <span class="math notranslate nohighlight">\(R\)</span> es <span class="math notranslate nohighlight">\(d\)</span> y <span class="math notranslate nohighlight">\(R_{ij}\)</span> (donde <span class="math notranslate nohighlight">\(1 \leq i\)</span>, <span class="math notranslate nohighlight">\(j \leq d\)</span>) son las funciones de coordenadas de <span class="math notranslate nohighlight">\(R\)</span>, entonces <span class="math notranslate nohighlight">\(\chi = \sum_{i = 1}^{d} R_{ii}\)</span>.</p>
+<p>Hemos visto en una pregunta de asignación que el carácter de una representación es siempre una función de clase. El punto es que matrices similares tienen la misma traza, por lo que siempre que <span class="math notranslate nohighlight">\(g\)</span>, <span class="math notranslate nohighlight">\(x \in G\)</span> la matriz</p>
+<div class="math notranslate nohighlight">
+\[R(g^{−1}xg) = (Rg)^{−1}(Rx)(Rg)\]</div>
+<p>tiene la misma traza que <span class="math notranslate nohighlight">\(Rx\)</span>, y esto muestra que el carácter <span class="math notranslate nohighlight">\(\chi\)</span> toma el mismo valor en <span class="math notranslate nohighlight">\(g^{−1}xg\)</span> que en <span class="math notranslate nohighlight">\(x\)</span>. La independencia lineal de la colección <span class="math notranslate nohighlight">\(S\)</span> de todas las funciones de coordenadas de <span class="math notranslate nohighlight">\(R^{(k)}\)</span> implica la independencia lineal de los caracteres <span class="math notranslate nohighlight">\(\chi^{(k)}\)</span>, porque si <span class="math notranslate nohighlight">\(\sum_{k} \lambda_{k}\chi^{(k)} = 0\)</span> entonces</p>
+<div class="math notranslate nohighlight">
+\[0 = \sum_{k} \lambda_{k}\left(\sum_{i = 1}^{d_{k}}R_{ii}^{(k)}\right) = \sum_{i, k}\lambda_{k}R_{ii}^{(k)},\]</div>
+<p>y esto implica que todos los coeficientes <span class="math notranslate nohighlight">\(\lambda_{k}\)</span> son cero. Entonces, para probar que los caracteres de las representaciones irreductibles forman una base para el espacio de todas las funciones de clase, queda probar que abarcan.</p>
+</div>
+<div class="section" id="proposicion">
+<h2><span class="section-number">11.2. </span>Proposición<a class="headerlink" href="#proposicion" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Si <span class="math notranslate nohighlight">\(\chi^{(1)}\)</span>, <span class="math notranslate nohighlight">\(\chi^{(1)}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span>, <span class="math notranslate nohighlight">\(\chi^{(s)}\)</span> son los caracteres de un conjunto completo de representaciones irreductibles de <span class="math notranslate nohighlight">\(G\)</span>, entonces cada función de clase en <span class="math notranslate nohighlight">\(G\)</span> puede expresarse como una combinación lineal <span class="math notranslate nohighlight">\(\sum_{k} \lambda_{k}\chi^{(k)}\)</span>.</p>
+<p><strong>Demostración</strong></p>
+<p>Sea <span class="math notranslate nohighlight">\(f\)</span> una función de clase en <span class="math notranslate nohighlight">\(G\)</span>, y para cada una de las representaciones irreductibles <span class="math notranslate nohighlight">\(R^{(h)}\)</span> (notación como arriba) considere la matriz</p>
+<div class="math notranslate nohighlight">
+\[M_{h} = \sum_{g\in G} \overline{(fg)}(R^{(h)}g),\hspace{3cm}(1)\]</div>
+<p>(donde la línea superior indica conjugación compleja). Demostramos que <span class="math notranslate nohighlight">\(M_{h}\)</span> conmuta con <span class="math notranslate nohighlight">\(R^{(h)} x\)</span> para todo <span class="math notranslate nohighlight">\(x \in G\)</span>. De hecho, dado que <span class="math notranslate nohighlight">\(f\)</span> es una función de clase, tenemos que <span class="math notranslate nohighlight">\(\overline{f (x^{−1}gx)} = \overline{fg}\)</span> para todo <span class="math notranslate nohighlight">\(g \in G\)</span>, y así</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+    (R^{(h)}x)^{−1}M_{h}(R^{(h)}x) &amp;= (R(h)x)−1\left(\sum_{g\in G} \overline{f(x^{−1}gx)}(R^{(h)}g)\right) (R^{(h)}x) \\
+                                   &amp;= \sum_{g\in G} \overline{f(x^{−1}gx)}((R^{(h)}x)^{−1}(R^{(h)}g)(R^{(h)}x))       \\
+                                   &amp;= \sum_{g\in G} \overline{f(x^{−1}gx)})R^{(h)}(x^{−1}gx)                          \\
+                                   &amp;= \sum_{g\in G} \overline{(fg)}(R^{(h)}g)
+\end{align}\end{split}\]</div>
+<p>ya que, con <span class="math notranslate nohighlight">\(x\)</span> fijo, <span class="math notranslate nohighlight">\(x^{−1}gx\)</span> atraviesa todos los elementos de <span class="math notranslate nohighlight">\(G\)</span> como lo hace <span class="math notranslate nohighlight">\(g\)</span>. Entonces <span class="math notranslate nohighlight">\((R^{(h)} x)^{−1}M_{h} (R^{(h)} x) = M_{h}\)</span>.</p>
+<p>Ahora, como <span class="math notranslate nohighlight">\(R^{(h)}\)</span> es irreducible, el lema de Schur nos dice que <span class="math notranslate nohighlight">\(M_{h} = \lambda_{h}I\)</span> para algún <span class="math notranslate nohighlight">\(\lambda_{h}\)</span> escalar. <span class="math notranslate nohighlight">\((1)\)</span> nos dice que</p>
+<div class="math notranslate nohighlight">
+\[\sum_{g\in G} \overline{(fg)}(R_{ij}^{(h)}g) = \delta_{h}\delta_{ij}.\hspace{3cm}(2)\]</div>
+<p>para todo <span class="math notranslate nohighlight">\(f_{1}\)</span>, <span class="math notranslate nohighlight">\(f_{2} \in V_{G}\)</span> se define <span class="math notranslate nohighlight">\(f_{1} \ast f_{2} \in \mathbb{C}\)</span> por</p>
+<div class="math notranslate nohighlight">
+\[f_{1} \ast f_{2} = \frac{1}{|G|} \sum_{g\in G} (f_{1}g)\overline{(f_{2}g)}.\]</div>
+<p>Vimos en la lección 9 (ver la Ecuación <span class="math notranslate nohighlight">\((3)\)</span> de esa lección) que <span class="math notranslate nohighlight">\(R_{pm}^{(k)} \ast R_{qn}^{(l)}\)</span> es cero a menos que <span class="math notranslate nohighlight">\(k = l\)</span>, <span class="math notranslate nohighlight">\(p = q\)</span> y <span class="math notranslate nohighlight">\(m = n\)</span>, en cuyo caso es <span class="math notranslate nohighlight">\(1 / d_{k}\)</span>. Dado que las funciones <span class="math notranslate nohighlight">\(R_{pm}^{(k)}\)</span> abarcan <span class="math notranslate nohighlight">\(V_{G}\)</span>, podemos escribir <span class="math notranslate nohighlight">\(f = \sum_{k, p, m} \mu_{k p m} R_{pm}^{(k)}\)</span> para algunos coeficientes <span class="math notranslate nohighlight">\(\mu_{k p m}\)</span>, y esto da</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+    R_{ij}^{(h)} \ast f &amp;= \sum_{k,p,m} \overline{\mu_{k, p, m}} (R_{ij}^{(h)} \ast R_{pm}^{(k)} )\\
+                    &amp;= \sum_{k,p,m} \overline{\mu_{k, p, m}}(1/d_{k})\delta_{hk}\delta_{ip}\delta_{jm}\\
+                    &amp;= (1/d_{h})\overline{\mu_{h, i, j}}.
+\end{align}\end{split}\]</div>
+<p>Pero la Ecuación <span class="math notranslate nohighlight">\((2)\)</span> dice que <span class="math notranslate nohighlight">\(R_{ij}^{(h)} \ast f = \lambda_{h}\delta_{ij} / | G |\)</span>. Así hemos demostrado que</p>
+<div class="math notranslate nohighlight">
+\[\mu_{h i j} = \frac{d_{h}\overline{\lambda_{h}}\delta_{ij}}{|G|} ,\]</div>
+<p>y se sigue que</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+    f &amp;= \sum_{h,i,j} \mu_{h i j}R_{ij}^{(h)}\\
+      &amp;= \frac{1}{|G|} \sum_{h,i,j} d_{h}\overline{\lambda_{h}}\delta_{ij}R_{ij}^{(h)}\\
+      &amp;= \frac{1}{|G|} \sum_{h} d_{h}\overline{\lambda_{h}}\left(\sum_{i} R_{ii}^{(h)}\right)\\
+      &amp;= \frac{1}{|G|} \sum_{h}d_{h}\overline{\lambda_{h}}\chi^{(h)}.
+\end{align}\end{split}\]</div>
+<p>Ésta es una combinación lineal de las <span class="math notranslate nohighlight">\(\chi^{(h)}\)</span>, como queríamos probar.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="12-caracterizacion-de-caracteristicas-de-representaciones-complejas-irreducibles-de-un-grupo-finito.html" class="btn btn-neutral float-right" title="12. Caracterización de Características de Representaciones Complejas Irreducibles de un Grupo Finito" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="10-funciones-de-clase.html" class="btn btn-neutral float-left" title="10. Funciones de clase" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Derechos de autor 2021, Ferreira, Juan David.
+
+    </p>
+  </div>
+    
+    
+    
+    Construido con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

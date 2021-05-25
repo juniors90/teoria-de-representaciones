@@ -1,0 +1,302 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>10. Funciones de clase &mdash; documentación de Teoría de Representaciones de Grupos - 0.0.1</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="11. Función Característica" href="11-funcion-caracteristica.html" />
+    <link rel="prev" title="9. El Espacio Coordinado de una Representación" href="09-el-espacio-coordenado-de-una-representacion.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Teoría de Representaciones de Grupos
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contenidos:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01-representaciones-por-permutacion-y-acciones.html">1. Representaciones por Permutacion y Acciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02-representaciones-acciones-lineales-y-modulos.html">2. Representaciones, Acciones lineales y módulos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03-representaciones-y-representaciones-matriciales.html">3. Representaciones y representaciones matriciales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04-matrices-interventoras.html">4. Matrices Interventoras</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05-modulos-cocientes.html">5. Módulos Cocientes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06-modulos-indescomponibles-y-modulos-irreducibles.html">6. Módulos Indescomponibles y Módulos Irreducibles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07-relaciones-de-ortogonalidad.html">7. Relaciones de ortogonalidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08-la-representacion-regular.html">8. La Representación Regular</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09-el-espacio-coordenado-de-una-representacion.html">9. El Espacio Coordinado de una Representación</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">10. Funciones de clase</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#definicion">10.1. Definición</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#proposicion">10.2. Proposición</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">10.3. Proposición</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="11-funcion-caracteristica.html">11. Función Característica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12-caracterizacion-de-caracteristicas-de-representaciones-complejas-irreducibles-de-un-grupo-finito.html">12. Caracterización de Características de Representaciones Complejas Irreducibles de un Grupo Finito</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Teoría de Representaciones de Grupos</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li><span class="section-number">10. </span>Funciones de clase</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/Notas/10-funciones-de-clase.rst.txt" rel="nofollow"> Ver código fuente de la página</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="funciones-de-clase">
+<h1><span class="section-number">10. </span>Funciones de clase<a class="headerlink" href="#funciones-de-clase" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>En la lección 10 describimos la representación regular de <span class="math notranslate nohighlight">\(G\)</span> como la representación lineal derivada de la representación de permutación de <span class="math notranslate nohighlight">\(G\)</span> sobre <span class="math notranslate nohighlight">\(G\)</span> correspondiente a la acción de multiplicación por la izquierda de <span class="math notranslate nohighlight">\(G\)</span> sobre sí mismo. Es decir, a cada elemento <span class="math notranslate nohighlight">\(g \in G\)</span> asociamos la permutación <span class="math notranslate nohighlight">\(\sigma_{g}: G \to G\)</span> definida por <span class="math notranslate nohighlight">\(\sigma_{g}x = gx\)</span> (para todo <span class="math notranslate nohighlight">\(x \in G\)</span>), y correspondiente a esta permutación tenemos una matriz de permutación <span class="math notranslate nohighlight">\(Rg\)</span>. Entonces <span class="math notranslate nohighlight">\(g \mapsto Rg\)</span> es una representación matricial. Se puede obtener una versión no matricial de la representación regular identificando los elementos de <span class="math notranslate nohighlight">\(G\)</span> con los elementos base de un espacio vectorial <span class="math notranslate nohighlight">\(V\)</span>; en otras palabras, sea <span class="math notranslate nohighlight">\(V\)</span> un espacio vectorial <span class="math notranslate nohighlight">\(|G|\)</span>-dimensional, luego elija cualquier base de <span class="math notranslate nohighlight">\(V\)</span> y una correspondencia uno a uno entre estos vectores base y los elementos de <span class="math notranslate nohighlight">\(G\)</span>, y asociar con cada elemento <span class="math notranslate nohighlight">\(g \in G\)</span> la transformación lineal <span class="math notranslate nohighlight">\(\rho_{g}: V \to V\)</span> que permuta la base de acuerdo con la permutación <span class="math notranslate nohighlight">\(\sigma_{g}\)</span> definida anteriormente. Entonces <span class="math notranslate nohighlight">\(\rho: g \mapsto \rho_{g}\)</span> es una representación de <span class="math notranslate nohighlight">\(G\)</span> por transformaciones lineales del espacio <span class="math notranslate nohighlight">\(V\)</span>.</p>
+<p>Además, también notamos en la lección 10 que el conjunto <span class="math notranslate nohighlight">\(V_{G}\)</span> de todas las funciones con valores complejos en <span class="math notranslate nohighlight">\(G\)</span> es un espacio vectorial <span class="math notranslate nohighlight">\(|G|\)</span>-dimensional sobre <span class="math notranslate nohighlight">\(\mathbb{C}\)</span>. De modo que podemos tomar el espacio vectorial <span class="math notranslate nohighlight">\(V\)</span> al que se hace referencia en el último párrafo como <span class="math notranslate nohighlight">\(V_{G}\)</span>. Si para todo <span class="math notranslate nohighlight">\(x \in G\)</span> definimos la función <span class="math notranslate nohighlight">\(f_{x} \in V_{G}\)</span> por la fórmula</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{equation}
+    f_{x}h =
+    \begin{cases}
+        1 &amp; \text{ si } h=x^{-1}\\
+        0 &amp; \text{ si } h\not=x^{-1}
+    \end{cases}
+\end{equation}\end{split}\]</div>
+<p>entonces se ve fácilmente que las <span class="math notranslate nohighlight">\(f_{x}\)</span> forman una base de <span class="math notranslate nohighlight">\(V_{G}\)</span> en correspondencia uno a uno con el elementos de <span class="math notranslate nohighlight">\(G\)</span>. Las observaciones en el último párrafo afirman que hay una acción de <span class="math notranslate nohighlight">\(G\)</span> sobre <span class="math notranslate nohighlight">\(V_{G}\)</span> tal que <span class="math notranslate nohighlight">\(gf_{x} = f_{gx}\)</span> para todo <span class="math notranslate nohighlight">\(x \in G\)</span> y <span class="math notranslate nohighlight">\(g \in G\)</span>. Una forma alternativa de describir esta acción es la siguiente: para todo <span class="math notranslate nohighlight">\(g \in G\)</span> y <span class="math notranslate nohighlight">\(f \in V_{G}\)</span> la función <span class="math notranslate nohighlight">\(gf \in V_{G}\)</span> viene dada por</p>
+<div class="math notranslate nohighlight">
+\[(gf)h = f(hg) \text{ para todo } h \in G.\]</div>
+<p>El estudiante debe comprobar que esta fórmula efectivamente produce <span class="math notranslate nohighlight">\(gf_{x} = f_{gx}\)</span>, y que los axiomas para una acción lineal de grupo en un espacio vectorial (ver Lección 3) se satisfacen de hecho.</p>
+<p>Hemos definido un <span class="math notranslate nohighlight">\(G\)</span>-módulo como un espacio vectorial con una acción <span class="math notranslate nohighlight">\(G\)</span>; es decir, debe haber una función <span class="math notranslate nohighlight">\((g, v) \mapsto gv\)</span> de <span class="math notranslate nohighlight">\(G\times V\)</span> a <span class="math notranslate nohighlight">\(V\)</span> que satisfaga <span class="math notranslate nohighlight">\((i)\)</span>, <span class="math notranslate nohighlight">\((ii)\)</span> y <span class="math notranslate nohighlight">\((iii)\)</span> de la lección 3. Estrictamente hablando, este debe ser un <span class="math notranslate nohighlight">\(G\)</span>-módulo izquierdo llamado, ya que la acción <span class="math notranslate nohighlight">\(G\)</span> está a la izquierda. De manera similar, un <span class="math notranslate nohighlight">\(G\)</span>-módulo derecho es un espacio vectorial <span class="math notranslate nohighlight">\(V\)</span> equipado con una función <span class="math notranslate nohighlight">\((v, g) \mapsto vg\)</span> de <span class="math notranslate nohighlight">\(V\times G\)</span> a <span class="math notranslate nohighlight">\(G\)</span> que satisface</p>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\((i)\)</span> <span class="math notranslate nohighlight">\(v1 = v\)</span> para todo <span class="math notranslate nohighlight">\(v \in V\)</span>, donde <span class="math notranslate nohighlight">\(1\)</span> es el elemento identidad de <span class="math notranslate nohighlight">\(G\)</span>,</p>
+<p><span class="math notranslate nohighlight">\((ii)\)</span> <span class="math notranslate nohighlight">\((vg)h = v(gh)\)</span> para todo <span class="math notranslate nohighlight">\(v \in V\)</span> y <span class="math notranslate nohighlight">\(g\)</span>, <span class="math notranslate nohighlight">\(h \in G\)</span>,</p>
+<p><span class="math notranslate nohighlight">\((iii)\)</span> <span class="math notranslate nohighlight">\((u + v)g = ug + vg\)</span> para todo <span class="math notranslate nohighlight">\(u\)</span>, <span class="math notranslate nohighlight">\(v \in V\)</span> y <span class="math notranslate nohighlight">\(g \in G\)</span>,</p>
+<p><span class="math notranslate nohighlight">\((iv)\)</span> <span class="math notranslate nohighlight">\((\lambda v)g = \lambda (vg)\)</span> para todo <span class="math notranslate nohighlight">\(v \in V\)</span> y <span class="math notranslate nohighlight">\(g \in G\)</span> y todo escalar <span class="math notranslate nohighlight">\(\lambda\)</span>.</p>
+</div></blockquote>
+<p>Hemos visto que <span class="math notranslate nohighlight">\(V_{G}\)</span> se convierte en un <span class="math notranslate nohighlight">\(G\)</span>-módulo izquierdo a través de la acción (izquierda) dada por <span class="math notranslate nohighlight">\((gf) h = f (hg)\)</span> para todo <span class="math notranslate nohighlight">\(g, h \in G\)</span> y todas las funciones <span class="math notranslate nohighlight">\(f\in V_{G}\)</span>. De hecho, también podemos convertir <span class="math notranslate nohighlight">\(V_{G}\)</span> en un <span class="math notranslate nohighlight">\(G\)</span>-módulo derecho definiendo <span class="math notranslate nohighlight">\(fg: G \to \mathbb{C}\)</span> (siempre que <span class="math notranslate nohighlight">\(f\in V_{G}\)</span> y <span class="math notranslate nohighlight">\(g\in G\)</span>) por</p>
+<div class="math notranslate nohighlight">
+\[(fg)h = f(gh) \text{ para todo } h \in G.\]</div>
+<p>Es un asunto sencillo, que dejamos al lector, para comprobar que se cumplen <span class="math notranslate nohighlight">\((i)\)</span> a <span class="math notranslate nohighlight">\((iv)\)</span> anteriores.</p>
+<p>Una pregunta que surge ahora es la siguiente: ¿qué funciones <span class="math notranslate nohighlight">\(f: G \to \mathbb{C}\)</span> tienen la propiedad de que <span class="math notranslate nohighlight">\(gf = fg\)</span> para todo <span class="math notranslate nohighlight">\(g\in G\)</span>? Es decir, ¿en qué elementos <span class="math notranslate nohighlight">\(f\in V_{G}\)</span> concuerdan las acciones izquierda y derecha de <span class="math notranslate nohighlight">\(G\)</span>?</p>
+<div class="section" id="definicion">
+<h2><span class="section-number">10.1. </span>Definición<a class="headerlink" href="#definicion" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Una función <span class="math notranslate nohighlight">\(f: G \to \mathbb{C}\)</span> se denomina función de clase si es constante en las clases de conjugación. Por tanto, <span class="math notranslate nohighlight">\(f\)</span> es una función de clase si y solo si <span class="math notranslate nohighlight">\(fx = fy\)</span> siempre que <span class="math notranslate nohighlight">\(x\)</span> e <span class="math notranslate nohighlight">\(y\)</span> se conjugan en <span class="math notranslate nohighlight">\(G\)</span>.</p>
+</div>
+<div class="section" id="proposicion">
+<h2><span class="section-number">10.2. </span>Proposición<a class="headerlink" href="#proposicion" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Una función <span class="math notranslate nohighlight">\(f\in V_{G}\)</span> satisface <span class="math notranslate nohighlight">\(gf = fg\)</span> para todo <span class="math notranslate nohighlight">\(g\in G\)</span> si y solo si es una función de clase.</p>
+<p><strong>Demostración</strong></p>
+<p>Supongamos que <span class="math notranslate nohighlight">\(gf = fg\)</span> para todo <span class="math notranslate nohighlight">\(g\in G\)</span> y sean <span class="math notranslate nohighlight">\(x\)</span> e <span class="math notranslate nohighlight">\(y\)</span> elementos conjugados de <span class="math notranslate nohighlight">\(G\)</span>. Entonces existe <span class="math notranslate nohighlight">\(g\in G\)</span> tal que <span class="math notranslate nohighlight">\(g^{−1} xg = y\)</span>, y por lo tanto</p>
+<div class="math notranslate nohighlight">
+\[fy = f(g^{−1} xg) = (gf)(g^{−1} x) = (fg)(g^{−1} x) = f(g(g^{−1} x)) = fx,\]</div>
+<p>donde hemos utilizado las definiciones de <span class="math notranslate nohighlight">\(gf\)</span> y <span class="math notranslate nohighlight">\(fg\)</span> y el supuesto de que <span class="math notranslate nohighlight">\(gf = fg\)</span>. Por tanto, es una función de clase.</p>
+<p>A la inversa, suponga que <span class="math notranslate nohighlight">\(f\)</span> es una función de clase y sea <span class="math notranslate nohighlight">\(g\in G\)</span> arbitrario. Teniendo en cuenta que para todos los <span class="math notranslate nohighlight">\(h\in G\)</span> tenemos</p>
+<div class="math notranslate nohighlight">
+\[g^{−1}(gh)g = hg,\]</div>
+<p>de modo que <span class="math notranslate nohighlight">\(gh\)</span> y <span class="math notranslate nohighlight">\(hg\)</span> se conjugan, se sigue que <span class="math notranslate nohighlight">\(f (gh) = f (hg)\)</span> (ya que <span class="math notranslate nohighlight">\(f\)</span> es una función de clase). Por lo tanto</p>
+<div class="math notranslate nohighlight">
+\[(gf)h = f(hg) = f(gh) = (fg)h \text{ para todo } h \in G,\]</div>
+<p>mostrando que <span class="math notranslate nohighlight">\(gf = fg\)</span> para todo <span class="math notranslate nohighlight">\(g\in G\)</span>, según se requiera.</p>
+<p>Por ejemplo, el grupo <span class="math notranslate nohighlight">\(S_{3}\)</span> tiene tres clases de conjugación. El elemento de identidad constituye una clase de conjugación por sí mismo, este es el caso en cualquier grupo, ya que <span class="math notranslate nohighlight">\(\sigma^{−1} (id) \sigma = id\)</span> para todo <span class="math notranslate nohighlight">\(\sigma\)</span>. Como <span class="math notranslate nohighlight">\((2, 3)^{−1} (1, 2) (2, 3) = (1, 3)\)</span> y <span class="math notranslate nohighlight">\((1,3)^{−1} (1, 2) (1, 3) = (2, 3)\)</span> vemos que <span class="math notranslate nohighlight">\((1, 2)\)</span>, <span class="math notranslate nohighlight">\((1, 3)\)</span> y <span class="math notranslate nohighlight">\((2, 3)\)</span> son todos conjugados, y de manera similar <span class="math notranslate nohighlight">\((1, 2, 3) = (1, 2)^{−1} (1, 3, 2) (1, 2)\)</span> muestra que <span class="math notranslate nohighlight">\((1, 2, 3)\)</span> y <span class="math notranslate nohighlight">\((1, 3, 2)\)</span> son todos conjugado.</p>
+<p>Se necesita un poco más de trabajo para demostrar que <span class="math notranslate nohighlight">\((1, 2)\)</span> y <span class="math notranslate nohighlight">\((1, 2, 3)\)</span> no se conjugan, pero dado que este es un tema secundario en la actualidad, lo omitimos. El punto es que una función de clase <span class="math notranslate nohighlight">\(f\)</span> en <span class="math notranslate nohighlight">\(S_{3}\)</span> está determinada por una terna <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, <span class="math notranslate nohighlight">\(z\)</span> de números complejos, donde</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+    f1 &amp;= x                          \\
+    f(1, 2) &amp;= f(1, 3) = f(2, 3) = y \\
+    f(1, 2, 3) &amp;= f(1, 3, 2) = z.
+\end{align}\end{split}\]</div>
+<p>Por tanto, vemos que las funciones de clase en <span class="math notranslate nohighlight">\(S_{3}\)</span> forman un espacio vectorial tridimensional. En general,</p>
+</div>
+<div class="section" id="id1">
+<h2><span class="section-number">10.3. </span>Proposición<a class="headerlink" href="#id1" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El conjunto de todas las funciones de clase <span class="math notranslate nohighlight">\(G \to \mathbb{C}\)</span> forma un subespacio vectorial de <span class="math notranslate nohighlight">\(V_{G}\)</span> de dimensión igual al número de clases de conjugación de <span class="math notranslate nohighlight">\(G\)</span>.</p>
+<p><strong>Demostración</strong></p>
+<p>La función cero es claramente constante en las clases de conjugación, por lo que el conjunto de todas las funciones de clase no está vacío. Si <span class="math notranslate nohighlight">\(e\)</span> y <span class="math notranslate nohighlight">\(f\)</span> son funciones de clase y si <span class="math notranslate nohighlight">\(x\)</span> e <span class="math notranslate nohighlight">\(y\)</span> son elementos conjugados arbitrarios de <span class="math notranslate nohighlight">\(G\)</span>, entonces <span class="math notranslate nohighlight">\(fx = fy\)</span> y <span class="math notranslate nohighlight">\(ex = ey\)</span> (dado que <span class="math notranslate nohighlight">\(e\)</span>, <span class="math notranslate nohighlight">\(f\)</span> son funciones de clase, y así</p>
+<div class="math notranslate nohighlight">
+\[(e + f)x = ex + fx = ey + fy = (e + f)y\]</div>
+<p>por la definición de la suma de dos funciones. Por tanto, <span class="math notranslate nohighlight">\(e + f\)</span> es una función de clase, por lo que hemos demostrado que el conjunto de funciones de clase se cierra con la suma. De manera similar, si <span class="math notranslate nohighlight">\(f\)</span> es una función de clase y <span class="math notranslate nohighlight">\(\lambda\)</span> cualquier escalar, entonces para todos los elementos conjugados <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\in G\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[(\lambda f)x = \lambda (fx) = \lambda (fy) = (\lambda f)y,\]</div>
+<p>lo que muestra que <span class="math notranslate nohighlight">\(\lambda_{f}\)</span> es una función de clase. (El estudiante debe tener cuidado de examinar cada paso de este cálculo y asegurarse de que sabe exactamente lo que se afirma y por qué es cierto.</p>
+<p>Es muy fácil mirar ecuaciones como las anteriores y creerlas porque parecen vagamente razonables, pero eso no es lo suficientemente bueno en matemáticas puras). Por lo tanto, el conjunto de todas las funciones de clase también se cierra bajo la multiplicación escalar. Por tanto, es un subespacio de <span class="math notranslate nohighlight">\(V_{G}\)</span>.</p>
+<p>Sean <span class="math notranslate nohighlight">\(\mathcal{C}_{1}\)</span>, <span class="math notranslate nohighlight">\(\mathcal{C}_{2}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span>, <span class="math notranslate nohighlight">\(\mathcal{C}_{t}\)</span> todas las clases de conjugación de <span class="math notranslate nohighlight">\(G\)</span>, y para cada <span class="math notranslate nohighlight">\(i\)</span> de <span class="math notranslate nohighlight">\(1\)</span> a <span class="math notranslate nohighlight">\(t\)</span> sea <span class="math notranslate nohighlight">\(F_{i}\)</span> la función <span class="math notranslate nohighlight">\(G \to \mathbb{C}\)</span> dada por <span class="math notranslate nohighlight">\(F_{i} = \sum_{y∈Ci} f_{y^{− 1}}\)</span>, donde las funciones <span class="math notranslate nohighlight">\(f_{x} \in V_{G}\)</span> son los definidos al comienzo de esta lección. Luego</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}F_{i}g = \sum_{ y\in\mathcal{ C_{i} } } f_{y^{−1}} (g) = \begin{cases} 1 &amp; \text{ si } g\in \mathcal{C}_{i}\\ 0 &amp; \text{ si } g\not \in \mathcal{C}_{i}\end{cases},\end{split}\]</div>
+<p>ya que <span class="math notranslate nohighlight">\(f_{y^{−1}} (g)\)</span> es <span class="math notranslate nohighlight">\(1\)</span> si <span class="math notranslate nohighlight">\(g = y\)</span> y es cero en caso contrario. Ahora, cada función de clase en <span class="math notranslate nohighlight">\(G\)</span> se puede expresar como una combinación lineal de Fi; específicamente, si <span class="math notranslate nohighlight">\(f: G \to \mathbb{C}\)</span> toma el valor <span class="math notranslate nohighlight">\(\delta_{i}\)</span> en elementos de la clase <span class="math notranslate nohighlight">\(\mathcal{C}_{i}\)</span> (para <span class="math notranslate nohighlight">\(1\)</span> de <span class="math notranslate nohighlight">\(1\)</span> a <span class="math notranslate nohighlight">\(t\)</span>) entonces <span class="math notranslate nohighlight">\(f = \sum_{i} \delta_{i}F_{i}\)</span>. Por tanto, <span class="math notranslate nohighlight">\(F_{i}\)</span> abarca el espacio de las funciones de clase. Además, se puede ver que para todas las elecciones de los coeficientes <span class="math notranslate nohighlight">\(\delta_{i}\)</span> la función <span class="math notranslate nohighlight">\(\sum_{i}\delta_{i}F_{i}\)</span> toma el valor <span class="math notranslate nohighlight">\(\delta_{i}\)</span> en elementos de clase <span class="math notranslate nohighlight">\(\mathcal{C}_{i}\)</span>. Por lo tanto, si <span class="math notranslate nohighlight">\(\sum_{i}\delta_{i}F_{i} = 0\)</span>, entonces todos los coeficientes <span class="math notranslate nohighlight">\(\delta_{i}\)</span> deben ser <span class="math notranslate nohighlight">\(0\)</span>, lo que significa que <span class="math notranslate nohighlight">\(F_{i}\)</span> son linealmente independientes. Entonces <span class="math notranslate nohighlight">\(F_{1}\)</span>, <span class="math notranslate nohighlight">\(F_{2}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span>, <span class="math notranslate nohighlight">\(F_{t}\)</span> forman una base para el espacio de funciones de clase, que por lo tanto tiene dimensión <span class="math notranslate nohighlight">\(t\)</span>, según se requiera.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="11-funcion-caracteristica.html" class="btn btn-neutral float-right" title="11. Función Característica" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="09-el-espacio-coordenado-de-una-representacion.html" class="btn btn-neutral float-left" title="9. El Espacio Coordinado de una Representación" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Derechos de autor 2021, Ferreira, Juan David.
+
+    </p>
+  </div>
+    
+    
+    
+    Construido con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

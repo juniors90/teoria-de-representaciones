@@ -1,0 +1,283 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>4. Matrices Interventoras &mdash; documentación de Teoría de Representaciones de Grupos - 0.0.1</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="5. Módulos Cocientes" href="05-modulos-cocientes.html" />
+    <link rel="prev" title="3. Representaciones y representaciones matriciales" href="03-representaciones-y-representaciones-matriciales.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Teoría de Representaciones de Grupos
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contenidos:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01-representaciones-por-permutacion-y-acciones.html">1. Representaciones por Permutacion y Acciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02-representaciones-acciones-lineales-y-modulos.html">2. Representaciones, Acciones lineales y módulos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03-representaciones-y-representaciones-matriciales.html">3. Representaciones y representaciones matriciales</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">4. Matrices Interventoras</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#estabilizador">4.1. Estabilizador</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">4.2. Matrices Interventoras</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#definicion">4.2.1. Definición</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="05-modulos-cocientes.html">5. Módulos Cocientes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06-modulos-indescomponibles-y-modulos-irreducibles.html">6. Módulos Indescomponibles y Módulos Irreducibles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07-relaciones-de-ortogonalidad.html">7. Relaciones de ortogonalidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08-la-representacion-regular.html">8. La Representación Regular</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09-el-espacio-coordenado-de-una-representacion.html">9. El Espacio Coordinado de una Representación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10-funciones-de-clase.html">10. Funciones de clase</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11-funcion-caracteristica.html">11. Función Característica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12-caracterizacion-de-caracteristicas-de-representaciones-complejas-irreducibles-de-un-grupo-finito.html">12. Caracterización de Características de Representaciones Complejas Irreducibles de un Grupo Finito</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Teoría de Representaciones de Grupos</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li><span class="section-number">4. </span>Matrices Interventoras</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/Notas/04-matrices-interventoras.rst.txt" rel="nofollow"> Ver código fuente de la página</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="matrices-interventoras">
+<h1><span class="section-number">4. </span>Matrices Interventoras<a class="headerlink" href="#matrices-interventoras" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="estabilizador">
+<h2><span class="section-number">4.1. </span>Estabilizador<a class="headerlink" href="#estabilizador" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Supongamos que un grupo <span class="math notranslate nohighlight">\(G\)</span> tiene una acción sobre un conjunto <span class="math notranslate nohighlight">\(S\)</span>. Para la variedad, asumiremos que esta es una acción correcta, pero declaraciones totalmente análogas también son válidas para acciones izquierdas. Para cada <span class="math notranslate nohighlight">\(s\in G\)</span> el subconjunto de <span class="math notranslate nohighlight">\(G\)</span></p>
+<div class="math notranslate nohighlight">
+\[StabG(s) = \{ g \in G | sg = s \}\]</div>
+<p>se llama estabilizador de <span class="math notranslate nohighlight">\(s\)</span> en <span class="math notranslate nohighlight">\(G\)</span>. Es bastante sencillo observar que <span class="math notranslate nohighlight">\(1 \in StabG (s)\)</span>, que <span class="math notranslate nohighlight">\(g^{−1} \in StabG (s)\)</span> siempre que <span class="math notranslate nohighlight">\(x \in StabG (s)\)</span>, y que <span class="math notranslate nohighlight">\(xy \in StabG (s)\)</span> siempre que <span class="math notranslate nohighlight">\(x, y \in StabG (s)\)</span>. Por tanto, el estabilizador de <span class="math notranslate nohighlight">\(S\)</span> es un subgrupo de <span class="math notranslate nohighlight">\(G\)</span>. El subconjunto de <span class="math notranslate nohighlight">\(S\)</span></p>
+<div class="math notranslate nohighlight">
+\[\mathcal{O} = \{ sg | g \in G \}\]</div>
+<p>se llama la órbita de s bajo la acción de <span class="math notranslate nohighlight">\(G\)</span>. Si <span class="math notranslate nohighlight">\(\mathcal{O} = S\)</span>, entonces se dice que la acción de <span class="math notranslate nohighlight">\(G\)</span> sobre <span class="math notranslate nohighlight">\(S\)</span> es transitiva.</p>
+<p>Como notación temporal, para <span class="math notranslate nohighlight">\(s, t \in S\)</span> escribamos <span class="math notranslate nohighlight">\(s \sim t\)</span> si existe <span class="math notranslate nohighlight">\(g\in G\)</span> tal que <span class="math notranslate nohighlight">\(sg = t\)</span>.</p>
+<ul class="simple">
+<li><p>Como <span class="math notranslate nohighlight">\(s1 = s\)</span> tenemos que <span class="math notranslate nohighlight">\(s \sim s\)</span>, para todo <span class="math notranslate nohighlight">\(s \in S\)</span>; entonces la relación <span class="math notranslate nohighlight">\(\sim\)</span> es reflexiva.</p></li>
+<li><p>Si <span class="math notranslate nohighlight">\(sg = t\)</span> entonces <span class="math notranslate nohighlight">\(tg^{−1} = s\)</span>; por tanto, si <span class="math notranslate nohighlight">\(s \sim t\)</span> entonces <span class="math notranslate nohighlight">\(t \sim s\)</span>, y entonces <span class="math notranslate nohighlight">\(\sim\)</span> es simétrico.</p></li>
+<li><p>Y <span class="math notranslate nohighlight">\(\sim\)</span> también es transitiva, ya que si <span class="math notranslate nohighlight">\(s, t, u \in S\)</span> con <span class="math notranslate nohighlight">\(s \sim t\)</span> y <span class="math notranslate nohighlight">\(t \sim u\)</span> entonces existen <span class="math notranslate nohighlight">\(g, h \in G\)</span> con <span class="math notranslate nohighlight">\(sg = t\)</span> y <span class="math notranslate nohighlight">\(th = u\)</span>, y esto da <span class="math notranslate nohighlight">\(s \sim u\)</span> ya que <span class="math notranslate nohighlight">\(s (gh ) = (sg) h = th = u\)</span>.</p></li>
+</ul>
+<p>Por tanto, <span class="math notranslate nohighlight">\(\sim\)</span> es una relación de equivalencia y, en consecuencia, el conjunto <span class="math notranslate nohighlight">\(S\)</span> es la unión disjunta de clases de equivalencia <span class="math notranslate nohighlight">\(\sim\)</span>. La clase de equivalencia que contiene <span class="math notranslate nohighlight">\(s\)</span> es el conjunto <span class="math notranslate nohighlight">\(\{t \in S | s \sim t\} = \{sg | g \in G\}\)</span>, que es precisamente la órbita de <span class="math notranslate nohighlight">\(s\)</span>. Las órbitas de <span class="math notranslate nohighlight">\(G\)</span> sobre <span class="math notranslate nohighlight">\(S\)</span> son las clases de equivalencia para la relación <span class="math notranslate nohighlight">\(\sim\)</span> como se definió anteriormente.</p>
+<p>Se puede ver que si el estabilizador de un elemento <span class="math notranslate nohighlight">\(s\)</span> es grande, entonces la órbita de <span class="math notranslate nohighlight">\(s\)</span> es pequeña y viceversa. Los dos casos extremos son los siguientes: si el estabilizador de <span class="math notranslate nohighlight">\(s\)</span> es todo el grupo <span class="math notranslate nohighlight">\(G\)</span>, entonces la órbita es el conjunto singleton <span class="math notranslate nohighlight">\(\{s\}\)</span>; si el estabilizador es el subgrupo trivial que consiste solo en el elemento de identidad, entonces los elementos de la órbita de <span class="math notranslate nohighlight">\(s\)</span> están en correspondencia uno a uno con los elementos de <span class="math notranslate nohighlight">\(G\)</span> (ya que si <span class="math notranslate nohighlight">\(g, h \in G\)</span> y <span class="math notranslate nohighlight">\(sg = sh\)</span> entonces <span class="math notranslate nohighlight">\(s (gh^{−1}) = s\)</span>, lo que significa que <span class="math notranslate nohighlight">\(gh{−1} \in StabG (s) = \{1\}\)</span>, y por lo tanto <span class="math notranslate nohighlight">\(g = h\)</span>). En el caso general, si escribimos <span class="math notranslate nohighlight">\(L = StabG (s)\)</span> entonces <span class="math notranslate nohighlight">\(sg = sh\)</span> si y solo si <span class="math notranslate nohighlight">\(gh^{−1} \in L\)</span>, que es equivalente a <span class="math notranslate nohighlight">\(g \in Lh\)</span>, y esto a su vez es equivalente a la igualdad de las clases laterales derechas <span class="math notranslate nohighlight">\(Lg\)</span> y <span class="math notranslate nohighlight">\(Lh\)</span>. (Si hubiéramos comenzado con una acción izquierda, habríamos obtenido clases laterales izquierdas en este punto: <span class="math notranslate nohighlight">\(gs = hs\)</span> si y solo si <span class="math notranslate nohighlight">\(gL = hL\)</span>.) Entonces concluimos que hay un mapeo biyectivo bien definido <span class="math notranslate nohighlight">\(sg \mapsto Lg\)</span> desde la órbita <span class="math notranslate nohighlight">\(\mathcal{O} = \{sg | g \in G\}\)</span> al conjunto <span class="math notranslate nohighlight">\(\{ Lg | g \in G \}\)</span> (cuyos elementos son las clases laterales derechas en <span class="math notranslate nohighlight">\(G\)</span> del estabilizador de <span class="math notranslate nohighlight">\(s\)</span>). Por tanto, si <span class="math notranslate nohighlight">\(g_{1}\)</span>, <span class="math notranslate nohighlight">\(g_{2}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span> , <span class="math notranslate nohighlight">\(g_{m}\)</span> es una transversal recta para <span class="math notranslate nohighlight">\(L\)</span>, de modo que</p>
+<div class="math notranslate nohighlight">
+\[G = Lg_{1} \dot{\cup} Lg_{2} \dot{\cup} \cdots \dot{\cup} Lg_{m}\]</div>
+<p>(donde «<span class="math notranslate nohighlight">\(\dot{\cup}\)</span>» indica unión disjunta) entonces</p>
+<div class="math notranslate nohighlight">
+\[\mathcal{O} = \{sg_{1}, sg_{2}, \dots, sg_{m}\},\]</div>
+<p>y los <span class="math notranslate nohighlight">\(sg_{i}\)</span> son distintos por pares.</p>
+<p>Hay dos formas diferentes de definir las acciones correctas de un grupo <span class="math notranslate nohighlight">\(G\)</span> sobre el propio <span class="math notranslate nohighlight">\(G\)</span>. En primer lugar, la operación de multiplicación del grupo <span class="math notranslate nohighlight">\(G \times G \to G\)</span> se puede interpretar como una función <span class="math notranslate nohighlight">\(S \times G \to S\)</span>, donde el conjunto <span class="math notranslate nohighlight">\(S\)</span> es igual a <span class="math notranslate nohighlight">\(G\)</span>. Los axiomas del grupo implican inmediatamente que esta función satisface las propiedades definitorias de una acción correcta. A esto lo llamaremos la acción de multiplicación correcta de <span class="math notranslate nohighlight">\(G\)</span> sobre sí mismo. Es una acción transitiva — solo hay una órbita — ya que si <span class="math notranslate nohighlight">\(s, t \in G\)</span> son arbitrarios, entonces el elemento <span class="math notranslate nohighlight">\(g = s^{−1}t\)</span> satisface <span class="math notranslate nohighlight">\(sg = t\)</span>. Además, el estabilizador de cualquier elemento es trivial, ya que <span class="math notranslate nohighlight">\(sg = g\)</span> implica <span class="math notranslate nohighlight">\(g = 1\)</span>. La otra acción estándar de <span class="math notranslate nohighlight">\(G\)</span> sobre sí mismo es la acción de conjugación. Para evitar confusiones con la acción de multiplicación correcta, usamos una notación exponencial para la acción de conjugación y definimos <span class="math notranslate nohighlight">\(xg = g^{−1}xg\)</span> para todo <span class="math notranslate nohighlight">\(x, g \in G\)</span>. Tenga en cuenta que mientras que la acción de multiplicación correcta es una acción de <span class="math notranslate nohighlight">\(G\)</span> sobre <span class="math notranslate nohighlight">\(G\)</span> considerada solo como un conjunto, la acción de conjugación es una acción de <span class="math notranslate nohighlight">\(G\)</span> sobre <span class="math notranslate nohighlight">\(G\)</span> considerado como un grupo.</p>
+<p>Porque no solo tenemos <span class="math notranslate nohighlight">\(x^{1} = 1^{−1}x 1 = x\)</span> y</p>
+<div class="math notranslate nohighlight">
+\[x^{gh} = (gh)^{−1}x(gh) = h^{−1}(g^{−1}xg)h = (g^{−1}xg)^{h} = (x^{g})^{h},\]</div>
+<p>para todo <span class="math notranslate nohighlight">\(x, g, h \in G\)</span>, pero también</p>
+<div class="math notranslate nohighlight">
+\[(xy)^{g} = g^{−1}(xy)g = (g^{−1}xg)(g^{−1}yg) = x{g}y^{g}\]</div>
+<p>para todo <span class="math notranslate nohighlight">\(x, y, g \in G\)</span>. Las órbitas de <span class="math notranslate nohighlight">\(G\)</span> bajo la acción de conjugación de <span class="math notranslate nohighlight">\(G\)</span> son, por supuesto, las clases de conjugación, como se define en la lección 4.</p>
+</div>
+<div class="section" id="id1">
+<h2><span class="section-number">4.2. </span>Matrices Interventoras<a class="headerlink" href="#id1" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Sean <span class="math notranslate nohighlight">\(U\)</span> y <span class="math notranslate nohighlight">\(V\)</span> espacios vectoriales sobre el campo complejo que son módulos para el grupo <span class="math notranslate nohighlight">\(G\)</span>, y sea <span class="math notranslate nohighlight">\(f: U \to V\)</span> un homomorfismo <span class="math notranslate nohighlight">\(G\)</span>. Es decir, <span class="math notranslate nohighlight">\(f\)</span> es un mapa lineal que satisface <span class="math notranslate nohighlight">\(g(fu) = f(gu)\)</span> para todo <span class="math notranslate nohighlight">\(u \in U\)</span> y <span class="math notranslate nohighlight">\(g \in G\)</span>. Sean <span class="math notranslate nohighlight">\(\rho: G \to GL (V)\)</span> y <span class="math notranslate nohighlight">\(\sigma: G \to GL (U)\)</span> las representaciones de <span class="math notranslate nohighlight">\(G\)</span> en <span class="math notranslate nohighlight">\(V\)</span> y <span class="math notranslate nohighlight">\(U\)</span> respectivamente. Es decir, si <span class="math notranslate nohighlight">\(g \in G\)</span> entonces <span class="math notranslate nohighlight">\(\rho g\)</span> es la transformación lineal de <span class="math notranslate nohighlight">\(V\)</span> dada por <span class="math notranslate nohighlight">\(v \mapsto gv\)</span> para todo <span class="math notranslate nohighlight">\(v \in V\)</span>, y <span class="math notranslate nohighlight">\(\sigma g\)</span> es la transformación lineal de <span class="math notranslate nohighlight">\(U\)</span> dada por <span class="math notranslate nohighlight">\(u \mapsto gu\)</span> para todo <span class="math notranslate nohighlight">\(u \in U\)</span>. Para todo <span class="math notranslate nohighlight">\(u \in U\)</span> tenemos</p>
+<div class="math notranslate nohighlight">
+\[((\rho g)f)u = (\rho g)(fu) = g(fu) = f(gu) = f((\sigma g)u) = (f(\sigma g))u,\]</div>
+<p>y entonces <span class="math notranslate nohighlight">\((\rho g) f = f (\sigma g)\)</span>. Esto es válido para todo <span class="math notranslate nohighlight">\(g \in G\)</span>. Se dice que una función <span class="math notranslate nohighlight">\(f\)</span> que satisface <span class="math notranslate nohighlight">\((\rho g) f = f (\sigma g)\)</span> entrelaza las representaciones <span class="math notranslate nohighlight">\(\rho\)</span> y <span class="math notranslate nohighlight">\(\sigma\)</span>. Entonces aquí nuevamente tenemos dos palabras que se usan para describir el mismo concepto: una función entrelazada es lo mismo que un <span class="math notranslate nohighlight">\(G\)</span>-homomorfismo.</p>
+<p>Suponga que <span class="math notranslate nohighlight">\(u_{1}\)</span>, <span class="math notranslate nohighlight">\(u_{2}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span>, <span class="math notranslate nohighlight">\(u_{n}\)</span> es una base para <span class="math notranslate nohighlight">\(U\)</span> y <span class="math notranslate nohighlight">\(v_{1}\)</span>, <span class="math notranslate nohighlight">\(v_{2}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span>, <span class="math notranslate nohighlight">\(v_{m}\)</span> es una base para <span class="math notranslate nohighlight">\(V\)</span>, y sea <span class="math notranslate nohighlight">\(A\)</span> la matriz de <span class="math notranslate nohighlight">\(f\)</span> relativa a estas dos bases. Por tanto, <span class="math notranslate nohighlight">\(A\)</span> es la matriz <span class="math notranslate nohighlight">\(m\times n\)</span> con <span class="math notranslate nohighlight">\((i, j)\)</span>-entrada <span class="math notranslate nohighlight">\(a_{ij}\)</span> que satisface <span class="math notranslate nohighlight">\(fu_{j} = \sum_{i = 1}^{m} a_{ij}v_{i}\)</span>. Para cada <span class="math notranslate nohighlight">\(g \in G\)</span> sea <span class="math notranslate nohighlight">\(Rg \in GL (m, \mathbb{C})\)</span> la matriz relativa a la base <span class="math notranslate nohighlight">\(v_{1}\)</span>, <span class="math notranslate nohighlight">\(v_{2}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span>, <span class="math notranslate nohighlight">\(v_{m}\)</span> de la transformación <span class="math notranslate nohighlight">\(v \mapsto gv\)</span> del espacio <span class="math notranslate nohighlight">\(V\)</span>, y sea <span class="math notranslate nohighlight">\(Sg \in GL (m, \mathbb{C})\)</span> la matriz relativa a la base <span class="math notranslate nohighlight">\(u_{1}\)</span>, <span class="math notranslate nohighlight">\(u_{2}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span>, <span class="math notranslate nohighlight">\(u_{m}\)</span> de la transformación <span class="math notranslate nohighlight">\(u \mapsto gu\)</span> del espacio <span class="math notranslate nohighlight">\(U\)</span>. Entonces, <span class="math notranslate nohighlight">\(R\)</span> y <span class="math notranslate nohighlight">\(S\)</span> son versiones matriciales de las representaciones <span class="math notranslate nohighlight">\(\rho\)</span> y <span class="math notranslate nohighlight">\(\sigma\)</span>. Y la versión matricial de la ecuación <span class="math notranslate nohighlight">\((\rho g)f = f(\sigma g)\)</span> es <span class="math notranslate nohighlight">\((Rg)A = A(Sg).\)</span></p>
+<div class="section" id="definicion">
+<h3><span class="section-number">4.2.1. </span>Definición<a class="headerlink" href="#definicion" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Si <span class="math notranslate nohighlight">\(R\)</span> y <span class="math notranslate nohighlight">\(S\)</span> son representaciones matriciales del grupo <span class="math notranslate nohighlight">\(G\)</span> de grados <span class="math notranslate nohighlight">\(m\)</span> y <span class="math notranslate nohighlight">\(n\)</span> respectivamente, se dice que una matriz <span class="math notranslate nohighlight">\(A\)</span> de <span class="math notranslate nohighlight">\(m × n\)</span> interviene <span class="math notranslate nohighlight">\(R\)</span> y <span class="math notranslate nohighlight">\(S\)</span> si <span class="math notranslate nohighlight">\((Rg) A = A (Sg)\)</span> para todo <span class="math notranslate nohighlight">\(g \in G\)</span>.</p>
+<p>Entonces, una matriz entrelazada es la versión matricial de un <span class="math notranslate nohighlight">\(G\)</span>-homomorfismo.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Un mapa lineal es invertible si y solo si su matriz (relativa a cualquier base) es invertible.</p>
+</div>
+<p>Por supuesto, una matriz <span class="math notranslate nohighlight">\(A\)</span> solo puede ser invertible si es cuadrada, y esto corresponde al hecho de que un mapa <span class="math notranslate nohighlight">\(U \to V\)</span> solo puede ser invertible si <span class="math notranslate nohighlight">\(U\)</span> y <span class="math notranslate nohighlight">\(V\)</span> tienen la misma dimensión. Un <span class="math notranslate nohighlight">\(G\)</span>-homomorfismo <span class="math notranslate nohighlight">\(U \to V\)</span> se llama <span class="math notranslate nohighlight">\(G\)</span>-isomorfismo si es invertible. La versión matricial de esto es una matriz entrelazada que es invertible.</p>
+<p>Ahora, si <span class="math notranslate nohighlight">\(A\)</span> es invertible, entonces la ecuación <span class="math notranslate nohighlight">\((Rg) A = A (Sg)\)</span> se puede reescribir como <span class="math notranslate nohighlight">\(Rg = A (Sg) A^{− 1}\)</span>, y, según una definición de la Lección 3, esto significa que las representaciones <span class="math notranslate nohighlight">\(R\)</span> y <span class="math notranslate nohighlight">\(S\)</span> son equivalentes. . Por el contrario, si <span class="math notranslate nohighlight">\(R\)</span> y <span class="math notranslate nohighlight">\(S\)</span> son equivalentes, de modo que existe una matriz <span class="math notranslate nohighlight">\(A\)</span> entrelazada invertible, entonces el mapa lineal <span class="math notranslate nohighlight">\(f: U \to V\)</span> cuya matriz relativa a nuestras dos bases fijas es <span class="math notranslate nohighlight">\(A\)</span> es un <span class="math notranslate nohighlight">\(G\)</span>-isomorfismo. Entonces podemos decir que dos <span class="math notranslate nohighlight">\(G\)</span>-módulos son <span class="math notranslate nohighlight">\(G\)</span>-isomorfos si y solo si las representaciones matriciales correspondientes (relativas a cualquier base) son equivalentes.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="05-modulos-cocientes.html" class="btn btn-neutral float-right" title="5. Módulos Cocientes" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="03-representaciones-y-representaciones-matriciales.html" class="btn btn-neutral float-left" title="3. Representaciones y representaciones matriciales" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Derechos de autor 2021, Ferreira, Juan David.
+
+    </p>
+  </div>
+    
+    
+    
+    Construido con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

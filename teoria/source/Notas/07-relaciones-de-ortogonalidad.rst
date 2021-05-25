@@ -189,3 +189,50 @@ siempre que :math:`G` tenga representaciones mutuamente desiguales de grados :ma
 
 
 Ilustremos el resultado anterior para el grupo :math:`G = S_{3}`. Conocemos tres representaciones irreductibles mutuamente desiguales, de grados :math:`1`, :math:`1` y :math:`2`. La suma de los cuadrados de estos grados es :math:`6`, que es igual al orden de :math:`S_{3}`; entonces, en vista de la desigualdad :math:`(4)`, no puede haber una cuarta representación irreductible que no sea equivalente a una de estas tres. Las representaciones de grado :math:`1` son necesariamente unitarias (para un grupo finito), ya que por un lado la representación tiene que ser equivalente a una representación unitaria (ver arriba), y por otro lado una representación de grado :math:`1` no puede ser equivalente a nada más que sí mismo, ya que las matrices :math:`1 \times 1` conmutan. Si identificamos :math:`S_{3}` con el grupo de simetrías de un triángulo equilátero, y coordinamos el plano euclidiano tomando el centroide del triángulo como origen y la recta que pasa por el origen y uno de los vértices como eje :math:`x`, obtenemos un representación de :math:`S_{3}` mediante matrices ortogonales reales. Ahora es muy sencillo calcular los valores de las funciones de coordenadas de nuestras tres representaciones irreducibles y obtener la siguiente tabla.
+
+
++------------------------+------------+--------------------+---------------------+----------------+---------------------+---------------------+
+| :math:`g`              | :math:`id` | :math:`(1, 2)`     | :math:`(1, 3)`      | :math:`(2, 3)` | :math:`(1, 2, 3)`   | :math:`(1,3, 2)`    |
++========================+============+====================+=====================+================+=====================+=====================+
+| :math:`R_{11}^{(1)} g` | :math:`1`  | :math:`1`          | :math:`1`           | :math:`1`      | :math:`1`           | :math:`1`           |
++------------------------+------------+--------------------+---------------------+----------------+---------------------+---------------------+
+| :math:`R_{11}^{(2)} g` | :math:`1`  | :math:`-1`         | :math:`-1`          | :math:`-1`     | :math:`1`           | :math:`1`           |
++------------------------+------------+--------------------+---------------------+----------------+---------------------+---------------------+
+| :math:`R_{11}^{(3)} g` | :math:`1`  | :math:`-1/2`       | :math:`-1/2`        | :math:`1`      | :math:`-1/2`        | :math:`-1/2`        |
++------------------------+------------+--------------------+---------------------+----------------+---------------------+---------------------+
+| :math:`R_{12}^{(3)} g` | :math:`0`  | :math:`\sqrt{3}/2` | :math:`-\sqrt{3}/2` | :math:`0`      | :math:`-\sqrt{3}/2` | :math:`\sqrt{3}/2`  |
++------------------------+------------+--------------------+---------------------+----------------+---------------------+---------------------+
+| :math:`R_{21}^{(3)} g` | :math:`0`  | :math:`\sqrt{3}/2` | :math:`-\sqrt{3}/2` | :math:`0`      | :math:`\sqrt{3}/2`  | :math:`-\sqrt{3}/2` |
++------------------------+------------+--------------------+---------------------+----------------+---------------------+---------------------+
+| :math:`R_{22}^{(3)} g` | :math:`1`  | :math:`1/2`        | :math:`1/2`         | :math:`-1`     | :math:`-1/2`        | :math:`-1/2`        |
++------------------------+------------+--------------------+---------------------+----------------+---------------------+---------------------+
+
+Aquí, por ejemplo, las últimas cuatro entradas de la segunda columna dicen que la matriz :math:`R^{(3)} (1, 2)` es :math:`\left(\begin{matrix}-1/2 & \sqrt{3}/2\\ \sqrt{3}/2 & 1/2 \end{matrix}\right)`, que es la matriz de la reflexión en el línea que pasa por el origen con pendiente :math:`tan (\pi / 3)`. (Los vértices :math:`1`, :math:`2` y :math:`3` del triángulo son, respectivamente, los puntos con coordenadas :math:`\left(\begin{matrix} x \\ y \end{matrix}\right)` y dadas por :math:`\left(\begin{matrix} 1 \\ 0 \end{matrix}\right)`, :math:`\left(\begin{matrix} -1/2 \\ \sqrt{3}/2 \end{matrix}\right)` y :math:`\left(\begin{matrix} -1/2 \\ -\sqrt{3}/2 \end{matrix}\right)` respectivamente.
+
+Al interpretar los valores de la tabla anterior como las entradas de una matriz de :math:`6 \times 6`, podemos comprobar fácilmente que el producto escalar de dos filas distintas de la matriz es :math:`0`, mientras que el producto escalar de una fila consigo misma es seis (para la primera dos filas) o tres (para las últimas cuatro filas). En general, Ecuación :math:`(2)` dice que la tabla de valores de las funciones de coordenadas es una matriz cuyas filas son mutuamente ortogonales, la longitud de cada fila viene dada por :math:`\sqrt{d / | G |}`, donde :math:`d` es el grado de la representación relevante.
+
+Dividiendo cada fila por su longitud se obtiene una matriz :math:`T (G)` cuyas filas forman un conjunto ortonormal de vectores; las filas de :math:`T (G)` están indexadas por triples :math:`\{(k, p, m) | 1 \leq k \leq s \text{ y } p, m \in \{1, 2,\dots , d_{k}\}\}` y las columnas por elementos de :math:`G`, siendo la :math:`((k, p, m), g)` entrada :math:`\sqrt{d / | G |} R_{p, m}^{(k)} g`. Para :math:`S_{3}` encontramos que
+
+.. math::
+
+    T(S_{3}) =
+        \left(
+            \begin{matrix}
+                1/\sqrt{6}   &1/\sqrt{6}     &1/\sqrt{6}   &1/\sqrt{6}   &1/\sqrt{6}    &1/\sqrt{6}   \\
+                1/\sqrt{6}   &−1/\sqrt{6}    &−1/\sqrt{6}  &−1/\sqrt{6}  &1/\sqrt{6}    &1/\sqrt{6}   \\
+                1/\sqrt{3}   &−1/2\sqrt{3}   &−1/2\sqrt{3} &1/\sqrt{3}   &−1/2\sqrt{3}  &−1/2\sqrt{3} \\
+                0            &1/2            &−1/2         &0            &−1/2          &1/2          \\
+                0            &1/2            &−1/2         &0            &1/2           &−1/2         \\
+                1/\sqrt{3}   &1/2\sqrt{3}    &1/2\sqrt{3}  &−1/\sqrt{3}  &−1/2\sqrt{3}  &−1/2\sqrt{3} \\
+            \end{matrix}
+        \right),
+
+que es unitario —ortogonal, de hecho, ya que es real— como se puede comprobar fácilmente.
+
+Una matriz cuadrada :math:`M` es unitaria si y solo si sus columnas forman un conjunto ortonormal de vectores, ya que esta condición es claramente equivalente a la ecuación matricial:math:`(\overline{M}^{t}) M = I`. Dado que esta a su vez es equivalente a :math:`M (\overline{M}^{t}) = I`, que dice que las filas forman un conjunto ortonormal, concluimos que las filas de una matriz cuadrada son ortonormales si y solo si las columnas también lo son. Dado que la igualdad se cumple en :math:`(4)`, de modo que :math:`T (G)` es cuadrado, la ortogonalidad de la columna nos dice que para todo :math:`g`, :math:`h \in G`
+
+.. math::
+
+    \frac{1}{|G|}\sum_{k ,p,m} {d_{k}} \left( \overline{R_{pm}^{(k)} g} \right) (R_{pm}^{(k)} h) = \delta_{gh}.
+
+(Esto es equivalente a la Ecuación :math:`(2)`, pero mucho menos importante en la práctica).

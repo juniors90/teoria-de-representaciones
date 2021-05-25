@@ -43,6 +43,7 @@
     
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="6. La Representación Regular" href="06-la-representacion-regular.html" />
     <link rel="prev" title="4. Módulos Indescomponibles y Módulos Irreducibles" href="04-modulos-indescomponibles-y-modulos-irreducibles.html" /> 
 </head>
 
@@ -99,6 +100,9 @@
 <li class="toctree-l2"><a class="reference internal" href="#definicion-preguntar">5.2. Definición (Preguntar)</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="06-la-representacion-regular.html">6. La Representación Regular</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07-el-espacio-coordenado-de-una-representacion.html">7. El Espacio Coordinado de una Representación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08-funciones-de-clase.html">8. Funciones de clase</a></li>
 </ul>
 
             
@@ -277,12 +281,103 @@
 \[R^{(l)} (g^{−1}) = (R^{(l)} g)^{−1} = \overline{R(l) g}^{t},\]</div>
 <p>y entonces <span class="math notranslate nohighlight">\(R_{nq}^{(l)}(g^{−1}) = \overline{R_{qn}^{(l)}g}\)</span>. Por tanto, la Ecuación <span class="math notranslate nohighlight">\((2)\)</span> se convierte en</p>
 <div class="math notranslate nohighlight">
-\[\frac{1}{|G|} \sum_{g\in G} (R_{pm}^{(k)}g)R_{qn}^{(l)}g = d_{k}^{-1}\delta_{nm}\delta_{pq}\delta_{kl}. (3)\]</div>
+\[\frac{1}{|G|} \sum_{g\in G} (R_{pm}^{(k)}g)R_{qn}^{(l)}g = d_{k}^{-1}\delta_{nm}\delta_{pq}\delta_{kl}.\hspace{2cm}  (3)\]</div>
 <p>Tabular los valores de la función <span class="math notranslate nohighlight">\(R_{pm}{(k)}: G \to \mathbb{C}\)</span> da un vector fila (llamémoslo temporalmente <span class="math notranslate nohighlight">\(x_{kpm}\)</span>) que tiene una entrada para cada elemento de <span class="math notranslate nohighlight">\(G\)</span>. La Ecuación <span class="math notranslate nohighlight">\((3)\)</span> nos dice que el producto escalar estándar de <span class="math notranslate nohighlight">\(x_{kpm}\)</span> y <span class="math notranslate nohighlight">\(x_{lqn}\)</span> es cero a menos que <span class="math notranslate nohighlight">\(k\)</span>, <span class="math notranslate nohighlight">\(p\)</span> y <span class="math notranslate nohighlight">\(m\)</span> sean (respectivamente) iguales a <span class="math notranslate nohighlight">\(l\)</span>, <span class="math notranslate nohighlight">\(q\)</span> y <span class="math notranslate nohighlight">\(n\)</span>, en cuyo caso el producto escalar es <span class="math notranslate nohighlight">\(|G|/d_{k}\)</span>. Para cada valor de <span class="math notranslate nohighlight">\(k\)</span> hay <span class="math notranslate nohighlight">\(d_{k}^{2}\)</span> posibilidades para el par ordenado <span class="math notranslate nohighlight">\((p, m)\)</span> (ya que <span class="math notranslate nohighlight">\(p\)</span>, <span class="math notranslate nohighlight">\(m \in \{1, 2,\dots, d_{k} \}\)</span>), por lo que tenemos <span class="math notranslate nohighlight">\(\sum_{k = 1}^{s}= d_{k}^{2}\)</span> vectores <span class="math notranslate nohighlight">\(x_{kpm}\)</span> en total. Estos vectores son linealmente independientes ya que son distintos de cero y ortogonales por pares, por lo que abarcan un espacio de dimensión <span class="math notranslate nohighlight">\(\sum_{k = 1}^{s}= d_{k}^{2}\)</span>. Como están contenidos en el espacio <span class="math notranslate nohighlight">\(|G|\)</span>-dimensional de los vectores fila con <span class="math notranslate nohighlight">\(|G|\)</span> componentes, concluimos que</p>
 <div class="math notranslate nohighlight">
-\[\sum_{k =1}^{2} d_{k}^{2} \leq |G| (4)\]</div>
+\[\sum_{k =1}^{2} d_{k}^{2} \leq |G|\hspace{2cm} (4)\]</div>
 <p>siempre que <span class="math notranslate nohighlight">\(G\)</span> tenga representaciones mutuamente desiguales de grados <span class="math notranslate nohighlight">\(d_{1}\)</span>, <span class="math notranslate nohighlight">\(d_{2}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span> , <span class="math notranslate nohighlight">\(d_{s}\)</span>. Por lo tanto, <span class="math notranslate nohighlight">\(s \leq | G |\)</span>, ya que cada <span class="math notranslate nohighlight">\(d_{k}\)</span> es al menos <span class="math notranslate nohighlight">\(1\)</span>, y esto muestra que ningún grupo <span class="math notranslate nohighlight">\(G\)</span> puede tener más de <span class="math notranslate nohighlight">\(|G|\)</span> representaciones irreductibles mutuamente desiguales. En particular, hasta la equivalencia, el número de representaciones complejas irreductibles de un grupo finito es finito. (De hecho, como mostraremos en unas pocas conferencias, la igualdad siempre se mantiene en <span class="math notranslate nohighlight">\((4)\)</span>).</p>
 <p>Ilustremos el resultado anterior para el grupo <span class="math notranslate nohighlight">\(G = S_{3}\)</span>. Conocemos tres representaciones irreductibles mutuamente desiguales, de grados <span class="math notranslate nohighlight">\(1\)</span>, <span class="math notranslate nohighlight">\(1\)</span> y <span class="math notranslate nohighlight">\(2\)</span>. La suma de los cuadrados de estos grados es <span class="math notranslate nohighlight">\(6\)</span>, que es igual al orden de <span class="math notranslate nohighlight">\(S_{3}\)</span>; entonces, en vista de la desigualdad <span class="math notranslate nohighlight">\((4)\)</span>, no puede haber una cuarta representación irreductible que no sea equivalente a una de estas tres. Las representaciones de grado <span class="math notranslate nohighlight">\(1\)</span> son necesariamente unitarias (para un grupo finito), ya que por un lado la representación tiene que ser equivalente a una representación unitaria (ver arriba), y por otro lado una representación de grado <span class="math notranslate nohighlight">\(1\)</span> no puede ser equivalente a nada más que sí mismo, ya que las matrices <span class="math notranslate nohighlight">\(1 \times 1\)</span> conmutan. Si identificamos <span class="math notranslate nohighlight">\(S_{3}\)</span> con el grupo de simetrías de un triángulo equilátero, y coordinamos el plano euclidiano tomando el centroide del triángulo como origen y la recta que pasa por el origen y uno de los vértices como eje <span class="math notranslate nohighlight">\(x\)</span>, obtenemos un representación de <span class="math notranslate nohighlight">\(S_{3}\)</span> mediante matrices ortogonales reales. Ahora es muy sencillo calcular los valores de las funciones de coordenadas de nuestras tres representaciones irreducibles y obtener la siguiente tabla.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 9%" />
+<col style="width: 15%" />
+<col style="width: 16%" />
+<col style="width: 12%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(g\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(id\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\((1, 2)\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\((1, 3)\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\((2, 3)\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\((1, 2, 3)\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\((1,3, 2)\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(R_{11}^{(1)} g\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(R_{11}^{(2)} g\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(-1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(-1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(-1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(R_{11}^{(3)} g\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(-1/2\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(-1/2\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(-1/2\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(-1/2\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(R_{12}^{(3)} g\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\sqrt{3}/2\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(-\sqrt{3}/2\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(-\sqrt{3}/2\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\sqrt{3}/2\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(R_{21}^{(3)} g\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\sqrt{3}/2\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(-\sqrt{3}/2\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\sqrt{3}/2\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(-\sqrt{3}/2\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(R_{22}^{(3)} g\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1/2\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1/2\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(-1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(-1/2\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(-1/2\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>Aquí, por ejemplo, las últimas cuatro entradas de la segunda columna dicen que la matriz <span class="math notranslate nohighlight">\(R^{(3)} (1, 2)\)</span> es <span class="math notranslate nohighlight">\(\left(\begin{matrix}-1/2 &amp; \sqrt{3}/2\\ \sqrt{3}/2 &amp; 1/2 \end{matrix}\right)\)</span>, que es la matriz de la reflexión en el línea que pasa por el origen con pendiente <span class="math notranslate nohighlight">\(tan (\pi / 3)\)</span>. (Los vértices <span class="math notranslate nohighlight">\(1\)</span>, <span class="math notranslate nohighlight">\(2\)</span> y <span class="math notranslate nohighlight">\(3\)</span> del triángulo son, respectivamente, los puntos con coordenadas <span class="math notranslate nohighlight">\(\left(\begin{matrix} x \\ y \end{matrix}\right)\)</span> y dadas por <span class="math notranslate nohighlight">\(\left(\begin{matrix} 1 \\ 0 \end{matrix}\right)\)</span>, <span class="math notranslate nohighlight">\(\left(\begin{matrix} -1/2 \\ \sqrt{3}/2 \end{matrix}\right)\)</span> y <span class="math notranslate nohighlight">\(\left(\begin{matrix} -1/2 \\ -\sqrt{3}/2 \end{matrix}\right)\)</span> respectivamente.</p>
+<p>Al interpretar los valores de la tabla anterior como las entradas de una matriz de <span class="math notranslate nohighlight">\(6 \times 6\)</span>, podemos comprobar fácilmente que el producto escalar de dos filas distintas de la matriz es <span class="math notranslate nohighlight">\(0\)</span>, mientras que el producto escalar de una fila consigo misma es seis (para la primera dos filas) o tres (para las últimas cuatro filas). En general, Ecuación <span class="math notranslate nohighlight">\((2)\)</span> dice que la tabla de valores de las funciones de coordenadas es una matriz cuyas filas son mutuamente ortogonales, la longitud de cada fila viene dada por <span class="math notranslate nohighlight">\(\sqrt{d / | G |}\)</span>, donde <span class="math notranslate nohighlight">\(d\)</span> es el grado de la representación relevante.</p>
+<p>Dividiendo cada fila por su longitud se obtiene una matriz <span class="math notranslate nohighlight">\(T (G)\)</span> cuyas filas forman un conjunto ortonormal de vectores; las filas de <span class="math notranslate nohighlight">\(T (G)\)</span> están indexadas por triples <span class="math notranslate nohighlight">\(\{(k, p, m) | 1 \leq k \leq s \text{ y } p, m \in \{1, 2,\dots , d_{k}\}\}\)</span> y las columnas por elementos de <span class="math notranslate nohighlight">\(G\)</span>, siendo la <span class="math notranslate nohighlight">\(((k, p, m), g)\)</span> entrada <span class="math notranslate nohighlight">\(\sqrt{d / | G |} R_{p, m}^{(k)} g\)</span>. Para <span class="math notranslate nohighlight">\(S_{3}\)</span> encontramos que</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}T(S_{3}) =
+    \left(
+        \begin{matrix}
+            1/\sqrt{6}   &amp;1/\sqrt{6}     &amp;1/\sqrt{6}   &amp;1/\sqrt{6}   &amp;1/\sqrt{6}    &amp;1/\sqrt{6}   \\
+            1/\sqrt{6}   &amp;−1/\sqrt{6}    &amp;−1/\sqrt{6}  &amp;−1/\sqrt{6}  &amp;1/\sqrt{6}    &amp;1/\sqrt{6}   \\
+            1/\sqrt{3}   &amp;−1/2\sqrt{3}   &amp;−1/2\sqrt{3} &amp;1/\sqrt{3}   &amp;−1/2\sqrt{3}  &amp;−1/2\sqrt{3} \\
+            0            &amp;1/2            &amp;−1/2         &amp;0            &amp;−1/2          &amp;1/2          \\
+            0            &amp;1/2            &amp;−1/2         &amp;0            &amp;1/2           &amp;−1/2         \\
+            1/\sqrt{3}   &amp;1/2\sqrt{3}    &amp;1/2\sqrt{3}  &amp;−1/\sqrt{3}  &amp;−1/2\sqrt{3}  &amp;−1/2\sqrt{3} \\
+        \end{matrix}
+    \right),\end{split}\]</div>
+<p>que es unitario —ortogonal, de hecho, ya que es real— como se puede comprobar fácilmente.</p>
+<p>Una matriz cuadrada <span class="math notranslate nohighlight">\(M\)</span> es unitaria si y solo si sus columnas forman un conjunto ortonormal de vectores, ya que esta condición es claramente equivalente a la ecuación matricial:math:<cite>(overline{M}^{t}) M = I</cite>. Dado que esta a su vez es equivalente a <span class="math notranslate nohighlight">\(M (\overline{M}^{t}) = I\)</span>, que dice que las filas forman un conjunto ortonormal, concluimos que las filas de una matriz cuadrada son ortonormales si y solo si las columnas también lo son. Dado que la igualdad se cumple en <span class="math notranslate nohighlight">\((4)\)</span>, de modo que <span class="math notranslate nohighlight">\(T (G)\)</span> es cuadrado, la ortogonalidad de la columna nos dice que para todo <span class="math notranslate nohighlight">\(g\)</span>, <span class="math notranslate nohighlight">\(h \in G\)</span></p>
+<div class="math notranslate nohighlight">
+\[\frac{1}{|G|}\sum_{k ,p,m} {d_{k}} \left( \overline{R_{pm}^{(k)} g} \right) (R_{pm}^{(k)} h) = \delta_{gh}.\]</div>
+<p>(Esto es equivalente a la Ecuación <span class="math notranslate nohighlight">\((2)\)</span>, pero mucho menos importante en la práctica).</p>
 </div>
 </div>
 
@@ -292,6 +387,7 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="06-la-representacion-regular.html" class="btn btn-neutral float-right" title="6. La Representación Regular" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="04-modulos-indescomponibles-y-modulos-irreducibles.html" class="btn btn-neutral float-left" title="4. Módulos Indescomponibles y Módulos Irreducibles" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
     </div>
 

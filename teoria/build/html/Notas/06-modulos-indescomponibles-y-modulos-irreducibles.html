@@ -1,0 +1,477 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>6. Módulos Indescomponibles y Módulos Irreducibles &mdash; documentación de Teoría de Representaciones de Grupos - 0.0.1</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="7. Relaciones de ortogonalidad" href="07-relaciones-de-ortogonalidad.html" />
+    <link rel="prev" title="5. Módulos Cocientes" href="05-modulos-cocientes.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Teoría de Representaciones de Grupos
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contenidos:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01-representaciones-por-permutacion-y-acciones.html">1. Representaciones por Permutacion y Acciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02-representaciones-acciones-lineales-y-modulos.html">2. Representaciones, Acciones lineales y módulos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03-representaciones-y-representaciones-matriciales.html">3. Representaciones y representaciones matriciales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04-matrices-interventoras.html">4. Matrices Interventoras</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05-modulos-cocientes.html">5. Módulos Cocientes</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">6. Módulos Indescomponibles y Módulos Irreducibles</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#definicion">6.1. Definición</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">6.2. Definición</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#teorema-de-maschke">6.3. Teorema de Maschke</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lema-de-schur-version-1">6.4. Lema de Schur (Versión 1).</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lema-de-schur-version-2">6.5. Lema de Schur (Versión 2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lema-de-schur-version-3">6.6. Lema de Schur (Version 3)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="07-relaciones-de-ortogonalidad.html">7. Relaciones de ortogonalidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08-la-representacion-regular.html">8. La Representación Regular</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09-el-espacio-coordenado-de-una-representacion.html">9. El Espacio Coordinado de una Representación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10-funciones-de-clase.html">10. Funciones de clase</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11-funcion-caracteristica.html">11. Función Característica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12-caracterizacion-de-caracteristicas-de-representaciones-complejas-irreducibles-de-un-grupo-finito.html">12. Caracterización de Características de Representaciones Complejas Irreducibles de un Grupo Finito</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Teoría de Representaciones de Grupos</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li><span class="section-number">6. </span>Módulos Indescomponibles y Módulos Irreducibles</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/Notas/06-modulos-indescomponibles-y-modulos-irreducibles.rst.txt" rel="nofollow"> Ver código fuente de la página</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="modulos-indescomponibles-y-modulos-irreducibles">
+<h1><span class="section-number">6. </span>Módulos Indescomponibles y Módulos Irreducibles<a class="headerlink" href="#modulos-indescomponibles-y-modulos-irreducibles" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<ul class="simple">
+<li><p>se dice que un espacio vectorial <span class="math notranslate nohighlight">\(V\)</span> es la suma directa interna de sus subespacios <span class="math notranslate nohighlight">\(X\)</span> e <span class="math notranslate nohighlight">\(Y\)</span> si cada elemento de <span class="math notranslate nohighlight">\(V\)</span> es expresable de forma única en la forma <span class="math notranslate nohighlight">\(x + y\)</span> con <span class="math notranslate nohighlight">\(x \in X\)</span> e <span class="math notranslate nohighlight">\(y \in Y\)</span>. A esto lo llamamos una descomposición directa de <span class="math notranslate nohighlight">\(V\)</span>, y escribimos <span class="math notranslate nohighlight">\(V = X \oplus Y\)</span>.</p></li>
+<li><p>se dice que <span class="math notranslate nohighlight">\(X\)</span> e <span class="math notranslate nohighlight">\(Y\)</span> son subespacios complementarios de <span class="math notranslate nohighlight">\(V\)</span>. Se ve fácilmente que si <span class="math notranslate nohighlight">\(V = X \oplus Y\)</span> entonces <span class="math notranslate nohighlight">\(V / X \simeq Y\)</span>, un isomorfismo <span class="math notranslate nohighlight">\(Y \to V / X\)</span> dado por <span class="math notranslate nohighlight">\(y \mapsto y + X\)</span> para todo <span class="math notranslate nohighlight">\(y \in Y\)</span>. (El símbolo «<span class="math notranslate nohighlight">\(\simeq\)</span>» significa «es isomorfo a».)</p></li>
+</ul>
+</div>
+<p>En términos de bases, una descomposición directa de un espacio vectorial equivale a dividir una base en dos partes; por tanto, si <span class="math notranslate nohighlight">\(V = X \oplus Y\)</span> entonces si <span class="math notranslate nohighlight">\(x_{1}\)</span>, <span class="math notranslate nohighlight">\(x_{2}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span> , <span class="math notranslate nohighlight">\(x_{n}\)</span> es una base de <span class="math notranslate nohighlight">\(X\)</span> e <span class="math notranslate nohighlight">\(y_{1}\)</span>, <span class="math notranslate nohighlight">\(y_{2}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span>, <span class="math notranslate nohighlight">\(y_{n}\)</span> es una base de <span class="math notranslate nohighlight">\(Y\)</span>  entonces <span class="math notranslate nohighlight">\(x_{1}\)</span>, <span class="math notranslate nohighlight">\(x_{2}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span> , <span class="math notranslate nohighlight">\(x_{n}\)</span>, <span class="math notranslate nohighlight">\(y_{1}\)</span>, <span class="math notranslate nohighlight">\(y_{2}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span>, <span class="math notranslate nohighlight">\(y_{n}\)</span> es una base de <span class="math notranslate nohighlight">\(V\)</span>. Es un teorema básico de la teoría del espacio vectorial que una base de un subespacio siempre puede extenderse a una base de <span class="math notranslate nohighlight">\(V\)</span>. Por lo tanto, si <span class="math notranslate nohighlight">\(X\)</span> es un subespacio de <span class="math notranslate nohighlight">\(V\)</span> y <span class="math notranslate nohighlight">\(x_{1}\)</span>, <span class="math notranslate nohighlight">\(x_{2}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span> , <span class="math notranslate nohighlight">\(x_{n}\)</span> es una base de <span class="math notranslate nohighlight">\(X\)</span>, entonces existen <span class="math notranslate nohighlight">\(x_{n + 1}\)</span>, <span class="math notranslate nohighlight">\(x_{n + 2}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span>, <span class="math notranslate nohighlight">\(x_{d}\)</span> tal que <span class="math notranslate nohighlight">\(x_{1}\)</span>, <span class="math notranslate nohighlight">\(x_{2}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span> , <span class="math notranslate nohighlight">\(x_{d}\)</span> es una base de <span class="math notranslate nohighlight">\(V\)</span>. El subespacio <span class="math notranslate nohighlight">\(Y\)</span> de <span class="math notranslate nohighlight">\(V\)</span> que está generado por <span class="math notranslate nohighlight">\(x_{n + 1}\)</span>, <span class="math notranslate nohighlight">\(x_{n + 2}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span> , <span class="math notranslate nohighlight">\(x_{d}\)</span> es entonces complementario de <span class="math notranslate nohighlight">\(X\)</span>, y obtenemos el hecho importante de que para cada subespacio <span class="math notranslate nohighlight">\(X\)</span> de un espacio vectorial <span class="math notranslate nohighlight">\(V\)</span> hay un subespacio <span class="math notranslate nohighlight">\(Y\)</span> de <span class="math notranslate nohighlight">\(V\)</span> tal que <span class="math notranslate nohighlight">\(V = X \oplus Y\)</span>. De hecho, generalmente hay muchos subespacios <span class="math notranslate nohighlight">\(Y\)</span> que complementan un <span class="math notranslate nohighlight">\(X\)</span> dado.</p>
+<p>El concepto de descomposición directa se generaliza fácilmente a los <span class="math notranslate nohighlight">\(G\)</span>-módulos. Un <span class="math notranslate nohighlight">\(G\)</span>-módulo V es la suma directa del módulo <span class="math notranslate nohighlight">\(G\)</span> de <span class="math notranslate nohighlight">\(X\)</span> e <span class="math notranslate nohighlight">\(Y\)</span> si <span class="math notranslate nohighlight">\(X\)</span> e <span class="math notranslate nohighlight">\(Y\)</span> son <span class="math notranslate nohighlight">\(G\)</span>-submódulos de <span class="math notranslate nohighlight">\(V\)</span> y <span class="math notranslate nohighlight">\(V = X \oplus Y\)</span> como espacios vectoriales.</p>
+<p>Si <span class="math notranslate nohighlight">\(V = X \oplus Y\)</span> (donde <span class="math notranslate nohighlight">\(X\)</span> e <span class="math notranslate nohighlight">\(Y\)</span> son <span class="math notranslate nohighlight">\(G\)</span>-submódulos) entonces <span class="math notranslate nohighlight">\(Y \simeq_{G} V / X\)</span>, donde hemos adjuntado un subíndice <span class="math notranslate nohighlight">\(G\)</span> al signo de isomorfismo para indicar que este es un <span class="math notranslate nohighlight">\(G\)</span>-isomorfismo (un isomorfismo de <span class="math notranslate nohighlight">\(G\)</span>-módulos). Como antes, el mapeo <span class="math notranslate nohighlight">\(\psi\)</span> de <span class="math notranslate nohighlight">\(Y\)</span> a <span class="math notranslate nohighlight">\(V/X\)</span> dado por <span class="math notranslate nohighlight">\(\psi y = y + X\)</span> es un isomorfismo. Ya sabemos que se trata de un isomorfismo de espacio vectorial, por lo que solo debemos comprobar que respeta la <span class="math notranslate nohighlight">\(G\)</span>-acción. Esto es inmediato a partir de la definición de la acción de <span class="math notranslate nohighlight">\(G\)</span> sobre <span class="math notranslate nohighlight">\(X/Y\)</span>: para todo <span class="math notranslate nohighlight">\(y \in Y\)</span> y <span class="math notranslate nohighlight">\(g\in G\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\psi (gy) = gy + X = g(y + X) = g(\psi y).\]</div>
+<p>Sin embargo, no está del todo claro que para cada <span class="math notranslate nohighlight">\(G\)</span>-submódulo <span class="math notranslate nohighlight">\(X\)</span> de un <span class="math notranslate nohighlight">\(G\)</span>-módulo <span class="math notranslate nohighlight">\(V\)</span> haya un submódulo complementario. Dado que un submódulo es <em>a fortiori</em> un subespacio vectorial, habrá un subespacio complementario, pero entre todos estos complementos, ¿hay uno que sea invariante en <span class="math notranslate nohighlight">\(G\)</span>? (Tenga en cuenta que se dice que el subespacio vectorial de un <span class="math notranslate nohighlight">\(G\)</span>-módulo es invariante en <span class="math notranslate nohighlight">\(G\)</span> si y solo si está cerrado bajo la <span class="math notranslate nohighlight">\(G\)</span>-acción; por lo tanto, un subespacio invariante en <span class="math notranslate nohighlight">\(G\)</span> de <span class="math notranslate nohighlight">\(V\)</span> es lo mismo que un <span class="math notranslate nohighlight">\(G\)</span>-submódulo de <span class="math notranslate nohighlight">\(V\)</span>).</p>
+<p>En general, no es cierto que para cada grupo <span class="math notranslate nohighlight">\(G\)</span> y cada <span class="math notranslate nohighlight">\(G\)</span>-módulo <span class="math notranslate nohighlight">\(V\)</span>, cada subespacio invariante <span class="math notranslate nohighlight">\(G\)</span> tenga un complemento <span class="math notranslate nohighlight">\(G\)</span>-invariante. Por ejemplo, considere el grupo <span class="math notranslate nohighlight">\(G\)</span> que consta de todas las matrices <span class="math notranslate nohighlight">\(2 \times 2\)</span> sobre <span class="math notranslate nohighlight">\(\mathbb{F}\)</span> de la forma <span class="math notranslate nohighlight">\(\left(\begin{matrix}1&amp;\lambda\\0&amp;1\end{matrix}\right)\)</span>, donde <span class="math notranslate nohighlight">\(\lambda\)</span> es arbitrario. De hecho, <span class="math notranslate nohighlight">\(G\)</span> es isomorfo al grupo aditivo de <span class="math notranslate nohighlight">\(F\)</span> a través del mapeo <span class="math notranslate nohighlight">\(\phi : \lambda \mapsto \left(\begin{matrix}1&amp;\lambda\\0&amp;1\end{matrix}\right)\)</span> este mapeo es claramente biyectivo, y</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\phi (\lambda + \mu) = \left(\begin{matrix}1&amp;\lambda + \mu\\0&amp;1\end{matrix}\right) = \left(\begin{matrix}1&amp;\lambda\\0&amp;1\end{matrix}\right)  \left(\begin{matrix}1&amp;\mu\\0&amp;1\end{matrix}\right) = \phi (\lambda) + \phi (\mu)\end{split}\]</div>
+<p>Pero lo que es más importante en la actualidad es que el espacio <span class="math notranslate nohighlight">\(V\)</span> de todos los vectores columna de dos componentes es un <span class="math notranslate nohighlight">\(G\)</span>-módulo que tiene solo un submódulo propio, a saber, el subespacio <span class="math notranslate nohighlight">\(X\)</span> que consta de todos los vectores de dos componentes cuyo segundo componente es <span class="math notranslate nohighlight">\(0\)</span>. que <span class="math notranslate nohighlight">\(U\)</span> es otro submódulo distinto de cero de <span class="math notranslate nohighlight">\(V\)</span>. Entonces <span class="math notranslate nohighlight">\(U\)</span> contiene un vector de columna <span class="math notranslate nohighlight">\(x\)</span> y distinto de cero. Dado que <span class="math notranslate nohighlight">\(U\)</span> está cerrado bajo esa acción de <span class="math notranslate nohighlight">\(G\)</span>, deducimos que</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left(\begin{matrix}x + \lambda y\\ y\end{matrix}\right) =  \left(\begin{matrix}1 &amp; \lambda\\ 0 &amp; 1\end{matrix}\right) \left(\begin{matrix} x\\ y\end{matrix}\right)\in U\end{split}\]</div>
+<p>para todo <span class="math notranslate nohighlight">\(\lambda \in \mathbb{F}\)</span>, y por cierre de <span class="math notranslate nohighlight">\(U\)</span> bajo resta</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left(\begin{matrix}\lambda y\\ 0\end{matrix}\right) = \left(\begin{matrix}x + \lambda y\\ y\end{matrix}\right) - \left(\begin{matrix} x\\ y\end{matrix}\right)\in U\end{split}\]</div>
+<p>para todo <span class="math notranslate nohighlight">\(\lambda \in \mathbb{F}\)</span>. En particular, si <span class="math notranslate nohighlight">\(y \not= 0\)</span> entonces al tomar <span class="math notranslate nohighlight">\(\lambda = y^{−1}\)</span> deducimos que <span class="math notranslate nohighlight">\(U\)</span> contiene <span class="math notranslate nohighlight">\(\left(\begin{matrix}1\\0\end{matrix}\right)\)</span>, y por lo tanto (por cierre bajo multiplicación escalar) todos los vectores cuyo segundo componente es <span class="math notranslate nohighlight">\(0\)</span>. En el Por otro lado, si <span class="math notranslate nohighlight">\(y = 0\)</span> entonces <span class="math notranslate nohighlight">\(x\)</span> debe ser diferente de cero (ya que asumimos que <span class="math notranslate nohighlight">\(\left(\begin{matrix}x\\y\end{matrix}\right)\)</span> es diferente de cero), y se sigue la misma conclusión, ya que ahora los múltiplos escalares de <span class="math notranslate nohighlight">\(\left(\begin{matrix}x\\y\end{matrix}\right)\)</span> dan todos los vectores que son cero en el segundo componente. Entonces, el submódulo <span class="math notranslate nohighlight">\(U\)</span> contiene <span class="math notranslate nohighlight">\(X\)</span> (que ya es suficiente para mostrar que <span class="math notranslate nohighlight">\(U\)</span> no puede ser un complemento de <span class="math notranslate nohighlight">\(X\)</span>). Si <span class="math notranslate nohighlight">\(U\)</span> no es igual a <span class="math notranslate nohighlight">\(X\)</span>, entonces debe contener algún vector que sea distinto de cero en el segundo componente, y dado que este vector junto con <span class="math notranslate nohighlight">\(\left(\begin{matrix}1\\0\end{matrix}\right)\)</span> (que está en <span class="math notranslate nohighlight">\(X\)</span> y por lo tanto en <span class="math notranslate nohighlight">\(U\)</span>) abarcan <span class="math notranslate nohighlight">\(V\)</span>, se sigue que <span class="math notranslate nohighlight">\(U\)</span> es igual a la totalidad de <span class="math notranslate nohighlight">\(V\)</span>.</p>
+<div class="section" id="definicion">
+<h2><span class="section-number">6.1. </span>Definición<a class="headerlink" href="#definicion" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Se dice que un <span class="math notranslate nohighlight">\(G\)</span>-módulo <span class="math notranslate nohighlight">\(V\)</span> es indecomponible si no puede expresarse como una suma directa de dos submódulos distintos de cero.</p>
+</div>
+<div class="section" id="id1">
+<h2><span class="section-number">6.2. </span>Definición<a class="headerlink" href="#id1" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Se dice que un <span class="math notranslate nohighlight">\(G\)</span>-módulo <span class="math notranslate nohighlight">\(V\)</span> es irreducible si no tiene más submódulos que él mismo y el submódulo cero.</p>
+<p>Hemos dado anteriormente un ejemplo de un módulo <span class="math notranslate nohighlight">\(V\)</span> que es indecomponible pero no irreductible. Como espacio vectorial, <span class="math notranslate nohighlight">\(V\)</span> es bidimensional y tiene un submódulo que es unidimensional como espacio vectorial; esto muestra que <span class="math notranslate nohighlight">\(V\)</span> no es irreductible. Pero como <span class="math notranslate nohighlight">\(V\)</span> no tiene otros submódulos no triviales, no puede expresarse como una suma directa de dos submódulos no triviales; por tanto, es indescomponible.</p>
+<p>El primer resultado principal de la teoría de la representación que pretendemos demostrar es el famoso teorema de Maschke que afirma que si el grupo <span class="math notranslate nohighlight">\(G\)</span> es finito y el orden de <span class="math notranslate nohighlight">\(G\)</span> es distinto de cero como elemento de <span class="math notranslate nohighlight">\(\mathbb{F}\)</span>, entonces todo <span class="math notranslate nohighlight">\(G\)</span>-módulo indecomponible es irreducible. <span class="math notranslate nohighlight">\(\ast\)</span></p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p><span class="math notranslate nohighlight">\(\ast\)</span> ¿Cómo podría ser cero el orden de <span class="math notranslate nohighlight">\(G\)</span>  en <span class="math notranslate nohighlight">\(\mathbb{F}\)</span>? El punto es que algunos cuerpos satisfacen ecuaciones inusuales como <span class="math notranslate nohighlight">\(1 + 1 = 0\)</span> o <span class="math notranslate nohighlight">\(1 + 1 + 1 = 0\)</span>. Por lo tanto, puede ser que un número entero <span class="math notranslate nohighlight">\(n\)</span> distinto de cero se convierta en cero cuando se interpreta como un elemento de <span class="math notranslate nohighlight">\(\mathbb{F}\)</span>. Si esto sucede, entonces el mínimo de tales el entero positivo se denomina <strong>característica</strong> de <span class="math notranslate nohighlight">\(\mathbb{F}\)</span>. La hipótesis del teorema de Maschke puede reformularse de la siguiente manera: <span class="math notranslate nohighlight">\(G\)</span> debe ser finito y la característica de <span class="math notranslate nohighlight">\(\mathbb{F}\)</span> no debe ser un divisor de <span class="math notranslate nohighlight">\(|G|\)</span>. Entonces, por ejemplo, si tomamos <span class="math notranslate nohighlight">\(G\)</span> como el grupo <span class="math notranslate nohighlight">\(S_{3}\)</span> de orden <span class="math notranslate nohighlight">\(6\)</span> y <span class="math notranslate nohighlight">\(\mathbb{F}\)</span> como los números enteros módulo <span class="math notranslate nohighlight">\(3\)</span>, entonces <span class="math notranslate nohighlight">\(1 + 1 + 1 = 0\)</span>, de donde <span class="math notranslate nohighlight">\(6 = 0\)</span> en <span class="math notranslate nohighlight">\(\mathbb{F}\)</span>, y el teorema de Maschke no se aplicaría.</p>
+</div>
+<p>From now on, unless otherwise stated, the scalar field for each vector space we deal with will b e C, the complex field. And all the vector spaces will be finite dimensional.</p>
+</div>
+<div class="section" id="teorema-de-maschke">
+<h2><span class="section-number">6.3. </span>Teorema de Maschke<a class="headerlink" href="#teorema-de-maschke" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Sea <span class="math notranslate nohighlight">\(G\)</span> un grupo finito, <span class="math notranslate nohighlight">\(V\)</span> un <span class="math notranslate nohighlight">\(G\)</span>-módulo y <span class="math notranslate nohighlight">\(U\)</span> un <span class="math notranslate nohighlight">\(G\)</span>-submódulo de <span class="math notranslate nohighlight">\(V\)</span>. Entonces hay un submódulo <span class="math notranslate nohighlight">\(W\)</span> de <span class="math notranslate nohighlight">\(V\)</span> tal que <span class="math notranslate nohighlight">\(V = U \oplus W\)</span>.</p>
+<p>De acuerdo con la definición de «irreductible» dada en la Lección 6, se dice que un módulo es reducible si tiene un submódulo propio distinto de cero. Se dice que un módulo es completamente reducible si para cada submódulo hay un submódulo complementario. El teorema de Maschke dice que cada módulo para un grupo finito <span class="math notranslate nohighlight">\(|G|\)</span> (sobre un cuerpo tal que <span class="math notranslate nohighlight">\(|G|\not = 0\)</span>) es completamente reducible, por lo que el teorema también se conoce como el Teorema de la reducibilidad completa.</p>
+<p>Si ha trabajado completamente en los ejercicios del Tutorial 1, entonces ya habrá probado el Teorema de Maschke. Esa prueba es la siguiente:</p>
+<ul>
+<li><p>El primer paso es notar que es posible definir un producto interno en el espacio <span class="math notranslate nohighlight">\(V\)</span>. Es decir, existe una función <span class="math notranslate nohighlight">\((u, v) \mapsto u \cdot v\)</span> de <span class="math notranslate nohighlight">\(V \times V\)</span> a <span class="math notranslate nohighlight">\(\mathbb{C}\)</span> tal que</p>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\((i)\)</span> <span class="math notranslate nohighlight">\(u \cdot (\lambda v + \mu w) = \lambda (u \cdot v) + \mu (u \cdot w)\)</span> para todo <span class="math notranslate nohighlight">\(u\)</span>, <span class="math notranslate nohighlight">\(v\)</span>, <span class="math notranslate nohighlight">\(w \in V\)</span> y <span class="math notranslate nohighlight">\(\lambda, \mu \in \mathbb{C}\)</span>,</p>
+<p><span class="math notranslate nohighlight">\((ii)\)</span> <span class="math notranslate nohighlight">\(u \cdot v = \overline{v \cdot u}\)</span> para todo <span class="math notranslate nohighlight">\(u\)</span>, <span class="math notranslate nohighlight">\(v \in V\)</span> (donde la línea superior indica conjugación compleja),</p>
+<p><span class="math notranslate nohighlight">\((iii)\)</span> <span class="math notranslate nohighlight">\(u \cdot u\)</span> es un número real y positivo para todo <span class="math notranslate nohighlight">\(u \not = 0, u\in V\)</span> (y es <span class="math notranslate nohighlight">\(0\)</span> si <span class="math notranslate nohighlight">\(u = 0\)</span>).</p>
+</div></blockquote>
+</li>
+</ul>
+<p>De hecho, si <span class="math notranslate nohighlight">\(v_{1}\)</span>, <span class="math notranslate nohighlight">\(v_{2}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span>, <span class="math notranslate nohighlight">\(v_{n}\)</span> es cualquier base de <span class="math notranslate nohighlight">\(V\)</span>, entonces existe un producto interno tal que <span class="math notranslate nohighlight">\(v_{i} \cdot v_{j} = \delta_{ij}\)</span> para todo <span class="math notranslate nohighlight">\(i\)</span> y <span class="math notranslate nohighlight">\(j\)</span>. Explícitamente, si <span class="math notranslate nohighlight">\(u = \sum_{i} \lambda_{i}v_{i}\)</span> y <span class="math notranslate nohighlight">\(v = \sum_{i} \mu_{i}v_{i}\)</span> entonces <span class="math notranslate nohighlight">\(u \cdot v = \sum_{i} \overline{\lambda_{i}}\mu_{i}\)</span>.</p>
+<p>Verifiquemos las propiedades que debe cumplir el producto interno. Sean <span class="math notranslate nohighlight">\(u\)</span>, <span class="math notranslate nohighlight">\(v\)</span>, <span class="math notranslate nohighlight">\(w \in V\)</span>; <span class="math notranslate nohighlight">\(\alpha, \beta \in \mathbb{C}\)</span>. Luego <span class="math notranslate nohighlight">\(u = \sum_{i} \lambda_{i}v_{i}\)</span>, <span class="math notranslate nohighlight">\(v = \sum_{i} \mu_{i}v_{i}\)</span> y <span class="math notranslate nohighlight">\(w = \sum_{i} \alpha_{i}v_{i}\)</span></p>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\((i)\)</span></p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+    u \cdot \left(\alpha v+\beta w\right) &amp;= \left(\sum_{i} \lambda_{i}v_{i}\right)\cdot \left(\alpha\left(\sum_{i} \mu_{i}v_{i}\right)+\beta \left(\sum_{i} \alpha_{i}v_{i}\right)\right)                                                               \\
+                                          &amp;= \left(\sum_{i} \lambda_{i}v_{i}\right)\cdot\left(\sum_{i} \left(\alpha \mu_{i}+ \beta \alpha_{i}\right)v_{i}\right)                                                                                             \\
+                                          &amp;= \sum_{i} \overline{\lambda_{i}}\left(\alpha \mu_{i} + \beta \alpha_{i}\right)                                                                                                                               \\
+                                          &amp;= \alpha\left(\sum_{i} \overline{\lambda_{i}}\mu_{i}\right) + \beta \left(\sum_{i} \overline{\lambda_{i}}\alpha_{i}\right)                                                                                    \\
+                                          &amp;= \alpha\left(\left(\sum_{i} \lambda_{i}v_{i}\right) \cdot \left(\sum_{i} \mu_{i}v_{i}\right)\right) + \beta \left(\left(\sum_{i} \lambda_{i}v_{i}\right) \cdot \left(\sum_{i} \alpha_{i}v_{i}\right)\right)  \\
+                                          &amp;= \alpha\left(u \cdot v\right) + \beta \left(u \cdot w\right)
+\end{align}\end{split}\]</div>
+</div></blockquote>
+<p><span class="math notranslate nohighlight">\((ii)\)</span></p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+    u \cdot v &amp;= \left(\sum_{i} \lambda_{i}v_{i}\right)\cdot \left(\sum_{i} \mu_{i}v_{i}\right)   \\
+              &amp;= \sum_{i} \overline{\lambda_{i}} \mu_{i}                                          \\
+              &amp;= \overline{\overline{\sum_{i} \overline{\lambda_{i}} \mu_{i}}}                    \\
+              &amp;= \overline{\sum_{i} \overline{\overline{\lambda_{i}} \mu_{i}}}                    \\
+              &amp;= \overline{\sum_{i} \lambda_{i} \overline{\mu_{i}}}                               \\
+              &amp;= \overline{v \cdot u}
+\end{align}\end{split}\]</div>
+</div></blockquote>
+<p><span class="math notranslate nohighlight">\((iii)\)</span></p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+    u \cdot u &amp;= \left(\sum_{i} \lambda_{i}v_{i}\right)\cdot \left(\sum_{i} \lambda_{i}v_{i}\right) = \sum_{i} \overline{\lambda_{i}} \lambda_{i} = \sum_{i} |\lambda_{i}|^{2} \geq 0 \text{ y } \\
+    u \cdot u &amp;  \Leftrightarrow \lambda_{i} = 0, \forall i=1,2,\dots,n \Leftrightarrow  \overline{v \cdot u} \Leftrightarrow u=0
+\end{align}\end{split}\]</div>
+</div></blockquote>
+</div></blockquote>
+<p>Fije un producto interno <span class="math notranslate nohighlight">\((u, v) \mapsto u \cdot v\)</span> en <span class="math notranslate nohighlight">\(V\)</span>, y defina otra función <span class="math notranslate nohighlight">\(V \times V \to \mathbb{C}\)</span> mediante la fórmula <span class="math notranslate nohighlight">\(u \ast v = \sum_{x\in G} xu \cdot xv\)</span>.</p>
+<p>Es fácil demostrar que se satisfacen las propiedades <span class="math notranslate nohighlight">\((i)\)</span>, <span class="math notranslate nohighlight">\((ii)\)</span> y <span class="math notranslate nohighlight">\((iii)\)</span> anteriores, de modo que <span class="math notranslate nohighlight">\(\ast\)</span> también es un producto interno.</p>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\((i)\)</span></p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+    u \ast \left(\alpha v+\beta w\right) &amp;= \sum_{x\in G} xu\cdot x\left(\alpha v + \beta w\right)                                              \\
+                                         &amp;= \sum_{x\in G} xu\cdot \left(\alpha \left(xv\right) + \beta \left(xw\right)\right)                   \\
+                                         &amp;= \sum_{x\in G}\left( \alpha (xu\cdot xv) +\beta (xu\cdot xw) \right)                                 \\
+                                         &amp;= \alpha \left( \sum_{x\in G} xu\cdot xv \right) +\beta \left(\sum_{x\in G} xu\cdot xw)\right)        \\                              \\
+                                         &amp;= \alpha(u \ast v) + \beta (u \ast w)
+\end{align}\end{split}\]</div>
+</div></blockquote>
+<p><span class="math notranslate nohighlight">\((ii)\)</span></p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+    u \ast v &amp;= \sum_{ x\in G} xu\cdot xv                                       \\
+              &amp;= \overline{ \overline{\sum_{x\in G} xu\cdot xv }}                  \\
+              &amp;= \overline{ \sum_{x\in G} \overline{ xu\cdot xv }}                 \\
+              &amp;= \overline{ \sum_{i} \lambda_{i} \overline{\mu_{i}}}               \\
+              &amp;= \overline{v \cdot u}
+\end{align}\end{split}\]</div>
+</div></blockquote>
+<p><span class="math notranslate nohighlight">\((iii)\)</span></p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+    u \ast u &amp;= \sum_{x\in G} xu \cdot xu = \sum_{i} || xu ||^{2} \geq 0 \text{ y } \\
+    u \ast u &amp;  \Leftrightarrow ||xu|| = 0, \forall x \in G \Leftrightarrow  xu = 0 \forall x\in G (\text{en particular para } x=1) \Leftrightarrow u=0.
+\end{align}\end{split}\]</div>
+</div></blockquote>
+</div></blockquote>
+<p>Además, es <span class="math notranslate nohighlight">\(G\)</span>-invariante, en el sentido de que <span class="math notranslate nohighlight">\(gu \ast gv = u \ast v\)</span> para todo <span class="math notranslate nohighlight">\(u\)</span>, <span class="math notranslate nohighlight">\(v \in V\)</span> y todo <span class="math notranslate nohighlight">\(g\in G\)</span>, ya que</p>
+<div class="math notranslate nohighlight">
+\[gu \ast gv = \sum_{x\in G} x(gu) \cdot x(gv) = \sum_{x\in G}(xg)u \cdot (xg)v =\sum_{y\in G} yu \cdot yv = u \ast v\]</div>
+<p>(donde hemos utilizado el hecho de que cuando <span class="math notranslate nohighlight">\(x\)</span> atraviesa todos los elementos de <span class="math notranslate nohighlight">\(G\)</span>, también lo hace <span class="math notranslate nohighlight">\(y = xg\)</span>, ya que <span class="math notranslate nohighlight">\(x \mapsto xg\)</span> es una biyección <span class="math notranslate nohighlight">\(G \to G\)</span>). Ahora definimos <span class="math notranslate nohighlight">\(W\)</span> como el complemento ortogonal de <span class="math notranslate nohighlight">\(U\)</span> relativo a este nuevo producto interno:</p>
+<div class="math notranslate nohighlight">
+\[W = U^{\bot} = \{v \in V | u \ast v = 0 \text{ para todo } u \in U\}.\]</div>
+<p>Entonces <span class="math notranslate nohighlight">\(V = U \oplus W\)</span>. (Es una propiedad general de los espacios de producto internos que si <span class="math notranslate nohighlight">\(U\)</span> es cualquier subespacio, entonces todo el espacio es la suma directa <span class="math notranslate nohighlight">\(U \oplus U^{\bot}\)</span>.) Solo tenemos que demostrar que <span class="math notranslate nohighlight">\(W\)</span> es un <span class="math notranslate nohighlight">\(G\)</span>-submódulo de <span class="math notranslate nohighlight">\(V\)</span>, y como ya sabemos que es un subespacio solo tenemos que demostrar que si <span class="math notranslate nohighlight">\(w ∈ W\)</span> y <span class="math notranslate nohighlight">\(g\in G\)</span> entonces <span class="math notranslate nohighlight">\(gw \in W\)</span>. Pero esto es fácil: si <span class="math notranslate nohighlight">\(u \in U\)</span> entonces <span class="math notranslate nohighlight">\(u \ast gw = g^{−1}u \ast w = 0\)</span> ya que <span class="math notranslate nohighlight">\(w \in U^{\bot}\)</span> y <span class="math notranslate nohighlight">\(g^{−1}u \in U\)</span> (ya que <span class="math notranslate nohighlight">\(U\)</span> es un <span class="math notranslate nohighlight">\(G\)</span>-módulo); por tanto, <span class="math notranslate nohighlight">\(gw \in U^{\bot}\)</span> (ya que <span class="math notranslate nohighlight">\(u 'ast gw = 0\)</span> para todo <span class="math notranslate nohighlight">\(u\in U\)</span>).</p>
+<p>La idea clave en esta demostración es crear un objeto <span class="math notranslate nohighlight">\(G\)</span>-invariante, en este caso un producto interno, sumando las transformadas <span class="math notranslate nohighlight">\(G\)</span> de un objeto arbitrario. Este es un tema que se repetirá en varios puntos de este curso. A menudo, además de sumar sobre <span class="math notranslate nohighlight">\(G\)</span>, dividimos por <span class="math notranslate nohighlight">\(| G |\)</span>, de modo que el proceso puede considerarse como un promedio de los efectos de los elementos de <span class="math notranslate nohighlight">\(G\)</span>. Ahora daremos una segunda prueba del teorema de Maschke; esta prueba puede aplicarse sin cambios si el cuerpo complejo se reemplaza por cualquier cuerpo en el que <span class="math notranslate nohighlight">\(| G | \not = 0\)</span>. La idea clave de promediar permanece.</p>
+<p>Dado el <span class="math notranslate nohighlight">\(G\)</span>-módulo <span class="math notranslate nohighlight">\(V\)</span> y el submódulo <span class="math notranslate nohighlight">\(U\)</span>, elija un subespacio vectorial arbitrario <span class="math notranslate nohighlight">\(Z\)</span> de <span class="math notranslate nohighlight">\(V\)</span> que sea complementario a <span class="math notranslate nohighlight">\(U\)</span>. Por lo tanto, como espacio vectorial <span class="math notranslate nohighlight">\(V = U \oplus Z\)</span>, pero esto generalmente no será una descomposición del <span class="math notranslate nohighlight">\(G\)</span>-módulo. Ahora, para cada <span class="math notranslate nohighlight">\(z \in Z\)</span> y <span class="math notranslate nohighlight">\(g\in G\)</span>, el elemento <span class="math notranslate nohighlight">\(gz \in V\)</span> se puede dividir de manera única en un componente en <span class="math notranslate nohighlight">\(U\)</span> y un componente en <span class="math notranslate nohighlight">\(Z\)</span>; para que podamos escribir</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+    gz = \tau gz + \sigma gz\hspace{3cm} (1)
+\end{equation}\]</div>
+<p>donde <span class="math notranslate nohighlight">\(\tau_{g}: Z \to U\)</span> y <span class="math notranslate nohighlight">\(\sigma_{g}: Z \to Z\)</span> son mapas lineales. Tenga en cuenta que tomando <span class="math notranslate nohighlight">\(g = 1\)</span> da <span class="math notranslate nohighlight">\(gz = z\)</span>; por tanto, <span class="math notranslate nohighlight">\(\tau_{1}z = 0\)</span> y <span class="math notranslate nohighlight">\(\sigma_{1}z = z\)</span>.</p>
+<p>Sea <span class="math notranslate nohighlight">\(h \in  G\)</span> y aplicando <span class="math notranslate nohighlight">\(h\)</span> a ambos lados de la Ecuación <span class="math notranslate nohighlight">\((1)\)</span> y compare el resultado con la ecuación obtenida al reemplazar <span class="math notranslate nohighlight">\(g\)</span> por <span class="math notranslate nohighlight">\(hg\)</span> en la Ecuación <span class="math notranslate nohighlight">\((1)\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+    \tau_{hg}z + \sigma_{hg}z &amp;= (hg)z = h(gz) \\
+                              &amp;= h(\tau_{g}z + \sigma_{g}z) \\
+                              &amp;= h(\tau_{g}z) + h(\sigma_{g}z) \\
+                              &amp;= h(\tau_{g}z) + (\tau_{h}(\sigma_{g}z) + \sigma_{h}(\sigma_{g}z))\hspace{2cm}(2)
+\end{align}\end{split}\]</div>
+<p>donde en el último paso hemos aplicado la Ecuación <span class="math notranslate nohighlight">\((1)\)</span> con <span class="math notranslate nohighlight">\(g\)</span> reemplazar por <span class="math notranslate nohighlight">\(h\)</span> y <span class="math notranslate nohighlight">\(z\)</span> por <span class="math notranslate nohighlight">\(\sigma_{g}z\)</span>. Dado que <span class="math notranslate nohighlight">\(\tau_{g}z \in U\)</span> y <span class="math notranslate nohighlight">\(U\)</span> es un <span class="math notranslate nohighlight">\(G\)</span>-submódulo, se deduce que <span class="math notranslate nohighlight">\(h (\tau_{g}z) \in U\)</span>, por lo que comparando los componentes <span class="math notranslate nohighlight">\(U\)</span> y <span class="math notranslate nohighlight">\(Z\)</span> de la primera y última expresión en la Ecuación <span class="math notranslate nohighlight">\((2)\)</span> da</p>
+<div class="math notranslate nohighlight">
+\[\tau_{hg}z = h(\tau_{g}z) + \tau_{h}(\sigma_{g}z)\hspace{3cm} (3)\]</div>
+<p>así como <span class="math notranslate nohighlight">\(\sigma_{hg}z = \sigma_{h} (\sigma_{g}z)\)</span>. Tenga en cuenta que tomando <span class="math notranslate nohighlight">\(h = g^{−1}\)</span> aquí se obtiene que <span class="math notranslate nohighlight">\(\sigma_{(g^{−1})} = \sigma_{g}^{− 1}\)</span>, ya que <span class="math notranslate nohighlight">\(\sigma_{1} = id\)</span>, y si ahora reemplazamos <span class="math notranslate nohighlight">\(z\)</span> por <span class="math notranslate nohighlight">\(\sigma_{g}^{− 1} z = \sigma_{hg}^{−1} (\sigma_{h}z)\)</span> en la Ecuación <span class="math notranslate nohighlight">\((3)\)</span> obtenemos</p>
+<div class="math notranslate nohighlight">
+\[\tau_{hg}(\sigma_{hg}^{−1}(\sigma_{h}z)) = h(\tau_{g}(\sigma_{g}^{−1}z)) + \tau_{h}z. \hspace{2cm}(4)\]</div>
+<p>Es la Ecuación <span class="math notranslate nohighlight">\((4)\)</span> a la que aplicamos la idea de promediar: sumarlo sobre todo <span class="math notranslate nohighlight">\(g \in G\)</span> da</p>
+<div class="math notranslate nohighlight">
+\[\sum_{g\in G} \tau_{hg}(\sigma_{hg}^{−1}(\sigma_{h}z)) = h\left(\sum_{g\in G} \tau_{g} (\sigma_{g}^{−1}z)\right) + |G|\tau_{h}z,\]</div>
+<p>y ahora dividiendo por <span class="math notranslate nohighlight">\(|G|\)</span> da</p>
+<div class="math notranslate nohighlight">
+\[\eta (\sigma_{h}z) = h(\eta z) + \eta_{h}z,\hspace{2cm}(5)\]</div>
+<p>donde hemos definido <span class="math notranslate nohighlight">\(\eta: Z \to U\)</span> por</p>
+<div class="math notranslate nohighlight">
+\[\eta z = \frac{1}{|G|} \sum_{g\in G} \tau_{g} (\sigma_{g}^{−1}z).\]</div>
+<p>(El punto crucial es que si <span class="math notranslate nohighlight">\(h \in G\)</span> es fijo, entonces <span class="math notranslate nohighlight">\(\eta z' = \frac{1}{|G|} \sum_{g\in G} \tau_{hg} (\sigma_{hg}^{−1}z')\)</span> para todo <span class="math notranslate nohighlight">\(z' \in Z\)</span>, ya que hg atraviesa todos los elementos de <span class="math notranslate nohighlight">\(G\)</span> como lo hace <span class="math notranslate nohighlight">\(g\)</span>.)</p>
+<p>Sea <span class="math notranslate nohighlight">\(W = \{z + \eta z | z \in Z \}\)</span>, y sea <span class="math notranslate nohighlight">\(w \in W\)</span> arbitrario. Elija <span class="math notranslate nohighlight">\(z \in Z\)</span> tal que <span class="math notranslate nohighlight">\(w = z + \eta z\)</span>. Entonces para todo <span class="math notranslate nohighlight">\(h \in G\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[hw = hz + h(\eta z) = hz + (\eta(\sigma_{h}z) − \tau_{h}z)\]</div>
+<p>(por la Ecuación <span class="math notranslate nohighlight">\((5)\)</span>), y ahora usando la Ecuación <span class="math notranslate nohighlight">\((1)\)</span> deducimos que</p>
+<div class="math notranslate nohighlight">
+\[hw = \sigma_{h}z + \eta(\sigma_{h}z) \in W.\]</div>
+<p>Dado que esto es válido para todo <span class="math notranslate nohighlight">\(w \in W\)</span> y <span class="math notranslate nohighlight">\(h \in G\)</span>, hemos demostrado que <span class="math notranslate nohighlight">\(W\)</span> está cerrado bajo la <span class="math notranslate nohighlight">\(G\)</span>-acción . También es un subespacio vectorial de <span class="math notranslate nohighlight">\(V\)</span> ya que es la imagen del mapa lineal <span class="math notranslate nohighlight">\(z \mapsto z + \eta z\)</span> de <span class="math notranslate nohighlight">\(Z\)</span> a <span class="math notranslate nohighlight">\(V\)</span>. Por lo tanto, <span class="math notranslate nohighlight">\(W\)</span> es un submódulo <span class="math notranslate nohighlight">\(G\)</span> de <span class="math notranslate nohighlight">\(V\)</span>. Si <span class="math notranslate nohighlight">\(v \in V\)</span> entonces, para algunos <span class="math notranslate nohighlight">\(u \in U\)</span> y <span class="math notranslate nohighlight">\(z \in Z\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[v = u + z = (u − \eta z) + (z + \eta z) \in U + W,\]</div>
+<p>ya que <span class="math notranslate nohighlight">\(\eta z \in U\)</span> y <span class="math notranslate nohighlight">\(z + \eta z \in W\)</span>. Además, <span class="math notranslate nohighlight">\(U \cap W = \{0\}\)</span>, ya que si <span class="math notranslate nohighlight">\(u \in U\)</span> y <span class="math notranslate nohighlight">\(u = z + \eta z\)</span> para algún <span class="math notranslate nohighlight">\(z \in Z\)</span> entonces</p>
+<div class="math notranslate nohighlight">
+\[z = u − \eta z \in U \cap Z = \{0\},\]</div>
+<p>mostrando que <span class="math notranslate nohighlight">\(z = 0\)</span> y, por tanto, <span class="math notranslate nohighlight">\(u = 0\)</span>. Por tanto, el submódulo <span class="math notranslate nohighlight">\(W\)</span> es complementario de <span class="math notranslate nohighlight">\(U\)</span>, como se requiere.</p>
+<p>Como siempre en este tema, es posible reformular las demostraciones usando matrices en lugar de transformaciones lineales. A veces, los resultados se vuelven más fáciles de entender de esta manera y, a veces, más difíciles. Y, a menudo, diferentes personas no están de acuerdo sobre cuál es más fácil. De todos modos, repasemos la prueba anterior en términos de matriz. Comenzamos eligiendo una base <span class="math notranslate nohighlight">\(v_{1}\)</span>, <span class="math notranslate nohighlight">\(v_{2}\)</span>,:math:<cite>dots</cite> , <span class="math notranslate nohighlight">\(v_{n}\)</span> para el submódulo <span class="math notranslate nohighlight">\(U\)</span> de <span class="math notranslate nohighlight">\(V\)</span>, y luego extendiéndolo a una base <span class="math notranslate nohighlight">\(v_{1}\)</span>, <span class="math notranslate nohighlight">\(v_{2}\)</span>,:math:<cite>dots</cite> , <span class="math notranslate nohighlight">\(v_{n+m}\)</span> de V. Para <span class="math notranslate nohighlight">\(g \in G\)</span> sea <span class="math notranslate nohighlight">\(Qg\)</span> la matriz <span class="math notranslate nohighlight">\((n + m) \times (n + m)\)</span> cuya <span class="math notranslate nohighlight">\((i, j)\)</span>-ésima entrada <span class="math notranslate nohighlight">\(Q_{ij}g\)</span> está definida por</p>
+<div class="math notranslate nohighlight">
+\[gv_{j} = \sum{i=1}^{n+m}(Q_{ij}g)v_{i}.\]</div>
+<p>Es decir, sea <span class="math notranslate nohighlight">\(Qg\)</span> es la matriz de la transformación <span class="math notranslate nohighlight">\(v \mapsto gv\)</span> relativa a nuestra base elegida. Observe que si <span class="math notranslate nohighlight">\(1 \leq j \leq n\)</span> entonces <span class="math notranslate nohighlight">\(v_{j} \in U\)</span> y entonces <span class="math notranslate nohighlight">\(gv_{j} \in U\)</span>, y se sigue que <span class="math notranslate nohighlight">\(gv_{j}\)</span> es una combinación lineal de <span class="math notranslate nohighlight">\(v_{1}\)</span>, <span class="math notranslate nohighlight">\(v_{2}\)</span>,:math:<cite>dots</cite> , <span class="math notranslate nohighlight">\(v_{n}\)</span>. Por tanto, los coeficientes <span class="math notranslate nohighlight">\(Q_{ij}g\)</span> son cero para <span class="math notranslate nohighlight">\(n + 1 \leq i \leq n + m\)</span> y <span class="math notranslate nohighlight">\(1 \leq j \leq n\)</span>. Entonces tenemos una descomposición en bloque de la matriz sea <span class="math notranslate nohighlight">\(Qg\)</span> como</p>
+<blockquote>
+<div><p>Qg = left(begin{matrix}Rg &amp; Tg\ 0 &amp; Sgend{matrix}right)  text{ para todo } g in G</p>
+</div></blockquote>
+<p>donde <span class="math notranslate nohighlight">\(Rg\)</span> y <span class="math notranslate nohighlight">\(Sg\)</span> son matrices respectivamente <span class="math notranslate nohighlight">\(n \times n\)</span> y <span class="math notranslate nohighlight">\(m \times m\)</span>, y <span class="math notranslate nohighlight">\(Tg\)</span> es <span class="math notranslate nohighlight">\(n \times m\)</span>. Esto puede verse como la versión matricial de reducibilidad; más precisamente, una representación matricial de <span class="math notranslate nohighlight">\(G\)</span> es reducible si es equivalente a una representación matricial que tiene una estructura de bloque como en la Ecuación <span class="math notranslate nohighlight">\((8)\)</span>. Si el subespacio de <span class="math notranslate nohighlight">\(V\)</span> generado por <span class="math notranslate nohighlight">\(v_{n+1}\)</span>, <span class="math notranslate nohighlight">\(v_{n+2}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span> , <span class="math notranslate nohighlight">\(v_{m}\)</span> fuera un <span class="math notranslate nohighlight">\(G\)</span>-submódulo, entonces <span class="math notranslate nohighlight">\(gv_{n + j}\)</span> sería una combinación lineal de <span class="math notranslate nohighlight">\(v_{n+1}\)</span>, <span class="math notranslate nohighlight">\(v_{n+2}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span> , <span class="math notranslate nohighlight">\(v_{m}\)</span>, y los coeficientes <span class="math notranslate nohighlight">\(Q_{ij}g\)</span> serían cero para <span class="math notranslate nohighlight">\(i \leq n\)</span> y <span class="math notranslate nohighlight">\(j \geq n\)</span>; la matriz <span class="math notranslate nohighlight">\(Tg\)</span> sería <span class="math notranslate nohighlight">\(0\)</span> para todo <span class="math notranslate nohighlight">\(g\)</span>. Por tanto, una representación matricial es descomponible si es equivalente a una de la forma <span class="math notranslate nohighlight">\(g \mapsto \left(\begin{matrix}Rg &amp; Tg\\ 0 &amp; Sg\end{matrix}\right)\)</span>, y la forma matricial del teorema de Maschke es que una representación de la forma dada por la Ecuación <span class="math notranslate nohighlight">\((8)\)</span> es equivalente a una representación de la misma forma con todos los <span class="math notranslate nohighlight">\(Tg\)</span> cero.</p>
+<p>Dado que <span class="math notranslate nohighlight">\(Rg\)</span> tiene <span class="math notranslate nohighlight">\((i, j)\)</span>-ésima entrada <span class="math notranslate nohighlight">\(Q_{ij}g\)</span> para <span class="math notranslate nohighlight">\(i\)</span>, <span class="math notranslate nohighlight">\(j \in \{1, 2 ,\dots , n\}\)</span> vemos que <span class="math notranslate nohighlight">\(Rg\)</span> es la matriz relativa a <span class="math notranslate nohighlight">\(v_{1}\)</span>, <span class="math notranslate nohighlight">\(v_{2}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span> , <span class="math notranslate nohighlight">\(v_{n}\)</span> de la transformación <span class="math notranslate nohighlight">\(u \mapsto gu\)</span> de <span class="math notranslate nohighlight">\(U\)</span>. Note también que <span class="math notranslate nohighlight">\(v_{n + 1} + U\)</span>, <span class="math notranslate nohighlight">\(v_{n + 2} + U\)</span> ,:math:<cite>dots</cite> , <span class="math notranslate nohighlight">\(v_{n + m} + U\)</span> es una base para el módulo de cociente <span class="math notranslate nohighlight">\(V/U\)</span>, y dado que</p>
+<div class="math notranslate nohighlight">
+\[g(v_{n+j} + U) = \left(\sum_{i =1}^{n+m} (Q_{i,n+j-g)v_{i}\right) + U = \sum_{i =1}^{m}(Q_{n+i,n+j}g)(v_{n+i} + U),\]</div>
+<p>y <span class="math notranslate nohighlight">\(Q_{n + i, n + j}g\)</span> es la <span class="math notranslate nohighlight">\((i, j)\)</span>-ésima entrada de <span class="math notranslate nohighlight">\(Sg\)</span>, vemos que <span class="math notranslate nohighlight">\(Sg\)</span> es la matriz de <span class="math notranslate nohighlight">\(v + U \mapsto g(v + U)\)</span> en relación con la base anterior de <span class="math notranslate nohighlight">\(V/U\)</span>.</p>
+<p>Dado que <span class="math notranslate nohighlight">\(g \mapsto Qg\)</span> es una representación matricial de <span class="math notranslate nohighlight">\(G\)</span>, la Ecuación <span class="math notranslate nohighlight">\((8)\)</span> da</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+    \left(\begin{matrix}R(hg) &amp; T(hg)\\ 0 &amp; S(hg) \end{matrix}\right) &amp;= Q(hg)                                                           \\
+                    &amp;= (Qg)(Qh)                                                                                                          \\
+                    &amp;= \left(\begin{matrix}Rh &amp; Th\\ 0 &amp; Sh \end{matrix}\right)\left(\begin{matrix}Rg &amp; Tg\\ 0 &amp; Sg \end{matrix}\right)  \\
+                    &amp;= \left(\begin{matrix}(Rh)(Rg) &amp; (Rh)(Tg)+(Th)(Sg)\\ 0 &amp; (Sh)(Sg) \end{matrix}\right),
+\end{align}\end{split}\]</div>
+<p>que confirma las fórmulas <span class="math notranslate nohighlight">\(R(hg) = (Rh)(Rg)\)</span> y <span class="math notranslate nohighlight">\(S(hg) = (Sh)(Sg)\)</span> (que ya sabíamos ya que <span class="math notranslate nohighlight">\(R\)</span> y <span class="math notranslate nohighlight">\(S\)</span> son versiones matriciales de las representaciones de <span class="math notranslate nohighlight">\(G\)</span> en <span class="math notranslate nohighlight">\(U\)</span> y <span class="math notranslate nohighlight">\(V/U\)</span> ), y también nos permite deducir que <span class="math notranslate nohighlight">\(T(hg) = (Rh)(T g) + (T h)(Sg)\)</span>. Por lo tanto, a la derecha multiplicando por <span class="math notranslate nohighlight">\((Sg)^{−1} = S(hg){−1}(Sh)\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[(T(hg)S(hg))^{−1}(Sh) = (Rh)((T g)(Sg)^{−1}) + Th,\hspace{3cm}(9)\]</div>
+<p>que es la matriz análoga de Ecuación <span class="math notranslate nohighlight">\((4)\)</span>. Promediando sobre <span class="math notranslate nohighlight">\(g \in G\)</span> esto da</p>
+<div class="math notranslate nohighlight">
+\[E(Sh) = (Rh)E + Th \text{ para todo }h \in G,\]</div>
+<p>donde hemos definido <span class="math notranslate nohighlight">\(E =\frac{1}{| G |} \sum_{g\in G} (Tg) (Sg)^{−1}\)</span>. Por lo tanto, obtenemos la siguiente ecuación matricial:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left(\begin{matrix}Rh &amp; Th\\ 0 &amp; Sh \end{matrix}\right)\left(\begin{matrix}I &amp; E\\ 0 &amp; I \end{matrix}\right) = \left(\begin{matrix}I &amp; E\\ 0 &amp; I \end{matrix}\right)\left(\begin{matrix}Rh &amp; 0\\ 0 &amp; Sh \end{matrix}\right) \text{ para todo }h \in G.\end{split}\]</div>
+<p>Equivalentemente</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left(\begin{matrix}I &amp; E\\ 0 &amp; I \end{matrix}\right)^{-1}\left(\begin{matrix}Rh &amp; Th\\ 0 &amp; Sh \end{matrix}\right)\left(\begin{matrix}I &amp; E\\ 0 &amp; I \end{matrix}\right) = \left(\begin{matrix}Rh &amp; 0\\ 0 &amp; Sh \end{matrix}\right) \text{ para todo }h \in G.\end{split}\]</div>
+<p>de modo que la representación <span class="math notranslate nohighlight">\(Q\)</span> sea equivalente a la suma diagonal de las representaciones <span class="math notranslate nohighlight">\(R\)</span> y <span class="math notranslate nohighlight">\(S\)</span>, según queríamos.</p>
+<p>Habiendo hecho el Teorema de Maschke, procedamos inmediatamente al otro teorema principal de este curso: el Lema de Schur. Llamarlo Lema, como es tradicional, contradice su importancia. Pero como corresponde a un Lema, su demostración es fácil.</p>
+</div>
+<div class="section" id="lema-de-schur-version-1">
+<span id="version-uno"></span><h2><span class="section-number">6.4. </span>Lema de Schur (Versión 1).<a class="headerlink" href="#lema-de-schur-version-1" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Sean <span class="math notranslate nohighlight">\(U\)</span>, <span class="math notranslate nohighlight">\(V\)</span> dos <span class="math notranslate nohighlight">\(G\)</span>-módulos irreducibles y <span class="math notranslate nohighlight">\(\phi: U \to V\)</span> un <span class="math notranslate nohighlight">\(G\)</span>-homomorfismo. Entonces <span class="math notranslate nohighlight">\(\phi\)</span> es un <span class="math notranslate nohighlight">\(G\)</span>-isomorfismo o el mapa cero.</p>
+<p><strong>Demostración:</strong></p>
+<p>Según parte del primer teorema del isomorfismo, <span class="math notranslate nohighlight">\(ker \phi\)</span> es un <span class="math notranslate nohighlight">\(G\)</span>-submódulo de <span class="math notranslate nohighlight">\(U\)</span>. Pero:math:<cite>U</cite> es irreducible, por lo que no tiene submódulos propios no triviales. Por lo tanto, <span class="math notranslate nohighlight">\(ker \phi = U\)</span> o <span class="math notranslate nohighlight">\(ker \phi = \{0\}\)</span>.</p>
+<ul class="simple">
+<li><p>Si <span class="math notranslate nohighlight">\(ker \phi = U\)</span> entonces <span class="math notranslate nohighlight">\(\phi\)</span> es el mapa cero, que es una de las posibilidades permitidas en el enunciado del teorema.</p></li>
+<li><p>En el caso alternativo, <span class="math notranslate nohighlight">\(\phi\)</span> es <em>inyectivo</em>, ya que <span class="math notranslate nohighlight">\(ker \phi = \{0\}\)</span>. Ahora, otra parte del primer teorema del isomorfismo nos dice que <span class="math notranslate nohighlight">\(im \phi\)</span> es un submódulo de <span class="math notranslate nohighlight">\(V\)</span>, por lo que la irreductibilidad de <span class="math notranslate nohighlight">\(V\)</span> nos dice que <span class="math notranslate nohighlight">\(im \phi\)</span> es <span class="math notranslate nohighlight">\(\{0\}\)</span> o <span class="math notranslate nohighlight">\(V\)</span>. Si es <span class="math notranslate nohighlight">\(\{0\}\)</span> entonces nuevamente <span class="math notranslate nohighlight">\(\phi\)</span> debe ser el mapa cero, y como ya hemos excluido este caso, deducimos que <span class="math notranslate nohighlight">\(im \phi = V\)</span>. Entonces <span class="math notranslate nohighlight">\(\phi\)</span> es tanto <em>sobreyectiva</em> como <em>inyectiva</em>, y por lo tanto es un isomorfismo, como se requiere. <span class="math notranslate nohighlight">\(^{\ast}\)</span> :math:<cite>blacksquare</cite></p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p><span class="math notranslate nohighlight">\(\ast\)</span> Se me acaba de ocurrir que la definición de «irreductible» debería haber incorporado el supuesto de que un módulo irreducible tiene que ser distinto de cero. Asumiremos esto de ahora en adelante.</p>
+</div>
+<p>Por tanto, parecería que el Lema de Schur no es gran cosa. Sin embargo, dedicaremos bastante tiempo a derivar consecuencias y reformulaciones del resultado, muchas de las cuales son bastante sorprendentes. La verdad es que el supuesto de irreductibilidad es muy fuerte. Así, los módulos irreductibles son objetos bastante especiales y, como veremos, tienen algunas propiedades sorprendentes.</p>
+<p>Primero, debemos derivar la forma matricial de la declaración anterior:</p>
+</div>
+<div class="section" id="lema-de-schur-version-2">
+<span id="version-dos"></span><h2><span class="section-number">6.5. </span>Lema de Schur (Versión 2)<a class="headerlink" href="#lema-de-schur-version-2" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Sean <span class="math notranslate nohighlight">\(R: G \to GL(n,\mathbb{F})\)</span> y <span class="math notranslate nohighlight">\(S: G \to GL(m,\mathbb{F})\)</span> representaciones matriciales irreductibles de <span class="math notranslate nohighlight">\(G\)</span>, y sea <span class="math notranslate nohighlight">\(X\)</span> una matriz <span class="math notranslate nohighlight">\(n \times m\)</span> que entrelaza <span class="math notranslate nohighlight">\(R\)</span> y <span class="math notranslate nohighlight">\(S\)</span>. Entonces <span class="math notranslate nohighlight">\(X = 0\)</span> o <span class="math notranslate nohighlight">\(X\)</span> es invertible.</p>
+<p>Esto se sigue inmediatamente del <a class="reference internal" href="#version-uno"><span class="std std-ref">Lema de Schur (Versión 1).</span></a>, en vista de nuestra discusión de los <span class="math notranslate nohighlight">\(G\)</span>-homomorfismos y las matrices entrelazadas en la Lección 5. Tenga en cuenta que, por supuesto, el caso <span class="math notranslate nohighlight">\(G\)</span> invertible solo puede surgir si <span class="math notranslate nohighlight">\(n = m\)</span> (que en términos de módulo dice que si <span class="math notranslate nohighlight">\(U\)</span> y <span class="math notranslate nohighlight">\(V\)</span> son isomorfos tienen la misma dimensión que <span class="math notranslate nohighlight">\(\mathbb{F}\)</span>).</p>
+<div class="admonition important">
+<p class="admonition-title">Importante</p>
+<p>Cabe señalar que todo lo dicho hasta ahora es totalmente general. Nuestra suposición de que se puede prescindir de <span class="math notranslate nohighlight">\(\mathbb{F} = \mathbb{C}\)</span>, el grupo <span class="math notranslate nohighlight">\(G\)</span> no tiene que ser finito y los módulos <span class="math notranslate nohighlight">\(U\)</span> y <span class="math notranslate nohighlight">\(V\)</span> no tienen que ser de dimensión finita sobre <span class="math notranslate nohighlight">\(\mathbb{F}\)</span>. Hemos usado solo el primer teorema del isomorfismo (y de hecho solo casos de eso) y la definición de irreductibilidad. Sin embargo, para el siguiente resultado, hacemos uso de la suposición de que el cuerpo es <span class="math notranslate nohighlight">\(\mathbb{C}\)</span>.</p>
+</div>
+</div>
+<div class="section" id="lema-de-schur-version-3">
+<h2><span class="section-number">6.6. </span>Lema de Schur (Version 3)<a class="headerlink" href="#lema-de-schur-version-3" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Sea <span class="math notranslate nohighlight">\(R: G \to GL (d, \mathbb{C})\)</span> una representación matricial irreducible de <span class="math notranslate nohighlight">\(G\)</span>, y suponga que <span class="math notranslate nohighlight">\(X\)</span> es una matriz a <span class="math notranslate nohighlight">\(d \times d\)</span> tal que <span class="math notranslate nohighlight">\((Rg) X = X (Rg)\)</span> para todo <span class="math notranslate nohighlight">\(g \in G\)</span>. Entonces <span class="math notranslate nohighlight">\(X = \lambda I\)</span> para algunos <span class="math notranslate nohighlight">\(\lambda \in \mathbb{C}\)</span>.</p>
+<p><strong>Demostración:</strong></p>
+<p>Elija <span class="math notranslate nohighlight">\(\lambda\)</span> para que sea un valor propio de <span class="math notranslate nohighlight">\(X\)</span>. Debido a que el campo fundamental es <span class="math notranslate nohighlight">\(\mathbb{C}\)</span>, y todo polinomio no constante con coeficientes en <span class="math notranslate nohighlight">\(\mathbb{C}\)</span> tiene una raíz en <span class="math notranslate nohighlight">\(\mathbb{C}\)</span>, el polinomio característico de <span class="math notranslate nohighlight">\(X\)</span> tiene al menos una raíz <span class="math notranslate nohighlight">\(\lambda \in \mathbb{C}\)</span>, por lo que un <span class="math notranslate nohighlight">\(\lambda\)</span> adecuado ciertamente existe. Por definición, det <span class="math notranslate nohighlight">\((X - \lambda I) = 0\)</span>, y la matriz <span class="math notranslate nohighlight">\(X - \lambda I\)</span> no es invertible. Ahora para todo <span class="math notranslate nohighlight">\(g \in G\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[(X − \lambda I)(Rg) = X(Rg) − \lambda(Rg) = (Rg)X − \lambda(Rg) = (Rg)(X − \lambda I),\]</div>
+<p>ya que <span class="math notranslate nohighlight">\(X\)</span> conmuta con cada <span class="math notranslate nohighlight">\(Rg\)</span>. Por lo tanto, <span class="math notranslate nohighlight">\(X - \lambda I\)</span> conmuta con cada <span class="math notranslate nohighlight">\(Rg\)</span>, y según el <a class="reference internal" href="#version-dos"><span class="std std-ref">Lema de Schur (Versión 2)</span></a> anterior se deduce que <span class="math notranslate nohighlight">\(X - \lambda I\)</span> es invertible o cero. Por la elección de <span class="math notranslate nohighlight">\(\lambda\)</span> no es invertible; entonces <span class="math notranslate nohighlight">\(X = \lambda I\)</span>, según sea necesario.</p>
+<p>La versión modular de esta declaración es que si <span class="math notranslate nohighlight">\(V\)</span> es un <span class="math notranslate nohighlight">\(G\)</span>-módulo irreducible de dimensión finita sobre <span class="math notranslate nohighlight">\(\mathbb{C}\)</span> y <span class="math notranslate nohighlight">\(\phi: V \to V\)</span> es un <span class="math notranslate nohighlight">\(G\)</span>-homomorfismo, entonces <span class="math notranslate nohighlight">\(\phi\)</span> es un múltiplo escalar del mapa de identidad. La suposición aquí de que <span class="math notranslate nohighlight">\(V\)</span> es de dimensión finita es necesaria ya que los espacios vectoriales de dimensión infinita admite operadores lineales que no tienen valores propios.</p>
+<p>No habrá escapado a la atención del lector alerta que, en nuestra tercera forma del Lema de Schur, <span class="math notranslate nohighlight">\(\mathbb{C}\)</span> podría ser reemplazado por cualquier campo algebraicamente cerrado.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="07-relaciones-de-ortogonalidad.html" class="btn btn-neutral float-right" title="7. Relaciones de ortogonalidad" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="05-modulos-cocientes.html" class="btn btn-neutral float-left" title="5. Módulos Cocientes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Derechos de autor 2021, Ferreira, Juan David.
+
+    </p>
+  </div>
+    
+    
+    
+    Construido con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

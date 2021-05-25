@@ -1,0 +1,284 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>7. El Espacio Coordinado de una Representación &mdash; documentación de Teoría de Representaciones de Grupos - 0.0.1</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="8. Funciones de clase" href="08-funciones-de-clase.html" />
+    <link rel="prev" title="6. La Representación Regular" href="06-la-representacion-regular.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Teoría de Representaciones de Grupos
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contenidos:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01-representaciones-por-permutacion-y-acciones.html">1. Representaciones por Permutacion y Acciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02-representaciones-acciones-lineales-y-modulos.html">2. Representaciones, Acciones lineales y módulos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03-modulos-cocientes.html">3. Módulos Cocientes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04-modulos-indescomponibles-y-modulos-irreducibles.html">4. Módulos Indescomponibles y Módulos Irreducibles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05-relaciones-de-ortogonalidad.html">5. Relaciones de ortogonalidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06-la-representacion-regular.html">6. La Representación Regular</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">7. El Espacio Coordinado de una Representación</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#proposicion">7.1. Proposición</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">7.2. Proposición</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">7.3. Proposición</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="08-funciones-de-clase.html">8. Funciones de clase</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Teoría de Representaciones de Grupos</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li><span class="section-number">7. </span>El Espacio Coordinado de una Representación</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/Notas/07-el-espacio-coordenado-de-una-representacion.rst.txt" rel="nofollow"> Ver código fuente de la página</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="el-espacio-coordinado-de-una-representacion">
+<h1><span class="section-number">7. </span>El Espacio Coordinado de una Representación<a class="headerlink" href="#el-espacio-coordinado-de-una-representacion" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>En este curso, <span class="math notranslate nohighlight">\(\mathbb{C}^{n}\)</span> generalmente significa el espacio vectorial de los vectores columna de <span class="math notranslate nohighlight">\(n\)</span> componentes sobre <span class="math notranslate nohighlight">\(\mathbb{C}\)</span>. Otros autores a menudo lo definen como el espacio de los vectores fila. Una tercera alternativa sería identificar <span class="math notranslate nohighlight">\(\mathbb{C}^{n}\)</span> con el espacio de todas las funciones de valor complejo en el conjunto <span class="math notranslate nohighlight">\(\{1, 2,\dots , n\}\)</span>. De hecho, una función <span class="math notranslate nohighlight">\(f: \{1, 2,\dots , n\} \to \mathbb{C}\)</span> no es más que una <span class="math notranslate nohighlight">\(n\)</span>-tupla de valores: <span class="math notranslate nohighlight">\(f\)</span> puede identificarse con el vector de <span class="math notranslate nohighlight">\(n\)</span> componentes cuyo <span class="math notranslate nohighlight">\(i\)</span>-ésimo componente es <span class="math notranslate nohighlight">\(f_{i}\)</span>. La moraleja de esta historia es simplemente que el conjunto de todas las funciones complejas valoradas en un conjunto de <span class="math notranslate nohighlight">\(n\)</span> elementos <span class="math notranslate nohighlight">\(S\)</span> es un espacio vectorial de dimensión <span class="math notranslate nohighlight">\(n\)</span>. La suma y la multiplicación escalar se definen mediante las fórmulas <span class="math notranslate nohighlight">\((f + g) s = (fs) + (gs)\)</span> y <span class="math notranslate nohighlight">\((\lambda f) s = \lambda (fs)\)</span>.</p>
+<p>Sea <span class="math notranslate nohighlight">\(V_{G}\)</span> el <span class="math notranslate nohighlight">\(|G|\)</span>-espacio dimensional de todas las funciones complejas con valores en <span class="math notranslate nohighlight">\(G\)</span>. El espacio de coordenadas de una representación matricial <span class="math notranslate nohighlight">\(S: G \to GL (d, \mathbb{C})\)</span> es el subespacio de <span class="math notranslate nohighlight">\(V_{G}\)</span> que está generado por las funciones de coordenadas de <span class="math notranslate nohighlight">\(S\)</span> Es decir, para todo <span class="math notranslate nohighlight">\(i\)</span>, <span class="math notranslate nohighlight">\(j \in \{1, 2,\dots , d\}\)</span> define <span class="math notranslate nohighlight">\(S_{ij}: G \to \mathbb{C}\)</span>, de modo que <span class="math notranslate nohighlight">\(S_{ij}g\)</span> es la entrada <span class="math notranslate nohighlight">\((i, j)\)</span> de <span class="math notranslate nohighlight">\(Sg\)</span>; el espacio de coordenadas es entonces el espacio generado por todas las funciones <span class="math notranslate nohighlight">\(S_{ij}\)</span>.</p>
+<div class="section" id="proposicion">
+<h2><span class="section-number">7.1. </span>Proposición<a class="headerlink" href="#proposicion" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Las representaciones equivalentes tienen el mismo espacio de coordenadas.</p>
+<p><strong>Demostración</strong></p>
+<p>Sean <span class="math notranslate nohighlight">\(R\)</span> y <span class="math notranslate nohighlight">\(S\)</span> representaciones matriciales equivalentes de <span class="math notranslate nohighlight">\(G\)</span> de grado <span class="math notranslate nohighlight">\(d\)</span>, de modo que exista una matriz <span class="math notranslate nohighlight">\(d \times d\)</span> invertible <span class="math notranslate nohighlight">\(T\)</span> tal que <span class="math notranslate nohighlight">\(T^{−1} (Rg) T = Sg\)</span> para todo <span class="math notranslate nohighlight">\(g \in G\)</span>. Sean <span class="math notranslate nohighlight">\(R_{ij}\)</span> y <span class="math notranslate nohighlight">\(S_{ij}\)</span> las funciones de coordenadas de <span class="math notranslate nohighlight">\(R\)</span> y <span class="math notranslate nohighlight">\(S\)</span>, y denotan las entradas <span class="math notranslate nohighlight">\((i, j)\)</span> de <span class="math notranslate nohighlight">\(T\)</span> y <span class="math notranslate nohighlight">\(T^{-1}\)</span> por <span class="math notranslate nohighlight">\(T_{ij}\)</span> y <span class="math notranslate nohighlight">\(U_{ij}\)</span> respectivamente. Entonces para todo <span class="math notranslate nohighlight">\(g \in G\)</span> tenemos eso</p>
+<div class="math notranslate nohighlight">
+\[S_{ij}g = \sum_{k = 1}^{d} \sum_{l = 1}^{d} U_{ik} (R_{kl}g) T_{lj}\]</div>
+<p>de donde se sigue que</p>
+<div class="math notranslate nohighlight">
+\[S_{ij} = \sum_{k,l} (U_{ik}T_{lj}) R_{kl}\]</div>
+<p>para todo i, <span class="math notranslate nohighlight">\(j \in \{1, 2,\dots , d\}.\)</span> Dado que esto expresa cada función de coordenadas de <span class="math notranslate nohighlight">\(S\)</span> como una combinación lineal de las funciones de coordenadas de <span class="math notranslate nohighlight">\(R\)</span>, se deduce que todas las funciones de coordenadas de <span class="math notranslate nohighlight">\(S\)</span> están contenidas en el espacio de coordenadas de <span class="math notranslate nohighlight">\(R\)</span> y, por lo tanto, el espacio de coordenadas de <span class="math notranslate nohighlight">\(S\)</span> está contenido en el espacio de coordenadas de <span class="math notranslate nohighlight">\(R\)</span>. Pero la equivalencia de representaciones es una relación simétrica, por lo que el mismo argumento muestra que el espacio de coordenadas de <span class="math notranslate nohighlight">\(R\)</span> está contenido en el de <span class="math notranslate nohighlight">\(S\)</span>.</p>
+<p>Tenga en cuenta también el siguiente resultado, que es bastante trivial.</p>
+</div>
+<div class="section" id="id1">
+<h2><span class="section-number">7.2. </span>Proposición<a class="headerlink" href="#id1" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El espacio de coordenadas de la suma diagonal de dos representaciones <span class="math notranslate nohighlight">\(R\)</span> y <span class="math notranslate nohighlight">\(S\)</span> es la suma del espacio vectorial de los espacios de coordenadas de <span class="math notranslate nohighlight">\(R\)</span> y <span class="math notranslate nohighlight">\(S\)</span>.</p>
+<p><strong>Demostración</strong></p>
+<p>Sea <span class="math notranslate nohighlight">\(m\)</span> y <span class="math notranslate nohighlight">\(n\)</span> el grado de <span class="math notranslate nohighlight">\(R\)</span> y <span class="math notranslate nohighlight">\(S\)</span> respectivamente, y sea <span class="math notranslate nohighlight">\(T\)</span> la suma diagonal, dada por</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}T g =\left(\begin{matrix}Rg &amp; 0 \\ 0 &amp; Sg \end{matrix}\right)\end{split}\]</div>
+<p>para todo <span class="math notranslate nohighlight">\(g \in G\)</span>. Denote las funciones de coordenadas de <span class="math notranslate nohighlight">\(R\)</span> por <span class="math notranslate nohighlight">\(R_{ij}\)</span>, y denote las de <span class="math notranslate nohighlight">\(S\)</span> y <span class="math notranslate nohighlight">\(T\)</span> de manera similar.</p>
+<p>Para <span class="math notranslate nohighlight">\(i\)</span>, <span class="math notranslate nohighlight">\(j \in \{1, 2,\dots, m\}\)</span> vemos que <span class="math notranslate nohighlight">\(T_{ij} = R_{ij}\)</span>, mientras que para <span class="math notranslate nohighlight">\(i\)</span>, <span class="math notranslate nohighlight">\(j \in \{m + 1, m + 2,\dots , m + n\}\)</span> tenemos <span class="math notranslate nohighlight">\(T_{ij} = S_{i − m, j − m}\)</span>. Además, todas las demás funciones de coordenadas de <span class="math notranslate nohighlight">\(T\)</span> son cero. Entonces, un elemento arbitrario <span class="math notranslate nohighlight">\(\sum_{i, j} \lambda_{ij}T_{ij}\)</span> del espacio de coordenadas de <span class="math notranslate nohighlight">\(T\)</span> se puede expresar como</p>
+<div class="math notranslate nohighlight">
+\[\sum_{ i\leq m, j\leq m} \lambda_{ij}R_{ij} + \sum_{i&gt; m, j&gt; m} \lambda_{ij}S_{i − m, j − m},\]</div>
+<p>que está en la suma de los espacios de coordenadas de <span class="math notranslate nohighlight">\(R\)</span> y <span class="math notranslate nohighlight">\(S\)</span>.</p>
+<p>Por el teorema de Maschke sabemos que toda representación compleja de un grupo finito es equivalente a una suma diagonal de representaciones irreductibles. Entonces, si, como arriba, fijamos un conjunto completo de representaciones irreductibles * <span class="math notranslate nohighlight">\(R^{(1)}\)</span>, <span class="math notranslate nohighlight">\(R^{(2)}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span> , <span class="math notranslate nohighlight">\(R^{(s)}\)</span> entonces el espacio de coordenadas de una representación arbitraria está contenido en la suma de los espacios de coordenadas de <span class="math notranslate nohighlight">\(R^{(k)}\)</span>. Ahora demostraremos un resultado que, aunque fácil, es crucial para nuestra causa.</p>
+</div>
+<div class="section" id="id2">
+<h2><span class="section-number">7.3. </span>Proposición<a class="headerlink" href="#id2" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El espacio de coordenadas de la representación regular es igual a <span class="math notranslate nohighlight">\(V_{G}\)</span>, el espacio de todas las funciones con valores complejos en <span class="math notranslate nohighlight">\(G\)</span>.</p>
+<p><strong>Demostración</strong></p>
+<p>Por supuesto, el espacio de coordenadas de la representación regular está contenido en <span class="math notranslate nohighlight">\(V_{G}\)</span>; por lo que solo tenemos que probar la inclusión inversa.</p>
+<p>Sea <span class="math notranslate nohighlight">\(g_{1}\)</span>, <span class="math notranslate nohighlight">\(g_{2}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span> , <span class="math notranslate nohighlight">\(g_{n}\)</span> los elementos de <span class="math notranslate nohighlight">\(G\)</span>, de modo que en particular el grado de representación regular es <span class="math notranslate nohighlight">\(n\)</span>, y sea <span class="math notranslate nohighlight">\(g \in G\)</span> arbitrario.</p>
+<p>Podemos elegir <span class="math notranslate nohighlight">\(i\)</span>, <span class="math notranslate nohighlight">\(j \in \{1, 2,\dots, n\}\)</span> tal que <span class="math notranslate nohighlight">\(g_{i} = gg_{j}\)</span>: por ejemplo, elija <span class="math notranslate nohighlight">\(j\)</span> para que <span class="math notranslate nohighlight">\(g_{j}\)</span> sea el elemento de identidad e <span class="math notranslate nohighlight">\(i\)</span> para que <span class="math notranslate nohighlight">\(g_{i} = g\)</span>. Ahora la función de coordenadas <span class="math notranslate nohighlight">\(R_{ij}\)</span> de la representación regular <span class="math notranslate nohighlight">\(R\)</span> satisface, para todo <span class="math notranslate nohighlight">\(h \in G\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+    R_{ij}h &amp;=
+        \begin{cases}
+            1 &amp; \text{ si }g_{i} = hg_{j} \\
+            0 &amp; \text{en caso contrario}
+        \end{cases}\\
+        &amp;=
+        \begin{cases}
+            1 &amp; \text{ si }h = g \\
+            0 &amp; \text{en caso contrario}
+        \end{cases}
+\end{align}\end{split}\]</div>
+<p>Por tanto, la función <span class="math notranslate nohighlight">\(R_{ij}\)</span> es análoga a un vector fila que tiene un componente igual a <span class="math notranslate nohighlight">\(1\)</span> y todos los demás componentes <span class="math notranslate nohighlight">\(0\)</span>. Además, el posicionamiento del <span class="math notranslate nohighlight">\(1\)</span> corresponde a la elección del elemento <span class="math notranslate nohighlight">\(h\)</span>, que era arbitrario. El conjunto de todas las funciones de esta forma abarca <span class="math notranslate nohighlight">\(V_{G}\)</span>. Explícitamente, si <span class="math notranslate nohighlight">\(f: G \to \mathbb{C}\)</span> es arbitrario, entonces</p>
+<div class="math notranslate nohighlight">
+\[f = \sum_{i = 1}^{n} (f_{i})R_{ij}\]</div>
+<p>donde <span class="math notranslate nohighlight">\(j\)</span> es fijo de modo que <span class="math notranslate nohighlight">\(g_{j}\)</span> es el elemento de identidad.</p>
+<p>El espacio de coordenadas de la representación irreducible <span class="math notranslate nohighlight">\(R^{(k)}\)</span> está generado por las funciones de coordenadas <span class="math notranslate nohighlight">\(d_{k}^{2} R_{pm}^{(k)}\)</span>, <span class="math notranslate nohighlight">\(m \in \{1, 2,\dots , d_{k}\}\)</span>), y la suma de los espacios de coordenadas de <span class="math notranslate nohighlight">\(R^{(1)}\)</span>, <span class="math notranslate nohighlight">\(R^{(2)}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span>, <span class="math notranslate nohighlight">\(R^{(s)}\)</span> está generado por la totalidad de todas las funciones de coordenadas <span class="math notranslate nohighlight">\(R_{pm}^{(k)}\)</span> para <span class="math notranslate nohighlight">\((k, p, m)\)</span> en el conjunto</p>
+<div class="math notranslate nohighlight">
+\[S = \{(k, p, m) | 1 \leq k \leq s\text{ y }p, m \in \{1, 2,\dots  , d_{k}\}\}.\]</div>
+<p>Pero esta suma de espacios de coordenadas debe ser igual al espacio completo <span class="math notranslate nohighlight">\(V_{G}\)</span> de funciones con valores complejos en <span class="math notranslate nohighlight">\(G\)</span>, ya que debe contener el espacio de coordenadas de la representación regular, por lo que el número de elementos en el conjunto de expansión <span class="math notranslate nohighlight">\(S\)</span> debe ser al menos <span class="math notranslate nohighlight">\(|G| = dim V_{G}\)</span>. Entonces llegamos a la conclusión de que <span class="math notranslate nohighlight">\(\sum_{k=1}^{s} d_{k}^{2} \geq | G |\)</span>, y por lo tanto <span class="math notranslate nohighlight">\(\sum_{k = 1}^{s} d_{k}^{2} = |G|\)</span> ya que la desigualdad inversa se obtuvo previamente. Dado que esto también muestra que el número de elementos en <span class="math notranslate nohighlight">\(S\)</span> es igual a la dimensión de <span class="math notranslate nohighlight">\(V_{G}\)</span>, que abarca, se deduce que los elementos de <span class="math notranslate nohighlight">\(S\)</span> son linealmente independientes.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="08-funciones-de-clase.html" class="btn btn-neutral float-right" title="8. Funciones de clase" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="06-la-representacion-regular.html" class="btn btn-neutral float-left" title="6. La Representación Regular" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Derechos de autor 2021, Ferreira, Juan David.
+
+    </p>
+  </div>
+    
+    
+    
+    Construido con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
