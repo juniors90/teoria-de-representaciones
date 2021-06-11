@@ -1,3 +1,6 @@
+.. role:: underline
+    :class: underline
+
 Módulos Indescomponibles y Módulos Irreducibles
 ===============================================
 

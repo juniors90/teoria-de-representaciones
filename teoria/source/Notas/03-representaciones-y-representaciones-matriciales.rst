@@ -1,3 +1,6 @@
+.. role:: underline
+    :class: underline
+    
 Representaciones y representaciones matriciales
 ================================================
 
@@ -7,7 +10,11 @@ Sean :math:`U` y :math:`V` espacios vectoriales de dimensión finita sobre el ca
     
     fu_{j} = \sum_{i = 1}^{n} a_{ij}v_{i} \text{ para todo } j = 1, 2, \dots , m,
 
-:math:`u_{1}`, :math:`u_{2}`, :math:`\dots` , siendo um los vectores que componen la base :math:`\mathcal{B}`, y :math:`v_{1}`, :math:`v_{2}`, :math:`\dots`, :math:`v_{n}` los que componen la base :math:`\mathcal{C}`. Los fundamentos de la conexión entre matrices y transformaciones lineales deberían serle familiares a partir del trabajo de :math:`2^{\circ}` año. Los principales hechos son los siguientes. Al multiplicar el vector de coordenadas relativo a :math:`\mathcal{B}` de un elemento :math:`u \in U` por :math:`M_{\mathcal{C B}} (f)` se obtiene el vector de coordenadas relativo a :math:`\mathcal{C}` de :math:`fu \in V`; es decir, si :math:`u = \sum_{j = 1}^{m} \lambda_{j}u_{j}` entonces :math:`fu = \sum_{i = 1}^{n} \lambda_{i}v_{i}`, donde
+siendo  :math:`u_{1}`, :math:`u_{2}`, :math:`\dots` , :math:`u_{m}` los vectores que componen la base :math:`\mathcal{B}`, y :math:`v_{1}`, :math:`v_{2}`, :math:`\dots`, :math:`v_{n}` los que componen la base :math:`\mathcal{C}`.
+
+La conexión entre matrices y transformaciones lineales son temas básicos de Álgebra Lineal. Los principales hechos son los siguientes:
+
+- Al multiplicar el vector de coordenadas relativo a :math:`\mathcal{B}` de un elemento :math:`u \in U` por :math:`M_{\mathcal{C B}} (f)` se obtiene el vector de coordenadas relativo a :math:`\mathcal{C}` de :math:`fu \in V`; es decir, si :math:`u = \sum_{j = 1}^{m} \lambda_{j}u_{j}` entonces :math:`fu = \sum_{i = 1}^{n} \lambda_{i}v_{i}`, donde
 
 .. math::
 
@@ -37,7 +44,25 @@ El grupo de todas las transformaciones lineales invertibles en un espacio vector
 
 Hemos definido una representación (lineal) de :math:`G` en :math:`V` como un homomorfismo :math:`\rho : G \to GL (V)`.
 
-De manera similar, una representación matricial de :math:`G` es un homomorfismo :math:`G\to GL(d,\mathbb{F})`; el entero d se llama grado de representación. Si :math:`\rho` es una representación de :math:`G` en un espacio vectorial :math:`V` de dimensión :math:`d`, y si :math:`\mathcal{C}` es una base de :math:`V`, entonces obtenemos una representación matricial de :math:`G` de grado :math:`d` definiendo :math:`Rg = M_{\mathcal{CC}} (\rho g)` para cada :math:`g \in G` El mapa :math:`R:G\to GL(d,\mathbb{F})` es ciertamente un homomorfismo ya que es el compuesto del homomorfismo :math:`g \mapsto \rho g` de :math:`G` a :math:`GL (V)` y el isomorfismo :math:`f \mapsto M_{\mathcal{CC}} (f)` de :math:`GL (V)`a :math:`GL(d,\mathbb{F})`. Por tanto, :math:`R` es una representación matricial, como se afirma. Por el contrario, dada una representación matricial :math:`R:G\to GL(d,\mathbb{F})` podemos obtener una representación :math:`\rho: G \to GL (V)` definiendo :math:`\rho g` como la transformación lineal cuya matriz relativa a :math:`\mathcal{C}` es :math:`Rg`. La moraleja de esta historia es la siguiente: una vez que se fija una base de :math:`V`, una representación de :math:`G` sobre :math:`V` es esencialmente lo mismo que una representación matricial de :math:`G` de grado :math:`d = dim V`.
+De manera similar, una representación matricial de :math:`G` es un homomorfismo
+
+.. math::
+
+    G\to GL(d,\mathbb{F}).
+    
+El entero :math:`d` se llama grado de representación.
+
+Si :math:`\rho` es una representación de :math:`G` en un espacio vectorial :math:`V` de dimensión :math:`d`, y si :math:`\mathcal{C}` es una base de :math:`V`, entonces obtenemos una representación matricial de :math:`G` de grado :math:`d` definiendo
+
+.. math::
+
+    Rg = M_{\mathcal{CC}} (\rho g)
+    
+para cada :math:`g \in G`.
+
+El mapa :math:`R:G\to GL(d,\mathbb{F})` es ciertamente un homomorfismo ya que es el compuesto del homomorfismo :math:`g \mapsto \rho g` de :math:`G` a :math:`GL (V)` y el isomorfismo :math:`f \mapsto M_{\mathcal{CC}} (f)` de :math:`GL (V)`a :math:`GL(d,\mathbb{F})`. Por tanto, :math:`R` es una representación matricial, como se afirma.
+
+Recíprocamente, dada una representación matricial :math:`R:G\to GL(d,\mathbb{F})` podemos obtener una representación :math:`\rho: G \to GL (V)` definiendo :math:`\rho g` como la transformación lineal cuya matriz relativa a :math:`\mathcal{C}` es :math:`Rg`. La moraleja de esta historia es la siguiente: una vez que se fija una base de :math:`V`, una representación de :math:`G` sobre :math:`V` es esencialmente lo mismo que una representación matricial de :math:`G` de grado :math:`d = dim V`.
 
 Dado que la elección de una base para un espacio vectorial es un asunto algo arbitrario, es natural investigar la relación entre dos representaciones matriciales que se derivan de la misma representación :math:`\rho: G \to GL (V)` eligiendo dos bases diferentes. Entonces suponga que :math:`\mathcal{B}` y :math:`\mathcal{C}` son bases de :math:`V`, y sean :math:`R, S:G\to GL(d,\mathbb{F})` definidas por las fórmulas :math:`Rg = M_{\mathcal{CC}} (\rho g)` y :math:`Sg = M_{\mathcal{BB}} (ρg)`, para todo :math:`g \in G`. Si :math:`T = M_{\mathcal{BC}}(id)` entonces encontramos que para todo :math:`g \in G`,
 
@@ -46,6 +71,8 @@ Dado que la elección de una base para un espacio vectorial es un asunto algo ar
     T(Rg) = M_{\mathcal{BC}}(id)M_{\mathcal{CC}}(\rho g) = M_{\mathcal{BC}}((id)(\rho g)) = M_{\mathcal{BC}}((\rho g)(id)) = M_{\mathcal{BB}}(\rho g)M_{\mathcal{BC}}(id) = (Sg)T.
 
 Dado que :math:`M_{\mathcal{BC}}(id) M_{\mathcal{CB}} (id) = M_{\mathcal{BB}}(id) = I`. Similarmente :math:`M_{\mathcal{CB}} (id) M_{\mathcal{BC}} (id) = M_{\mathcal{CC}}(id) = I`, vemos que la matriz :math:`T` es invertible. Por tanto, :math:`Sg = T(Rg) T^{−1}` para todo :math:`g \in G`.
+
+.. _representaciones-matriciales-equivalente:
 
 Definición
 -----------------
@@ -212,45 +239,3 @@ Así hemos obtenido una representación matricial de :math:`S_{3}` de grado :mat
 
 Supongamos, para mayor precisión, que el campo :math:`\mathbb{F}` (el campo escalar para :math:`V` y el campo de coeficientes para nuestras matrices) es :math:`\mathbb{C}`, el campo de números complejos. Las dos representaciones de :math:`S_{3}` de grado :math:`1` y la representación de :math:`S_{3}` de grado :math:`2` que hemos descrito anteriormente son todas representaciones irreductibles de :math:`S_{3}`, en un sentido que definiremos en breve. Además, resulta que cualquier representación compleja irreducible de :math:`S_{3}` tiene que ser equivalente a una de estas tres. Los principales teoremas de la teoría de la representación que discutiremos en este curso nos dicen en principio cómo una representación compleja arbitraria de un grupo finito :math:`G` puede expresarse en términos de representaciones complejas irreducibles, y cuántas clases de equivalencia de representaciones complejas irreducibles tiene un grupo finito. No existe un método uniforme conocido para construir las representaciones irreductibles de un grupo finito arbitrario y, en consecuencia, el principal problema práctico de la teoría de la representación es encontrar descripciones elegantes de las representaciones irreductibles de varias clases importantes de grupos finitos. En verdad, no hay muchas clases de grupos para los que se haya logrado este objetivo, pero los grupos simétricos constituyen una clase para la que se ha descubierto una teoría completa. Se espera que se describa parte de esta teoría antes del final de este curso.
 
-Centralizadores
--------------------------------------------------
-
-Proposición
-~~~~~~~~~~~~~~~~~~~~~
-
-Sea :math:`G` un grupo y :math:`g\in G`. Entonces el conjunto :math:`C_{G} (g) = \{x \in G | xg = gx \}` es un subgrupo de :math:`G`.
-
-**Demostración:**
-
-Debemos demostrar que :math:`1 \in C_{G} (g)`, que :math:`x^{-1} \in C_{G} (g)` siempre que :math:`x \in C_{G} (g)`, y que :math:`xy \in C_{G} (g)` siempre que :math:`x, y \in C_{G} (g)`. Todos estos son triviales.
-
-- Dado que la propiedad definitoria del elemento identidad es que :math:`1g` y :math:`g1` son iguales a :math:`g`, tenemos :math:`1g = g1` y, por tanto, :math:`1 \in C_{G} (g)`.
-
-- Si :math:`x \in C_{G} (g)` entonces :math:`xg = gx`, y multiplicar esta ecuación a la izquierda y a la derecha por :math:`x^{−1}` da :math:`gx^{−1} = x^{−1}g`, de donde :math:`x^{-1} \in C_{G} (g)`.
-
-- Si :math:`x, y \in C_{G} (g)` entonces :math:`xg = gx` y :math:`yg = gy`, y vemos que
-
-.. math::
-
-    (xy)g = x(yg) = x(gy) = (xg)y = (gx)y = g(xy),
-
-de donde :math:`xy \in C_{G} (g)`, según se requiera.
-
-Definición
-~~~~~~~~~~~~~~~~~~~
-
-El subgrupo :math:`C_{G} (g)` definido en la proposición anterior se denomina centralizador en :math:`G` del elemento :math:`g`.
-
-Recuerde que si :math:`H` es un subgrupo de un grupo :math:`G`, entonces para cada :math:`x\in G` el subconjunto :math:`xH = \{ xh | h \in H \}` se llama una clase lateral izquierda de :math:`H` en :math:`G`.
-
-El mapeo :math:`h \mapsto xh` de :math:`H` a :math:`xH` es una biyección, por lo que el número de elementos de la clase lateral :math:`xH` es el mismo que el número de elementos de :math:`G`. Si :math:`x, y \in G` entonces las clases laterales izquierdas :math:`xH` e :math:`yH` coinciden o son disjuntas. Coinciden si :math:`x \in yH` o (de manera equivalente) si :math:`y \in xH`, o (una tercera condición equivalente) si :math:`x^{−1}y \in H`. Además, cada elemento de :math:`G` se encuentra en alguna clase lateral izquierda de :math:`H`: de hecho, :math:`g \in gH.` De ello se deduce que podemos elegir una transversal izquierda, o sistema de representantes de las clases laterales izquierdas, para el subgrupo :math:`H`. Esta es una familia :math:`(x_{i}) i\in I` de elementos de :math:`G` tal que :math:`G` es la unión disjunta de las clases laterales :math:`x_{i}H` para :math:`i \in I`. Suponiendo que el grupo :math:`G` es finito, entonces, por supuesto, el número de clases laterales izquierdas de :math:`H` también es finito. 
-
-El número de clases laterales izquierdas de :math:`H` en :math:`G` se denomina índice de :math:`H` en :math:`G`, denotado por :math:`[G: H]`. Si :math:`n = [G: H]` entonces una transversal izquierda para :math:`H` constará de :math:`n` elementos :math:`x_{1}`, :math:`x_{2}`,:math:`\dots` , :math:`x_{n}`, y dado que :math:`G = x_{1}H \cup x_{2}H \cup \cdots \cup x_{n}H` expresa :math:`G` como la unión disjunta de :math:`n = [G: H]` conjuntos todos los cuales tienen :math:`|H|` elementos, llegamos a la conclusión de que :math:`|G| = [G: H] |H|`.
-
-Supongamos ahora que :math:`H = C_{G} (g)`, donde :math:`g \in G`. Si :math:`x,y \in G` están en la misma clase lateral izquierda de :math:`H`, entonces :math:`y = xh` para algunos:math:`h\in H`, y
-
-.. math::
-
-    ygy^{−1} = (xh)g(xh)^{−1} = x(hg)h^{−1} x^{−1} = x(gh)h^{−1}x^{−1} = xgx^{−1},
-
-ya que :math:`h` está en el centralizador de :math:`g`. Por tanto, hemos demostrado que :math:`ygy^{−1} = xgx^{−1}` siempre que :math:`x`, :math:`y` están en la misma clase lateral izquierda del centralizador. Por el contrario, si :math:`ygy^{−1} = xgx^{−1}` entonces :math:`(x^{−1}y) g = g (x^{− 1}y)`, de modo que :math:`x^{−1}y \in C_{G} (g)`, y por lo tanto :math:`x` e :math:`y` están en la misma clase lateral del centralizador. Así, los elementos de :math:`G` de la forma :math:`xgx^{−1}` están en correspondencia uno a uno con las clases laterales izquierdas de :math:`C_{G} (g)`: si :math:`x_{1}`, :math:`x_{2}`,:math:`\dots` , :math:`x_{n}` es una transversal izquierda, entonces cada elemento de la forma :math:`xgx^{−1}` es igual a uno u otro de los :math:`n` elementos :math:`x_{i}gx_{i}^{-1}`, y estos elementos son todos distintos (ya que corresponden a clases laterales distintas). Estos elementos de la forma :math:`xgx^{−1}` se denominan conjugados de :math:`g` en :math:`G`; hemos demostrado que el número de conjugados de :math:`G` es igual al índice del centralizador de :math:`g`.

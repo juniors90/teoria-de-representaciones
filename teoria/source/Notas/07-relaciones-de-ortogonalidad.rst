@@ -1,3 +1,6 @@
+.. role:: underline
+    :class: underline
+
 Relaciones de ortogonalidad
 ============================
 
@@ -229,7 +232,7 @@ Dividiendo cada fila por su longitud se obtiene una matriz :math:`T (G)` cuyas f
 
 que es unitario —ortogonal, de hecho, ya que es real— como se puede comprobar fácilmente.
 
-Una matriz cuadrada :math:`M` es unitaria si y solo si sus columnas forman un conjunto ortonormal de vectores, ya que esta condición es claramente equivalente a la ecuación matricial:math:`(\overline{M}^{t}) M = I`. Dado que esta a su vez es equivalente a :math:`M (\overline{M}^{t}) = I`, que dice que las filas forman un conjunto ortonormal, concluimos que las filas de una matriz cuadrada son ortonormales si y solo si las columnas también lo son. Dado que la igualdad se cumple en :math:`(4)`, de modo que :math:`T (G)` es cuadrado, la ortogonalidad de la columna nos dice que para todo :math:`g`, :math:`h \in G`
+Una matriz cuadrada :math:`M` es unitaria si y solo si sus columnas forman un conjunto ortonormal de vectores, ya que esta condición es claramente equivalente a la ecuación matricial :math:`(\overline{M}^{t}) M = I`. Dado que esta a su vez es equivalente a :math:`M (\overline{M}^{t}) = I`, que dice que las filas forman un conjunto ortonormal, concluimos que las filas de una matriz cuadrada son ortonormales si y solo si las columnas también lo son. Dado que la igualdad se cumple en :math:`(4)`, de modo que :math:`T (G)` es cuadrado, la ortogonalidad de la columna nos dice que para todo :math:`g`, :math:`h \in G`
 
 .. math::
 

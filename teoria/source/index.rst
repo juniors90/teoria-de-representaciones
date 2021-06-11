@@ -7,6 +7,8 @@ Teoría de Representaciones de Grupos
    :numbered:
    :caption: Contenidos:
 
+   Notas/01-grupos
+   Notas/01-ejemplo-de-accion-de-un-grupo-sobre-un-conjunto
    Notas/01-representaciones-por-permutacion-y-acciones
    Notas/02-representaciones-acciones-lineales-y-modulos
    Notas/03-representaciones-y-representaciones-matriciales

@@ -1,3 +1,6 @@
+.. role:: underline
+    :class: underline
+
 El Espacio Coordinado de una Representación
 ===========================================
 

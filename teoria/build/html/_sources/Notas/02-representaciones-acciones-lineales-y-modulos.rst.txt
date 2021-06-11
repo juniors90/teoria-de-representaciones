@@ -1,10 +1,13 @@
+.. role:: underline
+    :class: underline
+
 Representaciones, Acciones lineales y módulos
 =================================================
 
 Sea :math:`V` es un espacio vectorial sobre el campo :math:`\mathbb{F}` y :math:`G` es un grupo.
 
-Definición
---------------
+Definición de acción de un grupo sobre un espacio vectorial
+------------------------------------------------------------
 
 Una acción de :math:`G` sobre :math:`V` es una función :math:`(g, v) \mapsto gv` de :math:`G\times V` a :math:`V` tal que
 
@@ -26,7 +29,7 @@ Una acción de :math:`G` sobre :math:`V` es una función :math:`(g, v) \mapsto g
 Proposición
 -----------------
 
-Dada una acción de un grupo :math:`G` sobre un espacio vectorial :math:`V`, para cada :math:`g\in G` definimos una función :math:`\rho g: V \to V` dada por :math:`(\rho g) v = gv` para todo :math:`v\in V`. Entonces :math:`\rho g` es una transformación lineal invertible, y la función :math:`\rho` definido por :math:`g \mapsto \rho g` es un homomorfismo de :math:`G` al grupo de todas las transformaciones lineales invertibles en :math:`V`. A la inversa, dado un homomorfismo :math:`\rho` de :math:`G` al grupo de transformaciones lineales invertibles en :math:`V`, la fórmula :math:`gv = (\rho g) v` define una acción de :math:`G` sobre :math:`V`.
+Dada una acción de un grupo :math:`G` sobre un espacio vectorial :math:`V`, para cada :math:`g\in G` definimos una función :math:`\rho g: V \to V` dada por :math:`(\rho g) v = gv` para todo :math:`v\in V`. Entonces :math:`\rho g` es una transformación lineal inversible, y la función :math:`\rho` definida por :math:`g \mapsto \rho g` es un homomorfismo de :math:`G` al grupo de todas las transformaciones lineales invertibles en :math:`V`. A la inversa, dado un homomorfismo :math:`\rho` de :math:`G` al grupo de transformaciones lineales invertibles en :math:`V`, la fórmula :math:`gv = (\rho g) v` define una acción de :math:`G` sobre :math:`V`.
 
 **Demostración:**
 
@@ -54,8 +57,8 @@ para todo :math:`v, w \in V` y :math:`\lambda \in \mathbb{F}`.
 
 Entonces, una representación de un grupo en un vector es lo mismo que una acción de un grupo en un espacio vectorial. Bien, entonces, ¿por qué no introducir un tercer término para describir esta misma situación?
 
-Definición
------------------
+Definición de :math:`G`-módulo
+-------------------------------
 
 Un espacio vectorial :math:`V` en el que un grupo :math:`G` tiene una acción se llama :math:`G`-módulo.
 
@@ -66,9 +69,13 @@ Un espacio vectorial :math:`V` en el que un grupo :math:`G` tiene una acción se
 Definición
 -----------------
 
-    :math:`(i)` Un submódulo de un :math:`G`-módulo :math:`V` es un subespacio vectorial :math:`U` de :math:`V` tal que :math:`gu \in U` para todo :math:`g \in G` y :math:`u \in U`.
+Un submódulo de un :math:`G`-módulo :math:`V` es un subespacio vectorial :math:`U` de :math:`V` tal que :math:`gu \in U` para todo :math:`g \in G` y :math:`u \in U`.
+
     
-    :math:`(ii)` Si :math:`U` y :math:`V` son :math:`G`-módulo, entonces un :math:`G`-homomorfismo de :math:`U` a :math:`V` es una transformación lineal :math:`f: U \to V` tal que :math:`f (gu) = g (fu)` para todo :math:`g \in G` y :math:`u \in U.`
+Definición
+-----------------
+
+Si :math:`U` y :math:`V` son :math:`G`-módulo, entonces un :math:`G`-homomorfismo de :math:`U` a :math:`V` es una transformación lineal :math:`f: U \to V` tal que :math:`f (gu) = g (fu)` para todo :math:`g \in G` y :math:`u \in U.`
 
 Tendremos mucho más que decir sobre los :math:`G`-módulo. En particular, existe una versión en :math:`G`-módulo del *Primer Teorema del Isomorfismo*, que será de gran importancia para la teoría que desarrollaremos.
 

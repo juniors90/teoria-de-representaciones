@@ -1,6 +1,8 @@
+.. role:: underline
+    :class: underline
+
 Módulos Cocientes
 =========================
-
 
 
 Si :math:`S` y :math:`T` son subconjuntos arbitrarios del grupo :math:`G`, entonces se acostumbra definir su producto :math:`ST` por la regla de que :math:`ST = \{st | s \in S,  t \in T\}`. Si :math:`H` es un subgrupo normal de :math:`G`, de modo que :math:`gH = Hg` para todo :math:`g\in G`, entonces :math:`(xH) (yH) = (xy) H` para todo :math:`x, y \in G`. Esto produce una operación de multiplicación bien definida en el establecer :math:`G / H = \{gH | g \in G\}`, y se puede comprobar que bajo esta operación :math:`G/H` es un grupo. El grupo :math:`G/H` se denomina cociente de :math:`G` por :math:`H`.

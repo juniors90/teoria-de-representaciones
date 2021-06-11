@@ -1,3 +1,6 @@
+.. role:: underline
+    :class: underline
+
 La Representación Regular
 ============================
 

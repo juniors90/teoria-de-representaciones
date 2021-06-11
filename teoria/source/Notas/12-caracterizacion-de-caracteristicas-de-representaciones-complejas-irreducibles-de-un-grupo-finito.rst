@@ -1,3 +1,6 @@
+.. role:: underline
+    :class: underline
+
 Caracterización de Características de Representaciones Complejas Irreducibles de un Grupo Finito
 =================================================================================================
 
