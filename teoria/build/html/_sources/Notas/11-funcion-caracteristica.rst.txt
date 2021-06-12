@@ -9,15 +9,15 @@ Las funciones :math:`f_{x}` para :math:`x \in G` forman una base de :math:`V_{G}
 Definición
 -------------------
 
-El *carácter de una representación matricial* :math:`R` de :math:`G` es la función :math:`\chi: G \to \mathbb{C}` definida por :math:`\chi (g) = traza (Rg)`. Por lo tanto, si el grado de :math:`R` es :math:`d` y :math:`R_{ij}` (donde :math:`1 \leq i`, :math:`j \leq d`) son las funciones de coordenadas de :math:`R`, entonces :math:`\chi = \sum_{i = 1}^{d} R_{ii}`.
+El *carácter de una representación matricial* :math:`R` de :math:`G` es la función :math:`\chi: G \to \mathbb{C}` definida por :math:`\chi (g) = traza (R_g)`. Por lo tanto, si el grado de :math:`R` es :math:`d` y :math:`R_{ij}` (donde :math:`1 \leq i`, :math:`j \leq d`) son las funciones de coordenadas de :math:`R`, entonces :math:`\chi = \sum_{i = 1}^{d} R_{ii}`.
 
 Hemos visto en una pregunta de asignación que el carácter de una representación es siempre una función de clase. El punto es que matrices similares tienen la misma traza, por lo que siempre que :math:`g`, :math:`x \in G` la matriz
 
 .. math::
 
-    R(g^{−1}xg) = (Rg)^{−1}(Rx)(Rg)
+    R_{g^{−1}xg} = (R_g)^{−1}(R_{x})(R_g)
 
-tiene la misma traza que :math:`Rx`, y esto muestra que el carácter :math:`\chi` toma el mismo valor en :math:`g^{−1}xg` que en :math:`x`. La independencia lineal de la colección :math:`S` de todas las funciones de coordenadas de :math:`R^{(k)}` implica la independencia lineal de los caracteres :math:`\chi^{(k)}`, porque si :math:`\sum_{k} \lambda_{k}\chi^{(k)} = 0` entonces
+tiene la misma traza que :math:`R_x`, y esto muestra que el carácter :math:`\chi` toma el mismo valor en :math:`g^{−1}xg` que en :math:`x`. La independencia lineal de la colección :math:`S` de todas las funciones de coordenadas de :math:`R^{(k)}` implica la independencia lineal de los caracteres :math:`\chi^{(k)}`, porque si :math:`\sum_{k} \lambda_{k}\chi^{(k)} = 0` entonces
 
 .. math::
 

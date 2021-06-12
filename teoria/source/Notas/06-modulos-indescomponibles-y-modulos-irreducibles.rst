@@ -270,11 +270,11 @@ Como siempre en este tema, es posible reformular las demostraciones usando matri
 
 Es decir, sea :math:`Qg` es la matriz de la transformación :math:`v \mapsto gv` relativa a nuestra base elegida. Observe que si :math:`1 \leq j \leq n` entonces :math:`v_{j} \in U` y entonces :math:`gv_{j} \in U`, y se sigue que :math:`gv_{j}` es una combinación lineal de :math:`v_{1}`, :math:`v_{2}`,:math:`\dots` , :math:`v_{n}`. Por tanto, los coeficientes :math:`Q_{ij}g` son cero para :math:`n + 1 \leq i \leq n + m` y :math:`1 \leq j \leq n`. Entonces tenemos una descomposición en bloque de la matriz sea :math:`Qg` como
 
-    Qg = \left(\begin{matrix}Rg & Tg\\ 0 & Sg\end{matrix}\right)  \text{ para todo } g \in G
+    Qg = \left(\begin{matrix}R_g & Tg\\ 0 & Sg\end{matrix}\right)  \text{ para todo } g \in G
 
-donde :math:`Rg` y :math:`Sg` son matrices respectivamente :math:`n \times n` y :math:`m \times m`, y :math:`Tg` es :math:`n \times m`. Esto puede verse como la versión matricial de reducibilidad; más precisamente, una representación matricial de :math:`G` es reducible si es equivalente a una representación matricial que tiene una estructura de bloque como en la Ecuación :math:`(8)`. Si el subespacio de :math:`V` generado por :math:`v_{n+1}`, :math:`v_{n+2}`, :math:`\dots` , :math:`v_{m}` fuera un :math:`G`-submódulo, entonces :math:`gv_{n + j}` sería una combinación lineal de :math:`v_{n+1}`, :math:`v_{n+2}`, :math:`\dots` , :math:`v_{m}`, y los coeficientes :math:`Q_{ij}g` serían cero para :math:`i \leq n` y :math:`j \geq n`; la matriz :math:`Tg` sería :math:`0` para todo :math:`g`. Por tanto, una representación matricial es descomponible si es equivalente a una de la forma :math:`g \mapsto \left(\begin{matrix}Rg & Tg\\ 0 & Sg\end{matrix}\right)`, y la forma matricial del teorema de Maschke es que una representación de la forma dada por la Ecuación :math:`(8)` es equivalente a una representación de la misma forma con todos los :math:`Tg` cero.
+donde :math:`R_g` y :math:`Sg` son matrices respectivamente :math:`n \times n` y :math:`m \times m`, y :math:`Tg` es :math:`n \times m`. Esto puede verse como la versión matricial de reducibilidad; más precisamente, una representación matricial de :math:`G` es reducible si es equivalente a una representación matricial que tiene una estructura de bloque como en la Ecuación :math:`(8)`. Si el subespacio de :math:`V` generado por :math:`v_{n+1}`, :math:`v_{n+2}`, :math:`\dots` , :math:`v_{m}` fuera un :math:`G`-submódulo, entonces :math:`gv_{n + j}` sería una combinación lineal de :math:`v_{n+1}`, :math:`v_{n+2}`, :math:`\dots` , :math:`v_{m}`, y los coeficientes :math:`Q_{ij}g` serían cero para :math:`i \leq n` y :math:`j \geq n`; la matriz :math:`Tg` sería :math:`0` para todo :math:`g`. Por tanto, una representación matricial es descomponible si es equivalente a una de la forma :math:`g \mapsto \left(\begin{matrix}R_g & Tg\\ 0 & Sg\end{matrix}\right)`, y la forma matricial del teorema de Maschke es que una representación de la forma dada por la Ecuación :math:`(8)` es equivalente a una representación de la misma forma con todos los :math:`Tg` cero.
 
-Dado que :math:`Rg` tiene :math:`(i, j)`-ésima entrada :math:`Q_{ij}g` para :math:`i`, :math:`j \in \{1, 2 ,\dots , n\}` vemos que :math:`Rg` es la matriz relativa a :math:`v_{1}`, :math:`v_{2}`, :math:`\dots` , :math:`v_{n}` de la transformación :math:`u \mapsto gu` de :math:`U`. Note también que :math:`v_{n + 1} + U`, :math:`v_{n + 2} + U` ,:math:`\dots` , :math:`v_{n + m} + U` es una base para el módulo de cociente :math:`V/U`, y dado que
+Dado que :math:`R_g` tiene :math:`(i, j)`-ésima entrada :math:`Q_{ij}g` para :math:`i`, :math:`j \in \{1, 2 ,\dots , n\}` vemos que :math:`R_g` es la matriz relativa a :math:`v_{1}`, :math:`v_{2}`, :math:`\dots` , :math:`v_{n}` de la transformación :math:`u \mapsto gu` de :math:`U`. Note también que :math:`v_{n + 1} + U`, :math:`v_{n + 2} + U` ,:math:`\dots` , :math:`v_{n + m} + U` es una base para el módulo de cociente :math:`V/U`, y dado que
 
 .. math::
 
@@ -291,11 +291,11 @@ Dado que :math:`g \mapsto Qg` es una representación matricial de :math:`G`, la 
     \begin{align}
         \left(\begin{matrix}R(hg) & T(hg)\\ 0 & S(hg) \end{matrix}\right) &= Q(hg)                                                           \\
                         &= (Qg)(Qh)                                                                                                          \\
-                        &= \left(\begin{matrix}Rh & Th\\ 0 & Sh \end{matrix}\right)\left(\begin{matrix}Rg & Tg\\ 0 & Sg \end{matrix}\right)  \\
-                        &= \left(\begin{matrix}(Rh)(Rg) & (Rh)(Tg)+(Th)(Sg)\\ 0 & (Sh)(Sg) \end{matrix}\right),
+                        &= \left(\begin{matrix}Rh & Th\\ 0 & Sh \end{matrix}\right)\left(\begin{matrix}R_g & Tg\\ 0 & Sg \end{matrix}\right)  \\
+                        &= \left(\begin{matrix}(Rh)(R_g) & (Rh)(Tg)+(Th)(Sg)\\ 0 & (Sh)(Sg) \end{matrix}\right),
     \end{align}
 
-que confirma las fórmulas :math:`R(hg) = (Rh)(Rg)` y :math:`S(hg) = (Sh)(Sg)` (que ya sabíamos ya que :math:`R` y :math:`S` son versiones matriciales de las representaciones de :math:`G` en :math:`U` y :math:`V/U` ), y también nos permite deducir que :math:`T(hg) = (Rh)(T g) + (T h)(Sg)`. Por lo tanto, a la derecha multiplicando por :math:`(Sg)^{−1} = S(hg){−1}(Sh)`,
+que confirma las fórmulas :math:`R(hg) = (Rh)(R_g)` y :math:`S(hg) = (Sh)(Sg)` (que ya sabíamos ya que :math:`R` y :math:`S` son versiones matriciales de las representaciones de :math:`G` en :math:`U` y :math:`V/U` ), y también nos permite deducir que :math:`T(hg) = (Rh)(T g) + (T h)(Sg)`. Por lo tanto, a la derecha multiplicando por :math:`(Sg)^{−1} = S(hg){−1}(Sh)`,
 
 .. math::
 
@@ -365,7 +365,7 @@ Esto se sigue inmediatamente del :ref:`version-uno`, en vista de nuestra discusi
 Lema de Schur (Version 3)
 --------------------------------------
 
-Sea :math:`R: G \to GL (d, \mathbb{C})` una representación matricial irreducible de :math:`G`, y suponga que :math:`X` es una matriz a :math:`d \times d` tal que :math:`(Rg) X = X (Rg)` para todo :math:`g \in G`. Entonces :math:`X = \lambda I` para algunos :math:`\lambda \in \mathbb{C}`.
+Sea :math:`R: G \to GL (d, \mathbb{C})` una representación matricial irreducible de :math:`G`, y suponga que :math:`X` es una matriz a :math:`d \times d` tal que :math:`(R_g) X = X (R_g)` para todo :math:`g \in G`. Entonces :math:`X = \lambda I` para algunos :math:`\lambda \in \mathbb{C}`.
 
 **Demostración:**
 
@@ -373,9 +373,9 @@ Elija :math:`\lambda` para que sea un valor propio de :math:`X`. Debido a que el
 
 .. math::
 
-    (X − \lambda I)(Rg) = X(Rg) − \lambda(Rg) = (Rg)X − \lambda(Rg) = (Rg)(X − \lambda I),
+    (X − \lambda I)(R_g) = X(R_g) − \lambda(R_g) = (R_g)X − \lambda(R_g) = (R_g)(X − \lambda I),
 
-ya que :math:`X` conmuta con cada :math:`Rg`. Por lo tanto, :math:`X - \lambda I` conmuta con cada :math:`Rg`, y según el :ref:`version-dos` anterior se deduce que :math:`X - \lambda I` es invertible o cero. Por la elección de :math:`\lambda` no es invertible; entonces :math:`X = \lambda I`, según sea necesario.
+ya que :math:`X` conmuta con cada :math:`R_g`. Por lo tanto, :math:`X - \lambda I` conmuta con cada :math:`R_g`, y según el :ref:`version-dos` anterior se deduce que :math:`X - \lambda I` es invertible o cero. Por la elección de :math:`\lambda` no es invertible; entonces :math:`X = \lambda I`, según sea necesario.
 
 La versión modular de esta declaración es que si :math:`V` es un :math:`G`-módulo irreducible de dimensión finita sobre :math:`\mathbb{C}` y :math:`\phi: V \to V` es un :math:`G`-homomorfismo, entonces :math:`\phi` es un múltiplo escalar del mapa de identidad. La suposición aquí de que :math:`V` es de dimensión finita es necesaria ya que los espacios vectoriales de dimensión infinita admite operadores lineales que no tienen valores propios.
 

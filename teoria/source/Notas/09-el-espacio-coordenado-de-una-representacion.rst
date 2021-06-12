@@ -15,7 +15,7 @@ Las representaciones equivalentes tienen el mismo espacio de coordenadas.
 
 **Demostración**
 
-Sean :math:`R` y :math:`S` representaciones matriciales equivalentes de :math:`G` de grado :math:`d`, de modo que exista una matriz :math:`d \times d` invertible :math:`T` tal que :math:`T^{−1} (Rg) T = Sg` para todo :math:`g \in G`. Sean :math:`R_{ij}` y :math:`S_{ij}` las funciones de coordenadas de :math:`R` y :math:`S`, y denotan las entradas :math:`(i, j)` de :math:`T` y :math:`T^{-1}` por :math:`T_{ij}` y :math:`U_{ij}` respectivamente. Entonces para todo :math:`g \in G` tenemos eso
+Sean :math:`R` y :math:`S` representaciones matriciales equivalentes de :math:`G` de grado :math:`d`, de modo que exista una matriz :math:`d \times d` invertible :math:`T` tal que :math:`T^{−1} (R_g) T = Sg` para todo :math:`g \in G`. Sean :math:`R_{ij}` y :math:`S_{ij}` las funciones de coordenadas de :math:`R` y :math:`S`, y denotan las entradas :math:`(i, j)` de :math:`T` y :math:`T^{-1}` por :math:`T_{ij}` y :math:`U_{ij}` respectivamente. Entonces para todo :math:`g \in G` tenemos eso
 
 .. math::
 
@@ -42,7 +42,7 @@ Sea :math:`m` y :math:`n` el grado de :math:`R` y :math:`S` respectivamente, y s
 
 .. math::
 
-    T g =\left(\begin{matrix}Rg & 0 \\ 0 & Sg \end{matrix}\right)
+    T g =\left(\begin{matrix}R_g & 0 \\ 0 & Sg \end{matrix}\right)
 
 
 para todo :math:`g \in G`. Denote las funciones de coordenadas de :math:`R` por :math:`R_{ij}`, y denote las de :math:`S` y :math:`T` de manera similar.

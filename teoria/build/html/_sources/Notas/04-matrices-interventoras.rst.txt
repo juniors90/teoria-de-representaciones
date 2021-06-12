@@ -107,30 +107,30 @@ Matrices Interventoras
 
 - Sea :math:`f: U \to V` un :math:`G`-homomorfismo. Es decir, :math:`f` es un mapa lineal que satisface :math:`g(fu) = f(gu)` para todo :math:`u \in U` y :math:`g \in G`.
 
-- Sean :math:`\rho: G \to GL (V)` y :math:`\sigma: G \to GL (U)` las representaciones de :math:`G` en :math:`V` y en :math:`U` respectivamente. Es decir, si :math:`g \in G` entonces :math:`\rho g` es la transformación lineal de :math:`V` dada por :math:`v \mapsto gv` para todo :math:`v \in V`, y :math:`\sigma g` es la transformación lineal de :math:`U` dada por :math:`u \mapsto gu` para todo :math:`u \in U`. Para todo :math:`u \in U` tenemos
+- Sean :math:`\rho: G \to GL (V)` y :math:`\sigma: G \to GL (U)` las representaciones de :math:`G` en :math:`V` y en :math:`U` respectivamente. Es decir, si :math:`g \in G` entonces :math:`\rho_g` es la transformación lineal de :math:`V` dada por :math:`v \mapsto gv` para todo :math:`v \in V`, y :math:`\sigma g` es la transformación lineal de :math:`U` dada por :math:`u \mapsto gu` para todo :math:`u \in U`. Para todo :math:`u \in U` tenemos
 
 .. math::
 
     \begin{align}
-        ((\rho g)f)u &= (\rho g)(fu)     &&&&\text{ por composición }\\
+        ((\rho_g)f)u &= (\rho_g)(fu)     &&&&\text{ por composición }\\
                      &= g(fu)            &&&&\text{ por la acción de }\rho\\
                      &= f(gu)            &&&&\text{ por definición de } f\\
                      &= f((\sigma g)u)   &&&&\text{ por la acción de }\sigma\\
                      &= (f(\sigma g))u,  &&&&\text{ por composición }\\
     \end{align}
 
-y entonces :math:`(\rho g) f = f (\sigma g)`. Esto es válido para todo :math:`g \in G`. Se dice que una función :math:`f` que satisface :math:`(\rho g) f = f (\sigma g)` *interviene* las representaciones :math:`\rho` y :math:`\sigma`.
+y entonces :math:`(\rho_g) f = f (\sigma g)`. Esto es válido para todo :math:`g \in G`. Se dice que una función :math:`f` que satisface :math:`(\rho_g) f = f (\sigma g)` *interviene* las representaciones :math:`\rho` y :math:`\sigma`.
 
 .. important::
 
     Aquí nuevamente tenemos dos palabras que se usan para describir el mismo concepto: una función *interviene* es lo mismo que un :math:`G`-homomorfismo.
 
-Suponga que :math:`u_{1}`, :math:`u_{2}`, :math:`\dots`, :math:`u_{n}` es una base para :math:`U` y :math:`v_{1}`, :math:`v_{2}`, :math:`\dots`, :math:`v_{m}` es una base para :math:`V`, y sea :math:`A` la matriz de :math:`f` relativa a estas dos bases. Por tanto, :math:`A` es la matriz :math:`m\times n` con :math:`(i, j)`-entrada :math:`a_{ij}` que satisface :math:`fu_{j} = \sum_{i = 1}^{m} a_{ij}v_{i}`. Para cada :math:`g \in G` sea :math:`Rg \in GL (m, \mathbb{C})` la matriz relativa a la base :math:`v_{1}`, :math:`v_{2}`, :math:`\dots`, :math:`v_{m}` de la transformación :math:`v \mapsto gv` del espacio :math:`V`, y sea :math:`Sg \in GL (m, \mathbb{C})` la matriz relativa a la base :math:`u_{1}`, :math:`u_{2}`, :math:`\dots`, :math:`u_{m}` de la transformación :math:`u \mapsto gu` del espacio :math:`U`. Entonces, :math:`R` y :math:`S` son versiones matriciales de las representaciones :math:`\rho` y :math:`\sigma`. Y la versión matricial de la ecuación :math:`(\rho g)f = f(\sigma g)` es :math:`(Rg)A = A(Sg).`
+Suponga que :math:`u_{1}`, :math:`u_{2}`, :math:`\dots`, :math:`u_{n}` es una base para :math:`U` y :math:`v_{1}`, :math:`v_{2}`, :math:`\dots`, :math:`v_{m}` es una base para :math:`V`, y sea :math:`A` la matriz de :math:`f` relativa a estas dos bases. Por tanto, :math:`A` es la matriz :math:`m\times n` con :math:`(i, j)`-entrada :math:`a_{ij}` que satisface :math:`fu_{j} = \sum_{i = 1}^{m} a_{ij}v_{i}`. Para cada :math:`g \in G` sea :math:`R_g \in GL (m, \mathbb{C})` la matriz relativa a la base :math:`v_{1}`, :math:`v_{2}`, :math:`\dots`, :math:`v_{m}` de la transformación :math:`v \mapsto gv` del espacio :math:`V`, y sea :math:`Sg \in GL (m, \mathbb{C})` la matriz relativa a la base :math:`u_{1}`, :math:`u_{2}`, :math:`\dots`, :math:`u_{m}` de la transformación :math:`u \mapsto gu` del espacio :math:`U`. Entonces, :math:`R` y :math:`S` son versiones matriciales de las representaciones :math:`\rho` y :math:`\sigma`. Y la versión matricial de la ecuación :math:`(\rho_g)f = f(\sigma g)` es :math:`(R_g)A = A(Sg).`
 
 Definición
 ~~~~~~~~~~~~~~~~
 
-Si :math:`R` y :math:`S` son representaciones matriciales del grupo :math:`G` de grados :math:`m` y :math:`n` respectivamente, se dice que una matriz :math:`A` de :math:`m × n` interviene :math:`R` y :math:`S` si :math:`(Rg) A = A (Sg)` para todo :math:`g \in G`.
+Si :math:`R` y :math:`S` son representaciones matriciales del grupo :math:`G` de grados :math:`m` y :math:`n` respectivamente, se dice que una matriz :math:`A` de :math:`m × n` interviene :math:`R` y :math:`S` si :math:`(R_g) A = A (Sg)` para todo :math:`g \in G`.
 
 Entonces, una **matriz interventora** es la versión matricial de un :math:`G`-homomorfismo.
 
@@ -144,7 +144,7 @@ Entonces, una **matriz interventora** es la versión matricial de un :math:`G`-h
 
     - Un :math:`G`-homomorfismo :math:`f: U \to V` se llama :math:`G`-isomorfismo si es invertible. La versión matricial de esto es una matriz entrelazada que es invertible.
 
-Ahora, si :math:`A` es invertible, entonces la ecuación :math:`(Rg) A = A (Sg)` se puede reescribir como :math:`Rg = A (Sg) A^{− 1}`, esto significa que las representaciones :math:`R` y :math:`S` son equivalentes, por :ref:`representaciones-matriciales-equivalente` (Ver Sección :doc:`03-representaciones-y-representaciones-matriciales`).
+Ahora, si :math:`A` es invertible, entonces la ecuación :math:`(R_g) A = A (Sg)` se puede reescribir como :math:`R_g = A (Sg) A^{− 1}`, esto significa que las representaciones :math:`R` y :math:`S` son equivalentes, por :ref:`representaciones-matriciales-equivalente` (Ver Sección :doc:`03-representaciones-y-representaciones-matriciales`).
 
 Recíprocamente, si :math:`R` y :math:`S` son equivalentes, de modo que existe una matriz :math:`A` interventora invertible, entonces el mapa lineal :math:`f: U \to V` cuya matriz relativa a nuestras dos bases fijas es :math:`A` es un :math:`G`-isomorfismo.
 
@@ -189,7 +189,7 @@ Isomorfismos entre Representaciones Lineales
 
 Los isomorfismos entre Representaciones Lineales se pueden calcular utilizando la función ``LinearRepresentationIsomorphism( rho, sigma[, rho_cent_basis , sigma_ cent_basis] )`` la cual retorna una matriz :math:`A` o ``fail``
 
-Sean :math:`\rho: G \to GL (V)` y :math:`\sigma: G \to GL (U)`. Si existe un mapa lineal :math:`A: V \to U` tal que :math:`(\sigma g) A = A(\rho g)` para todo :math:`g \in G`, esta función devuelve uno de esos :math:`A`.
+Sean :math:`\rho: G \to GL (V)` y :math:`\sigma: G \to GL (U)`. Si existe un mapa lineal :math:`A: V \to U` tal que :math:`(\sigma g) A = A(\rho_g)` para todo :math:`g \in G`, esta función devuelve uno de esos :math:`A`.
 
 Es decir, que :math:`A` es el isomorfismo o la función que *interviene* las representaciones :math:`\rho` y :math:`\sigma`. :underline:`Si las representaciones no son isomorfas`, se devuelve ``fail``.
 
@@ -315,7 +315,7 @@ IsLinearRepresentationIsomorphism
 
 La función ``IsLinearRepresentationIsomorphism( A, rho, tau)`` devuelve ``true`` si ``rho`` y ``tau`` son :underline:`isomorfos como representaciones con el isomorfismo dado por el mapa lineal` :math:`A`.
 
-Esta función prueba si, para todo :math:`g \in G`, :math:`A (\rho g) = (\sigma g) A`. Es decir, se devuelve verdadero si y solo sí :math:`A` es el operador entrelazado que lleva :math:`\rho` a :math:`\sigma`. Veamos,
+Esta función prueba si, para todo :math:`g \in G`, :math:`A (\rho_g) = (\sigma g) A`. Es decir, se devuelve verdadero si y solo sí :math:`A` es el operador entrelazado que lleva :math:`\rho` a :math:`\sigma`. Veamos,
 
 .. code-block:: gap
     :caption: función IsLinearRepresentationIsomorphism

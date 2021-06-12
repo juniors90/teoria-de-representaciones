@@ -5,7 +5,7 @@ La Representación Regular
 ============================
 
 
-Si un grupo :math:`G` tiene una acción izquierda en un conjunto :math:`S`, entonces asociado con cada :math:`g \in G` es una permutación :math:`\sigma_{g}: S \to S` definida por :math:`\sigma_{g}s = gs` para todo :math:`s \in S`. Además, :math:`g \mapsto \sigma_{g}` es un homomorfismo de :math:`G` a el grupo de todas las permutaciones de :math:`S`. También hemos visto que las permutaciones pueden asociarse con matrices de permutaciones. Si :math:`S = \{s_{1}, s_{2}, \dots, s_{d}\}` obtenemos así un homomorfismo :math:`g \mapsto Rg` de :math:`G` al grupo de todas las matrices de permutación :math:`d \times d`, donde la entrada :math:`(i, j)` de :math:`Rg` es :math:`1` si :math:`v_{i} = gv_{j}` y :math:`0` en caso contrario.* En otras palabras , una representación de permutación se convierte en una representación de matriz si uno identifica permutaciones con matrices de permutación. (El :math:`G`-módulo G asociado con esta representación matricial es un espacio vectorial con base en correspondencia biyectiva con los elementos de :math:`S`, actuando los elementos de :math:`G` mediante transformaciones lineales que permutan esta base).
+Si un grupo :math:`G` tiene una acción izquierda en un conjunto :math:`S`, entonces asociado con cada :math:`g \in G` es una permutación :math:`\sigma_{g}: S \to S` definida por :math:`\sigma_{g}s = gs` para todo :math:`s \in S`. Además, :math:`g \mapsto \sigma_{g}` es un homomorfismo de :math:`G` a el grupo de todas las permutaciones de :math:`S`. También hemos visto que las permutaciones pueden asociarse con matrices de permutaciones. Si :math:`S = \{s_{1}, s_{2}, \dots, s_{d}\}` obtenemos así un homomorfismo :math:`g \mapsto R_g` de :math:`G` al grupo de todas las matrices de permutación :math:`d \times d`, donde la entrada :math:`(i, j)` de :math:`R_g` es :math:`1` si :math:`v_{i} = gv_{j}` y :math:`0` en caso contrario.* En otras palabras , una representación de permutación se convierte en una representación de matriz si uno identifica permutaciones con matrices de permutación. (El :math:`G`-módulo G asociado con esta representación matricial es un espacio vectorial con base en correspondencia biyectiva con los elementos de :math:`S`, actuando los elementos de :math:`G` mediante transformaciones lineales que permutan esta base).
 
 Si consideramos en particular la acción de multiplicación por la izquierda del grupo :math:`G` sobre sí mismo, obtenemos una representación de :math:`G` por :math:`| G | \times | G |` matrices de permutación. Las matrices precisas dependen de un orden elegido de los elementos de :math:`G`. Ilustremos lo que sucede para el grupo :math:`S_{3}`, usando el mismo orden de los elementos que usamos en la tabla de multiplicar dada en la Clase 1:
 
@@ -65,7 +65,7 @@ Similarmente
 
 .. note::
 
-    En el caso de una acción correcta de :math:`G` sobre :math:`S`, la matriz de permutación asociada con :math:`g \in G` debe tener :math:`(i, j)`-entrada :math:`1` si :math:`v_{i}g = v_{j}` y :math:`0` en caso contrario, para asegurar que :math:`R(gh)` sea igual a :math:`(Rg)(Rh)` en lugar de :math:`(Rh)(Rg)`.
+    En el caso de una acción correcta de :math:`G` sobre :math:`S`, la matriz de permutación asociada con :math:`g \in G` debe tener :math:`(i, j)`-entrada :math:`1` si :math:`v_{i}g = v_{j}` y :math:`0` en caso contrario, para asegurar que :math:`R(gh)` sea igual a :math:`(R_g)(Rh)` en lugar de :math:`(Rh)(R_g)`.
 
 
 Los demás son igualmente fáciles de calcular.
@@ -75,7 +75,7 @@ La representación :math:`R: G \to GL (|G|,\mathbb{C})` construida de esta maner
 
 .. math::
 
-    T^{−1}(Rg)T =
+    T^{−1}(R_g)T =
         \left(
             \begin{matrix}
                 S_{1}g & 0      & 0      & \cdots & 0      \\

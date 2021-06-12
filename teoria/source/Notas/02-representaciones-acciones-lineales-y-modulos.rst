@@ -29,35 +29,35 @@ Una acción de :math:`G` sobre :math:`V` es una función :math:`(g, v) \mapsto g
 Proposición
 -----------------
 
-Dada una acción de un grupo :math:`G` sobre un espacio vectorial :math:`V`, para cada :math:`g\in G` definimos una función :math:`\rho g: V \to V` dada por :math:`(\rho g) v = gv` para todo :math:`v\in V`. Entonces :math:`\rho g` es una transformación lineal inversible, y la función :math:`\rho` definida por :math:`g \mapsto \rho g` es un homomorfismo de :math:`G` al grupo de todas las transformaciones lineales invertibles en :math:`V`. A la inversa, dado un homomorfismo :math:`\rho` de :math:`G` al grupo de transformaciones lineales invertibles en :math:`V`, la fórmula :math:`gv = (\rho g) v` define una acción de :math:`G` sobre :math:`V`.
+Dada una acción de un grupo :math:`G` sobre un espacio vectorial :math:`V`, para cada :math:`g\in G` definimos una función :math:`\rho_g: V \to V` dada por :math:`(\rho_g) v = gv` para todo :math:`v\in V`. Entonces :math:`\rho_g` es una transformación lineal inversible, y la función :math:`\rho` definida por :math:`g \mapsto \rho_g` es un homomorfismo de :math:`G` al grupo de todas las transformaciones lineales invertibles en :math:`V`. A la inversa, dado un homomorfismo :math:`\rho` de :math:`G` al grupo de transformaciones lineales invertibles en :math:`V`, la fórmula :math:`gv = (\rho_g) v` define una acción de :math:`G` sobre :math:`V`.
 
 **Demostración:**
 
-Supongamos primero que se da la acción. Como tenemos una acción de :math:`G` sobre el conjunto :math:`V`, sabemos por el argumento anterior que :math:`g \mapsto \rho g` es un homomorfismo de :math:`G` al grupo de todas las funciones invertibles :math:`V \to V`, por lo que todo lo que tenemos que mostrar es que cada función ρg también es lineal. Pero esto es precisamente lo que dicen los puntos :math:`(iii)` y :math:`(iv)` anteriores:
+Supongamos primero que se da la acción. Como tenemos una acción de :math:`G` sobre el conjunto :math:`V`, sabemos por el argumento anterior que :math:`g \mapsto \rho_g` es un homomorfismo de :math:`G` al grupo de todas las funciones invertibles :math:`V \to V`, por lo que todo lo que tenemos que mostrar es que cada función ρg también es lineal. Pero esto es precisamente lo que dicen los puntos :math:`(iii)` y :math:`(iv)` anteriores:
 
 .. math::
 
     \begin{align}
-        (\rho g)(v + w) &= g(v + w) = gv + gw = (\rho g)v + (\rho g)w            \\
-        (\rho g)(\lambda v) &= g(\lambda v) = \lambda (gv) = \lambda ((\rho g)v)
+        (\rho_g)(v + w) &= g(v + w) = gv + gw = (\rho_g)v + (\rho_g)w            \\
+        (\rho_g)(\lambda v) &= g(\lambda v) = \lambda (gv) = \lambda ((\rho_g)v)
     \end{align}
 
 para todo :math:`v, w \in V` y :math:`\lambda \in \mathbb{F}`.
 
-A la inversa, suponga que se da el homomorfismo :math:`\rho`. Si ignoramos el hecho de que las funciones :math:`\rho g` son lineales y, en cambio, nos centramos en el hecho de que son funciones biyectivas :math:`V \to V`, entonces :math:`g \mapsto \rho g` puede considerarse como una representación de permutación de :math:`G` en el conjunto :math:`V`, y de ahí se sigue que :math:`gv = (\rho g) v` define una acción de :math:`G` sobre el conjunto :math:`V`. Así que tenemos que demostrar que la acción es lineal; es decir, que se cumplen :math:`(iii)` y :math:`(iv)`. Por supuesto, esto es exactamente lo que nos dice la linealidad de :math:`\rho g`:
+A la inversa, suponga que se da el homomorfismo :math:`\rho`. Si ignoramos el hecho de que las funciones :math:`\rho_g` son lineales y, en cambio, nos centramos en el hecho de que son funciones biyectivas :math:`V \to V`, entonces :math:`g \mapsto \rho_g` puede considerarse como una representación de permutación de :math:`G` en el conjunto :math:`V`, y de ahí se sigue que :math:`gv = (\rho_g) v` define una acción de :math:`G` sobre el conjunto :math:`V`. Así que tenemos que demostrar que la acción es lineal; es decir, que se cumplen :math:`(iii)` y :math:`(iv)`. Por supuesto, esto es exactamente lo que nos dice la linealidad de :math:`\rho_g`:
 
 .. math::
 
     \begin{align}
-        g(v + w) &= (\rho g)(v + w) = (\rho g)v + (\rho g)w = gv + gw \\
-        g(\lambda v) &= (\rho g)(\lambda v) = \lambda ((\rho g)v) = \lambda (gv)
+        g(v + w) &= (\rho_g)(v + w) = (\rho_g)v + (\rho_g)w = gv + gw \\
+        g(\lambda v) &= (\rho_g)(\lambda v) = \lambda ((\rho_g)v) = \lambda (gv)
     \end{align}
 
 para todo :math:`v, w \in V` y :math:`\lambda \in \mathbb{F}`.
 
 Entonces, una representación de un grupo en un vector es lo mismo que una acción de un grupo en un espacio vectorial. Bien, entonces, ¿por qué no introducir un tercer término para describir esta misma situación?
 
-Definición de :math:`G`-módulo
+Definición de G-módulo
 -------------------------------
 
 Un espacio vectorial :math:`V` en el que un grupo :math:`G` tiene una acción se llama :math:`G`-módulo.

@@ -1,89 +1,83 @@
 .. role:: underline
     :class: underline
     
-Representaciones y representaciones matriciales
-================================================
+Representación matricial
+========================
 
-Sean :math:`U` y :math:`V` espacios vectoriales de dimensión finita sobre el campo :math:`\mathbb{F}`, de dimensiones :math:`m` y :math:`n` respectivamente, y sea :math:`f: U \to V` un mapa lineal. Si :math:`\mathcal{B}` es una base de :math:`U` y :math:`\mathcal{C}` una base de :math:`V`, entonces la matriz de :math:`f` relativa a :math:`\mathcal{B}` y :math:`\mathcal{C}` es la matriz :math:`n \times m` :math:`M_{\mathcal{C B}} (f)` cuya entrada :math:`(i, j)` es el escalar :math:`a_{ij}`, donde
+Sean :math:`U` y :math:`V` espacios vectoriales de dimensión finita sobre el cuerpo :math:`\mathbb{F}`, de dimensiones :math:`m` y :math:`n` respectivamente, y sea :math:`f: U \to V` un mapa lineal. Si :math:`\mathcal{B}` es una base de :math:`U` y :math:`\mathcal{C}` una base de :math:`V`, entonces la matriz de :math:`f` relativa a :math:`\mathcal{B}` y :math:`\mathcal{C}` es la matriz :math:`M_{\mathcal{C B}} (f)` de orden :math:`n \times m` cuya entrada :math:`(i, j)` es el escalar :math:`a_{ij}`, donde
 
 .. math:: 
     
-    fu_{j} = \sum_{i = 1}^{n} a_{ij}v_{i} \text{ para todo } j = 1, 2, \dots , m,
+    f(u_{j}) = \sum_{i = 1}^{n} a_{ij}v_{i} \text{ para todo } j = 1, 2, \dots , m,
 
-siendo  :math:`u_{1}`, :math:`u_{2}`, :math:`\dots` , :math:`u_{m}` los vectores que componen la base :math:`\mathcal{B}`, y :math:`v_{1}`, :math:`v_{2}`, :math:`\dots`, :math:`v_{n}` los que componen la base :math:`\mathcal{C}`.
-
-La conexión entre matrices y transformaciones lineales son temas básicos de Álgebra Lineal. Los principales hechos son los siguientes:
-
-- Al multiplicar el vector de coordenadas relativo a :math:`\mathcal{B}` de un elemento :math:`u \in U` por :math:`M_{\mathcal{C B}} (f)` se obtiene el vector de coordenadas relativo a :math:`\mathcal{C}` de :math:`fu \in V`; es decir, si :math:`u = \sum_{j = 1}^{m} \lambda_{j}u_{j}` entonces :math:`fu = \sum_{i = 1}^{n} \lambda_{i}v_{i}`, donde
-
-.. math::
-
-    M_{\mathcal{C B}} (f) \left(\begin{matrix}\mu_{1}\\ \mu_{2} \\ \vdots \\ \mu_{m} \end{matrix}\right) = \left(\begin{matrix}\lambda_{1} \\ \lambda_{2} \\ \vdots \\ \lambda_{n} \end{matrix}\right)
+tales que :math:`\mathcal{B}=\{u_{1}, u_{2}, \dots, u_{m} \}` y :math:`\mathcal{C} = \{v_{1}, v_{2}, \dots, v_{n}\}`.
 
 
-Si las bases :math:`\mathcal{B}` y :math:`\mathcal{C}` son fijas, el mapeo :math:`f\to M_{\mathcal{C B}} (f)` es una correspondencia biyectiva entre el conjunto de todos los mapas lineales :math:`U \to V` y el conjunto de todas las matrices :math:`n \times m` sobre :math:`\mathbb{F}`. Si :math:`f: U \to V` y :math:`h: V \to W` son ambos mapas lineales, y :math:`\mathcal{D}` es una base del espacio vectorial :math:`W`, entonces :math:`M_{\mathcal{D B}} (hf) = M_{\mathcal{D C}} (h) M_{\mathcal{C B}} (f)`.
+- El grupo de todas las transformaciones lineales invertibles en un espacio vectorial :math:`V` se llama grupo lineal general :math:`GL(V)` del espacio :math:`V`.
 
-Y de manera similar, si :math:`h` y :math:`f` son dos mapas lineales de :math:`U` a :math:`V`, entonces :math:`M_{\mathcal{C B}} (h + f) = M_{\mathcal{C B}} (h) + M_{\mathcal{C B}} (f)`.
+- El grupo de matrices :math:`d \times d` invertibles sobre :math:`\mathbb{F}` se escribe como :math:`GL(d,\mathbb{F})` y se llama el grupo lineal general de grado :math:`d` sobre :math:`\mathbb{F}`.
 
-En particular tenemos eso
+
+Hemos definido una representación (lineal) de :math:`G` en :math:`V` como un homomorfismo :math:`\rho : G \to GL (V)`. Ahora pasamos a definir una *representación matricial* de :math:`G` en :math:`V`.
+
+.. _representacion-matricial:
+
+Representación matricial
+--------------------------
+
+Una representación matricial de :math:`G` es un homomorfismo :math:`G\to GL(d,\mathbb{F})`. El entero :math:`d` se llama grado de representación.
+
+Si :math:`\rho` es una representación de :math:`G` en un espacio vectorial :math:`V` de dimensión :math:`d`, y si :math:`\mathcal{C}` es una base de :math:`V`, entonces obtenemos una representación matricial de :math:`G` de grado :math:`d` definiendo :math:`R_g = M_{\mathcal{CC}} (\rho_g)` para cada :math:`g \in G`.
+
+El mapa :math:`R:G\to GL(d,\mathbb{F})` es ciertamente un homomorfismo ya que es la composición del homomorfismo :math:`g \mapsto \rho_g` de :math:`G` a :math:`GL (V)` y el isomorfismo :math:`f \mapsto M_{\mathcal{CC}} (f)` de :math:`GL (V)`a :math:`GL(d,\mathbb{F})`. Por tanto, :math:`R` es una representación matricial, como se afirma.
+
+Recíprocamente, dada una representación matricial :math:`R:G\to GL(d,\mathbb{F})` podemos obtener una representación :math:`\rho: G \to GL (V)` definiendo :math:`\rho_g` como la transformación lineal cuya matriz relativa a :math:`\mathcal{C}` es :math:`R_g`.
+
+.. Cambiar Nota por "La moraleja de esta historia es la siguiente:" 
+
+.. note::
+
+    Una vez que se fija una base de :math:`V`, una representación de :math:`G` sobre :math:`V` es esencialmente lo mismo que una representación matricial de :math:`G` de grado :math:`d = dim V`.
+
+.. _representaciones-matriciales-equivalentes:
+
+Representaciones matriciales equivalentes
+-------------------------------------------
+
+Dado que la elección de una base para un espacio vectorial es un asunto algo arbitrario, es natural investigar la relación entre dos representaciones matriciales que se derivan de la misma representación :math:`\rho: G \to GL (V)` eligiendo dos bases diferentes. Entonces suponga que :math:`\mathcal{B}` y :math:`\mathcal{C}` son bases de :math:`V`, y sean :math:`R, S:G\to GL(d,\mathbb{F})` definidas por las fórmulas :math:`R_g = M_{\mathcal{CC}} (\rho_g)` y :math:`S_g = M_{\mathcal{BB}} (\rho_g)`, para todo :math:`g \in G`. Si :math:`T = M_{\mathcal{BC}}(id)` entonces encontramos que para todo :math:`g \in G`,
 
 .. math::
 
     \begin{align}
-        M_{\mathcal{C C}}(hf) &= MC C(h)MC C(f)\\
-        M_{\mathcal{C C}}(h + f) &= M_{\mathcal{C C}}(h) + M_{\mathcal{C C}}(f)
+        T(R_g) &= M_{\mathcal{BC}}(id)M_{\mathcal{CC}}(\rho_g)  \\
+              &= M_{\mathcal{BC}}(id(\rho_g))                \\
+              &= M_{\mathcal{BC}}((\rho_g) id)                \\
+              &= M_{\mathcal{BB}}(\rho_g) M_{\mathcal{BC}}(id)  \\
+              &= (S_g)T.
     \end{align}
 
-para todas las transformaciones lineales :math:`h, f: V \to V`. Dado que la matriz de la transformación lineal identidad es la matriz identidad, de la primera de estas dos ecuaciones se deduce que una transformación lineal :math:`V \to V` es invertible si y solo si su matriz es relativa a :math:`C` es invertible, y deducimos que :math:`f \mapsto M_{\mathcal{C C}} (f)` es un isomorfismo del grupo de todas las transformaciones lineales invertibles en :math:`V` al grupo de todas las matrices :math:`n \times n` invertibles sobre :math:`\mathbb{F}`.
+Dado que
+
+.. math::
+
+    \begin{align}
+        M_{\mathcal{BC}}(id) M_{\mathcal{CB}} (id) &= M_{\mathcal{BB}}(id) = I&\text{y}&&M_{\mathcal{CB}} (id) M_{\mathcal{BC}} (id) &= M_{\mathcal{CC}}(id) = I,
+    \end{align}
+    
+vemos que la matriz :math:`T` es invertible. Por tanto, :math:`S_g = T(R_g) T^{−1}` para todo :math:`g \in G`.
+
+.. _definicion-de-representaciones-matriciales-equivalente:
 
 Definición
------------------
+~~~~~~~~~~~
 
-El grupo de todas las transformaciones lineales invertibles en un espacio vectorial V se llama grupo lineal general :math:`GL(V)` del espacio :math:`V`. El grupo de matrices :math:`d \times d` invertibles sobre :math:`\mathbb{F}` se escribe como :math:`GL(d,\mathbb{F})` y se llama el grupo lineal general de grado :math:`d` sobre :math:`\mathbb{F}`.
-
-
-Hemos definido una representación (lineal) de :math:`G` en :math:`V` como un homomorfismo :math:`\rho : G \to GL (V)`.
-
-De manera similar, una representación matricial de :math:`G` es un homomorfismo
-
-.. math::
-
-    G\to GL(d,\mathbb{F}).
-    
-El entero :math:`d` se llama grado de representación.
-
-Si :math:`\rho` es una representación de :math:`G` en un espacio vectorial :math:`V` de dimensión :math:`d`, y si :math:`\mathcal{C}` es una base de :math:`V`, entonces obtenemos una representación matricial de :math:`G` de grado :math:`d` definiendo
-
-.. math::
-
-    Rg = M_{\mathcal{CC}} (\rho g)
-    
-para cada :math:`g \in G`.
-
-El mapa :math:`R:G\to GL(d,\mathbb{F})` es ciertamente un homomorfismo ya que es el compuesto del homomorfismo :math:`g \mapsto \rho g` de :math:`G` a :math:`GL (V)` y el isomorfismo :math:`f \mapsto M_{\mathcal{CC}} (f)` de :math:`GL (V)`a :math:`GL(d,\mathbb{F})`. Por tanto, :math:`R` es una representación matricial, como se afirma.
-
-Recíprocamente, dada una representación matricial :math:`R:G\to GL(d,\mathbb{F})` podemos obtener una representación :math:`\rho: G \to GL (V)` definiendo :math:`\rho g` como la transformación lineal cuya matriz relativa a :math:`\mathcal{C}` es :math:`Rg`. La moraleja de esta historia es la siguiente: una vez que se fija una base de :math:`V`, una representación de :math:`G` sobre :math:`V` es esencialmente lo mismo que una representación matricial de :math:`G` de grado :math:`d = dim V`.
-
-Dado que la elección de una base para un espacio vectorial es un asunto algo arbitrario, es natural investigar la relación entre dos representaciones matriciales que se derivan de la misma representación :math:`\rho: G \to GL (V)` eligiendo dos bases diferentes. Entonces suponga que :math:`\mathcal{B}` y :math:`\mathcal{C}` son bases de :math:`V`, y sean :math:`R, S:G\to GL(d,\mathbb{F})` definidas por las fórmulas :math:`Rg = M_{\mathcal{CC}} (\rho g)` y :math:`Sg = M_{\mathcal{BB}} (ρg)`, para todo :math:`g \in G`. Si :math:`T = M_{\mathcal{BC}}(id)` entonces encontramos que para todo :math:`g \in G`,
-
-.. math::
-
-    T(Rg) = M_{\mathcal{BC}}(id)M_{\mathcal{CC}}(\rho g) = M_{\mathcal{BC}}((id)(\rho g)) = M_{\mathcal{BC}}((\rho g)(id)) = M_{\mathcal{BB}}(\rho g)M_{\mathcal{BC}}(id) = (Sg)T.
-
-Dado que :math:`M_{\mathcal{BC}}(id) M_{\mathcal{CB}} (id) = M_{\mathcal{BB}}(id) = I`. Similarmente :math:`M_{\mathcal{CB}} (id) M_{\mathcal{BC}} (id) = M_{\mathcal{CC}}(id) = I`, vemos que la matriz :math:`T` es invertible. Por tanto, :math:`Sg = T(Rg) T^{−1}` para todo :math:`g \in G`.
-
-.. _representaciones-matriciales-equivalente:
-
-Definición
------------------
-
-Se dice que las representaciones matriciales :math:`R, S:G\to GL(d,\mathbb{F})` son equivalentes si existe :math:`T \in GL(d,\mathbb{F})` tal que :math:`Sg = T(Rg) T^{−1}` para todo :math:`g \in G`.
+Se dice que las representaciones matriciales :math:`R, S:G\to GL(d,\mathbb{F})` son equivalentes si existe :math:`T \in GL(d,\mathbb{F})` tal que :math:`S_g = T(R_g) T^{−1}` para todo :math:`g \in G`.
 
 
 Algunas representaciones del grupo simétrico de grado 3
 -----------------------------------------------------------------
 
-Sea :math:`\sigma` una permutación de :math:`\{1, 2,\dots , n\}`. Si :math:`V` es un espacio vectorial (sobre cualquier campo :math:`\mathbb{F}`) con base :math:`v_{1}, v_{2},\dots , v_{n}` entonces hay una transformación lineal :math:`p_{\sigma}: V \to V` tal que :math:`v_{i}\mapsto v_{\sigma j}` para cada :math:`j`. Es decir, :math:`p_{\sigma}v_{j} = \sum_{i=1}^{n} \delta_{i\sigma j} v_{i}`. Por tanto, la matriz de :math:`p_{\sigma}` relativa a la base :math:`v_{1}, v_{2},\dots , v_{n}` es la matriz :math:`P_{\sigma}` cuya entrada :math:`(i, j)` es :math:`\delta_{i} \sigma_{j}`. Llamamos :math:`P_{\sigma}` a la matriz de permutación correspondiente a :math:`\sigma`. Es trivial comprobar a partir de la definición que si :math:`\sigma` y :math:`\tau` son permutaciones de :math:`\{1, 2,\dots , n\}` entonces :math:`p_{\sigma \tau} = p_{\sigma}p_{\tau}`: de hecho, para todo :math:`j` tenemos
+Sea :math:`\sigma` una permutación de :math:`\{1, 2,\dots , n\}`. Si :math:`V` es un espacio vectorial (sobre cualquier cuerpo :math:`\mathbb{F}`) con base :math:`v_{1}, v_{2},\dots , v_{n}` entonces hay una transformación lineal :math:`p_{\sigma}: V \to V` tal que :math:`v_{i}\mapsto v_{\sigma j}` para cada :math:`j`. Es decir, :math:`p_{\sigma}v_{j} = \sum_{i=1}^{n} \delta_{i\sigma j} v_{i}`. Por tanto, la matriz de :math:`p_{\sigma}` relativa a la base :math:`v_{1}, v_{2},\dots , v_{n}` es la matriz :math:`P_{\sigma}` cuya entrada :math:`(i, j)` es :math:`\delta_{i} \sigma_{j}`. Llamamos :math:`P_{\sigma}` a la matriz de permutación correspondiente a :math:`\sigma`. Es trivial comprobar a partir de la definición que si :math:`\sigma` y :math:`\tau` son permutaciones de :math:`\{1, 2,\dots , n\}` entonces :math:`p_{\sigma \tau} = p_{\sigma}p_{\tau}`: de hecho, para todo :math:`j` tenemos
 
 .. math::
 
@@ -152,7 +146,7 @@ Cuando se escribe explícitamente en el caso :math:`n = 3`, la representación m
     \end{align}
 
 
-Dado que :math:`det (AB) = det A det B` siempre que :math:`A` y :math:`B` son matrices :math:`d \times d`, vemos que si :math:`R: g \mapsto Rg` es una representación matricial del grado :math:`d` de cualquier grupo :math:`G`, entonces :math:`g \mapsto det (Rg)` es una representación matricial del grado :math:`1` del grupo :math:`G`. Al aplicar esta observación a la representación anterior de :math:`S_{3}` se obtiene la representación dada por
+Dado que :math:`det (AB) = det A det B` siempre que :math:`A` y :math:`B` son matrices :math:`d \times d`, vemos que si :math:`R: g \mapsto R_g` es una representación matricial del grado :math:`d` de cualquier grupo :math:`G`, entonces :math:`g \mapsto det (R_g)` es una representación matricial del grado :math:`1` del grupo :math:`G`. Al aplicar esta observación a la representación anterior de :math:`S_{3}` se obtiene la representación dada por
 
 .. math::
 
@@ -237,5 +231,5 @@ es un :math:`S_{3}`-submódulo de :math:`V`. Para probar esto, basta con mostrar
 
 Así hemos obtenido una representación matricial de :math:`S_{3}` de grado :math:`2`.
 
-Supongamos, para mayor precisión, que el campo :math:`\mathbb{F}` (el campo escalar para :math:`V` y el campo de coeficientes para nuestras matrices) es :math:`\mathbb{C}`, el campo de números complejos. Las dos representaciones de :math:`S_{3}` de grado :math:`1` y la representación de :math:`S_{3}` de grado :math:`2` que hemos descrito anteriormente son todas representaciones irreductibles de :math:`S_{3}`, en un sentido que definiremos en breve. Además, resulta que cualquier representación compleja irreducible de :math:`S_{3}` tiene que ser equivalente a una de estas tres. Los principales teoremas de la teoría de la representación que discutiremos en este curso nos dicen en principio cómo una representación compleja arbitraria de un grupo finito :math:`G` puede expresarse en términos de representaciones complejas irreducibles, y cuántas clases de equivalencia de representaciones complejas irreducibles tiene un grupo finito. No existe un método uniforme conocido para construir las representaciones irreductibles de un grupo finito arbitrario y, en consecuencia, el principal problema práctico de la teoría de la representación es encontrar descripciones elegantes de las representaciones irreductibles de varias clases importantes de grupos finitos. En verdad, no hay muchas clases de grupos para los que se haya logrado este objetivo, pero los grupos simétricos constituyen una clase para la que se ha descubierto una teoría completa. Se espera que se describa parte de esta teoría antes del final de este curso.
+Supongamos, para mayor precisión, que el cuerpo :math:`\mathbb{F}` (el cuerpo escalar para :math:`V` y el cuerpo de coeficientes para nuestras matrices) es :math:`\mathbb{C}`, el cuerpo de números complejos. Las dos representaciones de :math:`S_{3}` de grado :math:`1` y la representación de :math:`S_{3}` de grado :math:`2` que hemos descrito anteriormente son todas representaciones irreductibles de :math:`S_{3}`, en un sentido que definiremos en breve. Además, resulta que cualquier representación compleja irreducible de :math:`S_{3}` tiene que ser equivalente a una de estas tres. Los principales teoremas de la teoría de la representación que discutiremos en este curso nos dicen en principio cómo una representación compleja arbitraria de un grupo finito :math:`G` puede expresarse en términos de representaciones complejas irreducibles, y cuántas clases de equivalencia de representaciones complejas irreducibles tiene un grupo finito. No existe un método uniforme conocido para construir las representaciones irreductibles de un grupo finito arbitrario y, en consecuencia, el principal problema práctico de la teoría de la representación es encontrar descripciones elegantes de las representaciones irreductibles de varias clases importantes de grupos finitos. En verdad, no hay muchas clases de grupos para los que se haya logrado este objetivo, pero los grupos simétricos constituyen una clase para la que se ha descubierto una teoría completa. Se espera que se describa parte de esta teoría antes del final de este curso.
 

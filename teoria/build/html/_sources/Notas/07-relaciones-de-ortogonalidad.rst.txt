@@ -9,7 +9,7 @@ Un poco de escepticismo es algo saludable, y sería natural en esta etapa ser un
 Lema
 -------------
 
-Sea :math:`G` un grupo finito, y sean :math:`R`, :math:`S` representaciones matriciales de :math:`G` de grados :math:`n` y :math:`m` respectivamente. Si :math:`X` es cualquier matriz :math:`n \times m`, entonces :math:`Y = \sum_{g\in G} (Rg) X (S (g^{− 1}))` entrelaza :math:`R` y :math:`S`.
+Sea :math:`G` un grupo finito, y sean :math:`R`, :math:`S` representaciones matriciales de :math:`G` de grados :math:`n` y :math:`m` respectivamente. Si :math:`X` es cualquier matriz :math:`n \times m`, entonces :math:`Y = \sum_{g\in G} (R_g) X (S (g^{− 1}))` entrelaza :math:`R` y :math:`S`.
 
 **Demostración:**
 
@@ -18,7 +18,7 @@ Para todo :math:`h \in G`,
 .. math::
 
     \begin{align}
-        (Rh)Y &= \sum_{g\in G} (Rh)(Rg)X(S(g−1))\\
+        (Rh)Y &= \sum_{g\in G} (Rh)(R_g)X(S(g−1))\\
               &= \sum_{g\in G} (R(hg))X(S(g^{−1}))(S(h−1))(Sh)\\
               &= \left(\sum_{g\in G} (R(hg))X(S(g^{−1}h^{−1})\right) (Sh)\\
               &= \left(\sum_{g\in G} (Rk)X(S(k−1)\right) (Sh)\\
@@ -96,12 +96,12 @@ Entonces :math:`\mu k = d_{k}^{-1}`, y la Ecuación :math:`(1)` se convierte en
 
 Este resultado básico se conoce como *ortogonalidad de funciones coordenadas*.
 
-.. En el Tutorial 1 se demostró que cada representación matricial de un grupo finito es equivalente a una representación unitaria, que por definición es una representación :math:`R` tal que :math:`Rg` es una matriz unitaria para cada :math:`g \in G`.
+.. En el Tutorial 1 se demostró que cada representación matricial de un grupo finito es equivalente a una representación unitaria, que por definición es una representación :math:`R` tal que :math:`R_g` es una matriz unitaria para cada :math:`g \in G`.
 
 Definición (Preguntar)
 ---------------------------------
 
-Se :math:`R` representación matricial de un grupo finito :math:`G`. Se dice que :math:`R` es una representación unitaria si se cumple que que :math:`Rg` es una matriz unitaria para cada :math:`g \in G`.
+Se :math:`R` representación matricial de un grupo finito :math:`G`. Se dice que :math:`R` es una representación unitaria si se cumple que que :math:`R_g` es una matriz unitaria para cada :math:`g \in G`.
 
 .. note::
 
@@ -114,7 +114,7 @@ Dada una representación matricial :math:`R: G \to GL (d, \mathbb{C})` podemos c
 
 .. math::
 
-    gv = (Rg)v (\text{ para todo } g \in G \text{ y } v \in V).
+    gv = (R_g)v (\text{ para todo } g \in G \text{ y } v \in V).
 
 El espacio :math:`V` es, por supuesto, un espacio de producto interno en relación con el producto interno estándar o producto escalar.
 
@@ -155,7 +155,7 @@ Ahora elija una base :math:`v_{1}`, :math:`v_{2}`, :math:`\dots` , :math:`v_{d}`
 
     gv_{j} = \sum_{i=1}^{d} (Sg)_{ij}v_{i}
 
-para todo :math:`g\in G` y :math:`j \in \{1, 2,\dots , d\}`. La representación :math:`S` es entonces equivalente a la representación R; de hecho, :math:`Sg = T^{−1} (Rg) T` (para todo :math:`g\in G`), donde :math:`T` es la matriz de transición para cambiar las coordenadas relativas a :math:`v_{1}`, :math:`v_{2}`, :math:`\dots` , :math:`v_{d}` en coordenadas estándar. Específicamente, la :math:`j`-ésima columna de :math:`T` es simplemente el vector de columna :math:`v_{j}`. Además, :math:`S` es una representación unitaria. Para ver esto, observe que la invariancia :math:`G` de :math:`\ast` produce (por definición) que :math:`(gv) \ast (gu) = v \ast u` para todo :math:`u`, :math:`v \in V`, y ahora desde la base :math:`v_{1}`, :math:`v_{2}`, :math:`\dots` , :math:`v_{d}` es ortonormal
+para todo :math:`g\in G` y :math:`j \in \{1, 2,\dots , d\}`. La representación :math:`S` es entonces equivalente a la representación R; de hecho, :math:`Sg = T^{−1} (R_g) T` (para todo :math:`g\in G`), donde :math:`T` es la matriz de transición para cambiar las coordenadas relativas a :math:`v_{1}`, :math:`v_{2}`, :math:`\dots` , :math:`v_{d}` en coordenadas estándar. Específicamente, la :math:`j`-ésima columna de :math:`T` es simplemente el vector de columna :math:`v_{j}`. Además, :math:`S` es una representación unitaria. Para ver esto, observe que la invariancia :math:`G` de :math:`\ast` produce (por definición) que :math:`(gv) \ast (gu) = v \ast u` para todo :math:`u`, :math:`v \in V`, y ahora desde la base :math:`v_{1}`, :math:`v_{2}`, :math:`\dots` , :math:`v_{d}` es ortonormal
 
 .. math::
     

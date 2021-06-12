@@ -36,13 +36,14 @@
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/translations.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
-    <link rel="next" title="1. Grupos" href="Notas/01-grupos.html" /> 
+    <link rel="next" title="1. Ejemplos de acción de un grupo sobre un conjunto" href="Notas/01-ejemplo-de-accion-de-un-grupo-sobre-un-conjunto.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -89,20 +90,19 @@
             
               <p class="caption"><span class="caption-text">Contenidos:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="Notas/01-grupos.html">1. Grupos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Notas/01-ejemplo-de-accion-de-un-grupo-sobre-un-conjunto.html">2. Ejemplos de acción de un grupo sobre un conjunto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Notas/01-representaciones-por-permutacion-y-acciones.html">3. Representaciones por Permutacion y Acciones</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Notas/02-representaciones-acciones-lineales-y-modulos.html">4. Representaciones, Acciones lineales y módulos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Notas/03-representaciones-y-representaciones-matriciales.html">5. Representaciones y representaciones matriciales</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Notas/04-matrices-interventoras.html">6. Matrices Interventoras</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Notas/05-modulos-cocientes.html">7. Módulos Cocientes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Notas/06-modulos-indescomponibles-y-modulos-irreducibles.html">8. Módulos Indescomponibles y Módulos Irreducibles</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Notas/07-relaciones-de-ortogonalidad.html">9. Relaciones de ortogonalidad</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Notas/08-la-representacion-regular.html">10. La Representación Regular</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Notas/09-el-espacio-coordenado-de-una-representacion.html">11. El Espacio Coordinado de una Representación</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Notas/10-funciones-de-clase.html">12. Funciones de clase</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Notas/11-funcion-caracteristica.html">13. Función Característica</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Notas/12-caracterizacion-de-caracteristicas-de-representaciones-complejas-irreducibles-de-un-grupo-finito.html">14. Caracterización de Características de Representaciones Complejas Irreducibles de un Grupo Finito</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Notas/01-ejemplo-de-accion-de-un-grupo-sobre-un-conjunto.html">1. Ejemplos de acción de un grupo sobre un conjunto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Notas/01-representaciones-por-permutacion-y-acciones.html">2. Representaciones por Permutacion y Acciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Notas/02-representaciones-acciones-lineales-y-modulos.html">3. Representaciones, Acciones lineales y módulos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Notas/03-representaciones-y-representaciones-matriciales.html">4. Representación matricial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Notas/04-matrices-interventoras.html">5. Matrices Interventoras</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Notas/05-modulos-cocientes.html">6. Módulos Cocientes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Notas/06-modulos-indescomponibles-y-modulos-irreducibles.html">7. Módulos Indescomponibles y Módulos Irreducibles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Notas/07-relaciones-de-ortogonalidad.html">8. Relaciones de ortogonalidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Notas/08-la-representacion-regular.html">9. La Representación Regular</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Notas/09-el-espacio-coordenado-de-una-representacion.html">10. El Espacio Coordinado de una Representación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Notas/10-funciones-de-clase.html">11. Funciones de clase</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Notas/11-funcion-caracteristica.html">12. Función Característica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Notas/12-caracterizacion-de-caracteristicas-de-representaciones-complejas-irreducibles-de-un-grupo-finito.html">13. Caracterización de Características de Representaciones Complejas Irreducibles de un Grupo Finito</a></li>
 </ul>
 
             
@@ -175,81 +175,154 @@
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">Contenidos:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="Notas/01-grupos.html">1. Grupos</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Notas/01-grupos.html#proposicion">1.1. Proposición</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Notas/01-grupos.html#definicion-de-centralizador">1.2. Definición de Centralizador</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Notas/01-ejemplo-de-accion-de-un-grupo-sobre-un-conjunto.html">1. Ejemplos de acción de un grupo sobre un conjunto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Notas/01-representaciones-por-permutacion-y-acciones.html">2. Representaciones por Permutacion y Acciones</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Notas/01-representaciones-por-permutacion-y-acciones.html#introduccion">2.1. Introducción</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Notas/01-representaciones-por-permutacion-y-acciones.html#id1">2.2. Representaciones por Permutación y Acciones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Notas/01-representaciones-por-permutacion-y-acciones.html#accion-de-un-grupo-sobre-un-conjunto">2.3. Acción de un grupo sobre un conjunto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Notas/01-representaciones-por-permutacion-y-acciones.html#acciones-de-grupos">2.4. Acciones de Grupos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Notas/01-representaciones-por-permutacion-y-acciones.html#definicion">2.5. Definición</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Notas/01-ejemplo-de-accion-de-un-grupo-sobre-un-conjunto.html">2. Ejemplos de acción de un grupo sobre un conjunto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Notas/01-representaciones-por-permutacion-y-acciones.html">3. Representaciones por Permutacion y Acciones</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Notas/01-representaciones-por-permutacion-y-acciones.html#introduccion">3.1. Introducción</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Notas/01-representaciones-por-permutacion-y-acciones.html#id1">3.2. Representaciones por Permutación y Acciones</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Notas/01-representaciones-por-permutacion-y-acciones.html#accion-de-un-grupo-sobre-un-conjunto">3.3. Acción de un grupo sobre un conjunto</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Notas/01-representaciones-por-permutacion-y-acciones.html#acciones-de-grupos">3.4. Acciones de Grupos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Notas/01-representaciones-por-permutacion-y-acciones.html#definicion">3.5. Definición</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Notas/02-representaciones-acciones-lineales-y-modulos.html">3. Representaciones, Acciones lineales y módulos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Notas/02-representaciones-acciones-lineales-y-modulos.html#definicion-de-accion-de-un-grupo-sobre-un-espacio-vectorial">3.1. Definición de acción de un grupo sobre un espacio vectorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Notas/02-representaciones-acciones-lineales-y-modulos.html#proposicion">3.2. Proposición</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Notas/02-representaciones-acciones-lineales-y-modulos.html#definicion-de-g-modulo">3.3. Definición de G-módulo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Notas/02-representaciones-acciones-lineales-y-modulos.html#definicion">3.4. Definición</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Notas/02-representaciones-acciones-lineales-y-modulos.html#id1">3.5. Definición</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Notas/02-representaciones-acciones-lineales-y-modulos.html">4. Representaciones, Acciones lineales y módulos</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Notas/02-representaciones-acciones-lineales-y-modulos.html#definicion-de-accion-de-un-grupo-sobre-un-espacio-vectorial">4.1. Definición de acción de un grupo sobre un espacio vectorial</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Notas/02-representaciones-acciones-lineales-y-modulos.html#proposicion">4.2. Proposición</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Notas/02-representaciones-acciones-lineales-y-modulos.html#definicion-de-g-modulo">4.3. Definición de <span class="math notranslate nohighlight">\(G\)</span>-módulo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Notas/02-representaciones-acciones-lineales-y-modulos.html#definicion">4.4. Definición</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Notas/02-representaciones-acciones-lineales-y-modulos.html#id1">4.5. Definición</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Notas/03-representaciones-y-representaciones-matriciales.html">4. Representación matricial</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Notas/03-representaciones-y-representaciones-matriciales.html#id1">4.1. Representación matricial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Notas/03-representaciones-y-representaciones-matriciales.html#representaciones-matriciales-equivalentes">4.2. Representaciones matriciales equivalentes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Notas/03-representaciones-y-representaciones-matriciales.html#algunas-representaciones-del-grupo-simetrico-de-grado-3">4.3. Algunas representaciones del grupo simétrico de grado 3</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Notas/03-representaciones-y-representaciones-matriciales.html">5. Representaciones y representaciones matriciales</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Notas/03-representaciones-y-representaciones-matriciales.html#definicion">5.1. Definición</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Notas/03-representaciones-y-representaciones-matriciales.html#representaciones-matriciales-equivalente">5.2. Definición</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Notas/03-representaciones-y-representaciones-matriciales.html#algunas-representaciones-del-grupo-simetrico-de-grado-3">5.3. Algunas representaciones del grupo simétrico de grado 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Notas/04-matrices-interventoras.html">5. Matrices Interventoras</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Notas/04-matrices-interventoras.html#estabilizador">5.1. Estabilizador</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Notas/04-matrices-interventoras.html#id1">5.2. Matrices Interventoras</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Notas/04-matrices-interventoras.html#implementacion-en-gap">5.3. Implementacion en GAP</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Notas/04-matrices-interventoras.html">6. Matrices Interventoras</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Notas/04-matrices-interventoras.html#estabilizador">6.1. Estabilizador</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Notas/04-matrices-interventoras.html#id1">6.2. Matrices Interventoras</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Notas/04-matrices-interventoras.html#implementacion-en-gap">6.3. Implementacion en GAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Notas/05-modulos-cocientes.html">6. Módulos Cocientes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Notas/05-modulos-cocientes.html#teorema-isomorfismo">6.1. Teorema Isomorfismo</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Notas/05-modulos-cocientes.html">7. Módulos Cocientes</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Notas/05-modulos-cocientes.html#teorema-isomorfismo">7.1. Teorema Isomorfismo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Notas/06-modulos-indescomponibles-y-modulos-irreducibles.html">7. Módulos Indescomponibles y Módulos Irreducibles</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Notas/06-modulos-indescomponibles-y-modulos-irreducibles.html#definicion">7.1. Definición</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Notas/06-modulos-indescomponibles-y-modulos-irreducibles.html#id1">7.2. Definición</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Notas/06-modulos-indescomponibles-y-modulos-irreducibles.html#teorema-de-maschke">7.3. Teorema de Maschke</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Notas/06-modulos-indescomponibles-y-modulos-irreducibles.html#lema-de-schur-version-1">7.4. Lema de Schur (Versión 1).</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Notas/06-modulos-indescomponibles-y-modulos-irreducibles.html#lema-de-schur-version-2">7.5. Lema de Schur (Versión 2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Notas/06-modulos-indescomponibles-y-modulos-irreducibles.html#lema-de-schur-version-3">7.6. Lema de Schur (Version 3)</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Notas/06-modulos-indescomponibles-y-modulos-irreducibles.html">8. Módulos Indescomponibles y Módulos Irreducibles</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Notas/06-modulos-indescomponibles-y-modulos-irreducibles.html#definicion">8.1. Definición</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Notas/06-modulos-indescomponibles-y-modulos-irreducibles.html#id1">8.2. Definición</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Notas/06-modulos-indescomponibles-y-modulos-irreducibles.html#teorema-de-maschke">8.3. Teorema de Maschke</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Notas/06-modulos-indescomponibles-y-modulos-irreducibles.html#lema-de-schur-version-1">8.4. Lema de Schur (Versión 1).</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Notas/06-modulos-indescomponibles-y-modulos-irreducibles.html#lema-de-schur-version-2">8.5. Lema de Schur (Versión 2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Notas/06-modulos-indescomponibles-y-modulos-irreducibles.html#lema-de-schur-version-3">8.6. Lema de Schur (Version 3)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Notas/07-relaciones-de-ortogonalidad.html">8. Relaciones de ortogonalidad</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Notas/07-relaciones-de-ortogonalidad.html#lema">8.1. Lema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Notas/07-relaciones-de-ortogonalidad.html#definicion-preguntar">8.2. Definición (Preguntar)</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Notas/07-relaciones-de-ortogonalidad.html">9. Relaciones de ortogonalidad</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Notas/07-relaciones-de-ortogonalidad.html#lema">9.1. Lema</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Notas/07-relaciones-de-ortogonalidad.html#definicion-preguntar">9.2. Definición (Preguntar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Notas/08-la-representacion-regular.html">9. La Representación Regular</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Notas/09-el-espacio-coordenado-de-una-representacion.html">10. El Espacio Coordinado de una Representación</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Notas/09-el-espacio-coordenado-de-una-representacion.html#proposicion">10.1. Proposición</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Notas/09-el-espacio-coordenado-de-una-representacion.html#id1">10.2. Proposición</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Notas/09-el-espacio-coordenado-de-una-representacion.html#id2">10.3. Proposición</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Notas/08-la-representacion-regular.html">10. La Representación Regular</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Notas/09-el-espacio-coordenado-de-una-representacion.html">11. El Espacio Coordinado de una Representación</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Notas/09-el-espacio-coordenado-de-una-representacion.html#proposicion">11.1. Proposición</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Notas/09-el-espacio-coordenado-de-una-representacion.html#id1">11.2. Proposición</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Notas/09-el-espacio-coordenado-de-una-representacion.html#id2">11.3. Proposición</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Notas/10-funciones-de-clase.html">11. Funciones de clase</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Notas/10-funciones-de-clase.html#definicion">11.1. Definición</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Notas/10-funciones-de-clase.html#proposicion">11.2. Proposición</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Notas/10-funciones-de-clase.html#id1">11.3. Proposición</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Notas/10-funciones-de-clase.html">12. Funciones de clase</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Notas/10-funciones-de-clase.html#definicion">12.1. Definición</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Notas/10-funciones-de-clase.html#proposicion">12.2. Proposición</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Notas/10-funciones-de-clase.html#id1">12.3. Proposición</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Notas/11-funcion-caracteristica.html">12. Función Característica</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Notas/11-funcion-caracteristica.html#definicion">12.1. Definición</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Notas/11-funcion-caracteristica.html#proposicion">12.2. Proposición</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Notas/11-funcion-caracteristica.html">13. Función Característica</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Notas/11-funcion-caracteristica.html#definicion">13.1. Definición</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Notas/11-funcion-caracteristica.html#proposicion">13.2. Proposición</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Notas/12-caracterizacion-de-caracteristicas-de-representaciones-complejas-irreducibles-de-un-grupo-finito.html">14. Caracterización de Características de Representaciones Complejas Irreducibles de un Grupo Finito</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Notas/12-caracterizacion-de-caracteristicas-de-representaciones-complejas-irreducibles-de-un-grupo-finito.html#teorema">14.1. Teorema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Notas/12-caracterizacion-de-caracteristicas-de-representaciones-complejas-irreducibles-de-un-grupo-finito.html">13. Caracterización de Características de Representaciones Complejas Irreducibles de un Grupo Finito</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Notas/12-caracterizacion-de-caracteristicas-de-representaciones-complejas-irreducibles-de-un-grupo-finito.html#teorema">13.1. Teorema</a></li>
 </ul>
 </li>
 </ul>
+</div>
+<div class="section" id="algebra-lineal">
+<h2>Álgebra Lineal<a class="headerlink" href="#algebra-lineal" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Sean <span class="math notranslate nohighlight">\(U\)</span> y <span class="math notranslate nohighlight">\(V\)</span> espacios vectoriales de dimensión finita sobre el cuerpo <span class="math notranslate nohighlight">\(\mathbb{F}\)</span>, de dimensiones <span class="math notranslate nohighlight">\(m\)</span> y <span class="math notranslate nohighlight">\(n\)</span> respectivamente, y sea <span class="math notranslate nohighlight">\(f: U \to V\)</span> un mapa lineal. Si <span class="math notranslate nohighlight">\(\mathcal{B}\)</span> es una base de <span class="math notranslate nohighlight">\(U\)</span> y <span class="math notranslate nohighlight">\(\mathcal{C}\)</span> una base de <span class="math notranslate nohighlight">\(V\)</span>, entonces la matriz de <span class="math notranslate nohighlight">\(f\)</span> relativa a <span class="math notranslate nohighlight">\(\mathcal{B}\)</span> y <span class="math notranslate nohighlight">\(\mathcal{C}\)</span> es la matriz <span class="math notranslate nohighlight">\(n \times m\)</span> <span class="math notranslate nohighlight">\(M_{\mathcal{C B}} (f)\)</span> cuya entrada <span class="math notranslate nohighlight">\((i, j)\)</span> es el escalar <span class="math notranslate nohighlight">\(a_{ij}\)</span>, donde</p>
+<div class="math notranslate nohighlight">
+\[f(u_{j}) = \sum_{i = 1}^{n} a_{ij}v_{i} \text{ para todo } j = 1, 2, \dots , m,\]</div>
+<p>siendo  <span class="math notranslate nohighlight">\(u_{1}\)</span>, <span class="math notranslate nohighlight">\(u_{2}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span> , <span class="math notranslate nohighlight">\(u_{m}\)</span> los vectores que componen la base <span class="math notranslate nohighlight">\(\mathcal{B}\)</span>, y <span class="math notranslate nohighlight">\(v_{1}\)</span>, <span class="math notranslate nohighlight">\(v_{2}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span>, <span class="math notranslate nohighlight">\(v_{n}\)</span> los que componen la base <span class="math notranslate nohighlight">\(\mathcal{C}\)</span>.</p>
+<p>La conexión entre matrices y transformaciones lineales son temas básicos de Álgebra Lineal. Los principales hechos son los siguientes:</p>
+<p>Al multiplicar el vector de coordenadas relativo a <span class="math notranslate nohighlight">\(\mathcal{B}\)</span> de un elemento <span class="math notranslate nohighlight">\(u \in U\)</span> por <span class="math notranslate nohighlight">\(M_{\mathcal{C B}} (f)\)</span> se obtiene el vector de coordenadas relativo a <span class="math notranslate nohighlight">\(\mathcal{C}\)</span> de <span class="math notranslate nohighlight">\(f(u) \in V\)</span>; es decir, si <span class="math notranslate nohighlight">\(u=\sum_{j = 1}^{m}\lambda_{j}u_{j}\)</span> entonces <span class="math notranslate nohighlight">\(f(u)=\sum_{i = 1}^{n}\lambda_{i}v_{i}\)</span>, donde</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}M_{\mathcal{C B}} (f) \left(\begin{matrix}\mu_{1} \\ \mu_{2} \\ \vdots \\ \mu_{m} \end{matrix}\right) = \left(\begin{matrix}\lambda_{1} \\ \lambda_{2} \\ \vdots \\ \lambda_{n} \end{matrix}\right)\end{split}\]</div>
+<p>Si las bases <span class="math notranslate nohighlight">\(\mathcal{B}\)</span> y <span class="math notranslate nohighlight">\(\mathcal{C}\)</span> son fijas, el mapeo <span class="math notranslate nohighlight">\(f\to M_{\mathcal{C B}} (f)\)</span> es una correspondencia biyectiva entre el conjunto de todos los mapas lineales <span class="math notranslate nohighlight">\(U \to V\)</span> y el conjunto de todas las matrices <span class="math notranslate nohighlight">\(n \times m\)</span> sobre <span class="math notranslate nohighlight">\(\mathbb{F}\)</span>. Si <span class="math notranslate nohighlight">\(f: U \to V\)</span> y <span class="math notranslate nohighlight">\(h: V \to W\)</span> son ambos mapas lineales, y <span class="math notranslate nohighlight">\(\mathcal{D}\)</span> es una base del espacio vectorial <span class="math notranslate nohighlight">\(W\)</span>, entonces</p>
+<div class="math notranslate nohighlight">
+\[M_{\mathcal{D B}} (hf) = M_{\mathcal{D C}} (h) M_{\mathcal{C B}} (f).\]</div>
+<p>Y de manera similar, si <span class="math notranslate nohighlight">\(h\)</span> y <span class="math notranslate nohighlight">\(f\)</span> son dos mapas lineales de <span class="math notranslate nohighlight">\(U\)</span> a <span class="math notranslate nohighlight">\(V\)</span>, entonces</p>
+<div class="math notranslate nohighlight">
+\[M_{\mathcal{C B}} (h + f) = M_{\mathcal{C B}} (h) + M_{\mathcal{C B}} (f).\]</div>
+<p>En particular tenemos eso</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+    M_{\mathcal{CC}}(hf) &amp;= M_\mathcal{CC}(h)M_\mathcal{CC}(f)\\
+    M_{\mathcal{CC}}(h + f) &amp;= M_{\mathcal{CC}}(h) + M_{\mathcal{CC}}(f)
+\end{align}\end{split}\]</div>
+<p>para todas las transformaciones lineales <span class="math notranslate nohighlight">\(h, f: V \to V\)</span>. Dado que la matriz de la transformación lineal identidad es la matriz identidad, de la primera de estas dos ecuaciones se deduce que una transformación lineal <span class="math notranslate nohighlight">\(V \to V\)</span> es invertible si y solo si su matriz es relativa a <span class="math notranslate nohighlight">\(C\)</span> es invertible, y deducimos que <span class="math notranslate nohighlight">\(f \mapsto M_{\mathcal{C C}} (f)\)</span> es un isomorfismo del grupo de todas las transformaciones lineales invertibles en <span class="math notranslate nohighlight">\(V\)</span> al grupo de todas las matrices <span class="math notranslate nohighlight">\(n \times n\)</span> invertibles sobre <span class="math notranslate nohighlight">\(\mathbb{F}\)</span>.</p>
+</div>
+<div class="section" id="grupos">
+<h2>Grupos<a class="headerlink" href="#grupos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Los grupos se inventaron como una herramienta para estudiar objetos simétricos. Estos pueden ser objetos de cualquier tipo. Si definimos una simetría de un objeto como una transformación de ese objeto que conserva su estructura esencial, entonces el conjunto de todas las simetrías del objeto forma un grupo. En matemáticas siempre es posible considerar cualquier objeto como un conjunto con alguna estructura adicional; por tanto, una simetría es una función biyectiva que preserva la estructura desde el conjunto hacia sí mismo. La composición de funciones proporciona una operación en este conjunto, y no es difícil demostrar que los axiomas de grupo deben satisfacerse.</p>
+<p>Por ejemplo, un cuerpo es un conjunto dotado con operaciones de suma y multiplicación, que satisface varios axiomas. Un cuadrado puede considerarse como un conjunto de puntos y líneas en el plano euclidiano que satisfacen varias propiedades relacionadas con los ángulos y las distancias. Una simetría de un cuerpo es una función biyectiva del cuerpo a sí mismo que conserva las operaciones de suma y multiplicación. (Es decir, una simetría de un cuerpo es un automorfismo del cuerpo). Una simetría de un cuadrado es una función del conjunto relevante de puntos y líneas a sí mismo que conserva todos los ángulos y distancias. En ambos casos, el conjunto de todas las simetrías es un grupo.</p>
+<p>Está claro que la combinación de dos funciones que conservan alguna propiedad también conservará esa propiedad. Por ejemplo, si <span class="math notranslate nohighlight">\(R\)</span> es un conjunto equipado con una operación <span class="math notranslate nohighlight">\(\ast\)</span> (como suma o multiplicación) y si <span class="math notranslate nohighlight">\(f, g: R \to R\)</span> son funciones que conservan <span class="math notranslate nohighlight">\(\ast\)</span>, entonces para todo <span class="math notranslate nohighlight">\(x, y \in R\)</span></p>
+<div class="math notranslate nohighlight">
+\[(fg)(x \ast y) = f(g(x \ast y)) = f((gx) \ast (gy)) = (f(gx)) \ast (f(gy)) = ((fg)x) \ast ((fg)y),\]</div>
+<p>para que <span class="math notranslate nohighlight">\(fg\)</span> también conserve <span class="math notranslate nohighlight">\(\ast\)</span>. De manera similar, si <span class="math notranslate nohighlight">\(S\)</span> es un conjunto de puntos en el plano euclidiano y <span class="math notranslate nohighlight">\(\phi, \psi: S \to S \)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+    \angle P_{1}, P_{2}, P_{3} &amp;= \angle P_{1}'P_{2}'P_{3}' \text{ donde } P_{i}' = \psi P_{i} \\
+                               &amp;= \angle P_{1}''P_{2}''P_{3}'' \text{ donde } P_{i}'' = \phi P_{i}' = ( \phi \psi ) P_{i},
+\end{align}\end{split}\]</div>
+<p>de modo que <span class="math notranslate nohighlight">\(\phi \psi\)</span> también conserva los ángulos. Así se puede ver que el compuesto de dos simetrías es una simetría. De manera similar, la inversa de una simetría también es una simetría. Además, la composición de funciones es una operación asociativa. De modo que se satisfacen los axiomas de grupo. Podemos esperar que comprender el grupo de simetría de un objeto pueda conducir a una comprensión más profunda del objeto en sí.</p>
+<p>La teoría de la representación en realidad invierte esta filosofía. Si uno considera los grupos como cosas que son de interés por derecho propio, entonces quizás uno pueda esperar comprender mejor un grupo dado descubriendo un objeto del cual el grupo es el grupo de simetría, y usando las propiedades de ese objeto para descubrir información sobre el grupo. grupo. Sin embargo, el tema subyacente sigue siendo que los elementos de un grupo deben asociarse con las transformaciones de un conjunto. Por tanto, la siguiente definición es natural.</p>
+</div>
+<div class="section" id="proposicion">
+<h2>Proposición<a class="headerlink" href="#proposicion" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Sea <span class="math notranslate nohighlight">\(G\)</span> un grupo y <span class="math notranslate nohighlight">\(g\in G\)</span>. Entonces el conjunto <span class="math notranslate nohighlight">\(C_{G} (g) = \{x \in G | xg = gx \}\)</span> es un subgrupo de <span class="math notranslate nohighlight">\(G\)</span>.</p>
+<p><strong>Demostración:</strong></p>
+<ul class="simple">
+<li><p>Por definición de elemento identidad tenemos que <span class="math notranslate nohighlight">\(1g = g1\)</span> y por lo tanto, <span class="math notranslate nohighlight">\(1 \in C_{G} (g)\)</span>.</p></li>
+<li><p>Si <span class="math notranslate nohighlight">\(x \in C_{G} (g)\)</span> entonces <span class="math notranslate nohighlight">\(xg = gx\)</span>, y multiplicar esta ecuación a la izquierda y a la derecha por <span class="math notranslate nohighlight">\(x^{−1}\)</span> da <span class="math notranslate nohighlight">\(gx^{−1} = x^{−1}g\)</span>, de donde <span class="math notranslate nohighlight">\(x^{-1} \in C_{G} (g)\)</span>.</p></li>
+<li><p>Si <span class="math notranslate nohighlight">\(x, y \in C_{G} (g)\)</span> entonces <span class="math notranslate nohighlight">\(xg = gx\)</span> y <span class="math notranslate nohighlight">\(yg = gy\)</span>, y vemos que</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[(xy)g = x(yg) = x(gy) = (xg)y = (gx)y = g(xy),\]</div>
+<p>entonces <span class="math notranslate nohighlight">\(xy \in C_{G} (g)\)</span>. Luego, tenemos que <span class="math notranslate nohighlight">\(C_{G} (g) = \{x \in G | xg = gx \}\)</span> es un subgrupo de <span class="math notranslate nohighlight">\(G\)</span>, como queriamos probar.</p>
+</div>
+<div class="section" id="definicion-de-centralizador">
+<h2>Definición de Centralizador<a class="headerlink" href="#definicion-de-centralizador" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El subgrupo <span class="math notranslate nohighlight">\(C_{G} (g)\)</span> definido en la proposición anterior se denomina centralizador en <span class="math notranslate nohighlight">\(G\)</span> del elemento <span class="math notranslate nohighlight">\(g\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<ul class="simple">
+<li><p>si <span class="math notranslate nohighlight">\(H\)</span> es un subgrupo de un grupo <span class="math notranslate nohighlight">\(G\)</span>, entonces para cada <span class="math notranslate nohighlight">\(x\in G\)</span> el subconjunto <span class="math notranslate nohighlight">\(xH = \{ xh | h \in H \}\)</span> se llama una clase lateral izquierda de <span class="math notranslate nohighlight">\(H\)</span> en <span class="math notranslate nohighlight">\(G\)</span>.</p></li>
+</ul>
+</div>
+<p>El mapeo <span class="math notranslate nohighlight">\(h \mapsto xh\)</span> de <span class="math notranslate nohighlight">\(H\)</span> a <span class="math notranslate nohighlight">\(xH\)</span> es una biyección, por lo que el número de elementos de la clase lateral <span class="math notranslate nohighlight">\(xH\)</span> es el mismo que el número de elementos de <span class="math notranslate nohighlight">\(H\)</span>. Si <span class="math notranslate nohighlight">\(x, y \in G\)</span> entonces las clases laterales izquierdas <span class="math notranslate nohighlight">\(xH\)</span> e <span class="math notranslate nohighlight">\(yH\)</span> coinciden o son disjuntas. Coinciden si <span class="math notranslate nohighlight">\(x \in yH\)</span> o (de manera equivalente) si <span class="math notranslate nohighlight">\(y \in xH\)</span>, o (una tercera condición equivalente) si <span class="math notranslate nohighlight">\(x^{−1}y \in H\)</span>. Además, cada elemento de <span class="math notranslate nohighlight">\(G\)</span> se encuentra en alguna clase lateral izquierda de <span class="math notranslate nohighlight">\(H\)</span>: de hecho, <span class="math notranslate nohighlight">\(g \in gH.\)</span> De ello se deduce que podemos elegir una transversal izquierda, o <strong>sistema de representantes de las clases laterales izquierdas</strong>, para el subgrupo <span class="math notranslate nohighlight">\(H\)</span>. Esta es una familia <span class="math notranslate nohighlight">\((x_{i})_{i\in I}\)</span> de elementos de <span class="math notranslate nohighlight">\(G\)</span> tal que <span class="math notranslate nohighlight">\(G\)</span> es la unión disjunta de las clases laterales <span class="math notranslate nohighlight">\(x_{i}H\)</span> para <span class="math notranslate nohighlight">\(i \in I\)</span>. Suponiendo que el grupo <span class="math notranslate nohighlight">\(G\)</span> es finito, entonces, por supuesto, el número de clases laterales izquierdas de <span class="math notranslate nohighlight">\(H\)</span> también es finito.</p>
+<p>El número de clases laterales izquierdas de <span class="math notranslate nohighlight">\(H\)</span> en <span class="math notranslate nohighlight">\(G\)</span> se denomina índice de <span class="math notranslate nohighlight">\(H\)</span> en <span class="math notranslate nohighlight">\(G\)</span>, denotado por <span class="math notranslate nohighlight">\([G:H]\)</span>. Si <span class="math notranslate nohighlight">\(n = [G:H]\)</span> entonces una transversal izquierda para <span class="math notranslate nohighlight">\(H\)</span> constará de <span class="math notranslate nohighlight">\(n\)</span> elementos <span class="math notranslate nohighlight">\(x_{1}\)</span>, <span class="math notranslate nohighlight">\(x_{2}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span>, <span class="math notranslate nohighlight">\(x_{n}\)</span>, y dado que <span class="math notranslate nohighlight">\(G = x_{1}H \cup x_{2}H \cup \cdots \cup x_{n}H\)</span> expresa <span class="math notranslate nohighlight">\(G\)</span> como la unión disjunta de <span class="math notranslate nohighlight">\(n = [G: H]\)</span> conjuntos todos los cuales tienen <span class="math notranslate nohighlight">\(|H|\)</span> elementos, llegamos a la conclusión de que <span class="math notranslate nohighlight">\(|G| = [G: H] |H|\)</span>.</p>
+</div>
+<div class="section" id="conjugacion">
+<h2>Conjugación<a class="headerlink" href="#conjugacion" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Sean <span class="math notranslate nohighlight">\(g \in G\)</span> y <span class="math notranslate nohighlight">\(H = C_{G} (g)\)</span>. Si <span class="math notranslate nohighlight">\(x,y \in G\)</span> están en la misma clase lateral izquierda de <span class="math notranslate nohighlight">\(H\)</span>, entonces <span class="math notranslate nohighlight">\(y = xh\)</span> para algún <span class="math notranslate nohighlight">\(h\in H\)</span> y</p>
+<div class="math notranslate nohighlight">
+\[ygy^{−1} = (xh)g(xh)^{−1} = x(hg)h^{−1} x^{−1} = x(gh)h^{−1}x^{−1} = xgx^{−1},\]</div>
+<p>ya que <span class="math notranslate nohighlight">\(h\)</span> está en el centralizador de <span class="math notranslate nohighlight">\(g\)</span>. Por tanto, hemos demostrado que <span class="math notranslate nohighlight">\(ygy^{−1} = xgx^{−1}\)</span> para todo <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span> en la misma clase lateral izquierda del centralizador.</p>
+<p>Recíprocamente, si <span class="math notranslate nohighlight">\(ygy^{−1} = xgx^{−1}\)</span> entonces <span class="math notranslate nohighlight">\((x^{−1}y) g = g (x^{− 1}y)\)</span>, de modo que <span class="math notranslate nohighlight">\(x^{−1}y \in C_{G} (g)\)</span>, y por lo tanto <span class="math notranslate nohighlight">\(x\)</span> e <span class="math notranslate nohighlight">\(y\)</span> están en la misma clase lateral del centralizador.</p>
+<p>Así, los elementos de <span class="math notranslate nohighlight">\(G\)</span> de la forma <span class="math notranslate nohighlight">\(xgx^{−1}\)</span> están en correspondencia uno a uno con las clases laterales izquierdas de <span class="math notranslate nohighlight">\(C_{G} (g)\)</span>: si <span class="math notranslate nohighlight">\(x_{1}\)</span>, <span class="math notranslate nohighlight">\(x_{2}\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span> , <span class="math notranslate nohighlight">\(x_{n}\)</span> es una transversal izquierda, entonces cada elemento de la forma <span class="math notranslate nohighlight">\(xgx^{−1}\)</span> es igual a uno u otro de los <span class="math notranslate nohighlight">\(n\)</span> elementos <span class="math notranslate nohighlight">\(x_{i}gx_{i}^{-1}\)</span>, y estos elementos son todos distintos (ya que corresponden a clases laterales distintas). Estos elementos de la forma <span class="math notranslate nohighlight">\(xgx^{−1}\)</span> se denominan <em>conjugados</em> de <span class="math notranslate nohighlight">\(g\)</span> en <span class="math notranslate nohighlight">\(G\)</span>.</p>
+<div class="admonition important">
+<p class="admonition-title">Importante</p>
+<p>Con este razonameinto, hemos demostrado que el número de conjugados de <span class="math notranslate nohighlight">\(G\)</span> es igual al índice del centralizador de <span class="math notranslate nohighlight">\(g\)</span>.</p>
+</div>
 </div>
 </div>
 
@@ -259,7 +332,7 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="Notas/01-grupos.html" class="btn btn-neutral float-right" title="1. Grupos" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Notas/01-ejemplo-de-accion-de-un-grupo-sobre-un-conjunto.html" class="btn btn-neutral float-right" title="1. Ejemplos de acción de un grupo sobre un conjunto" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
